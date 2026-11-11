@@ -1,0 +1,23 @@
+
+User-agent: *
+Disallow: /wp-login.php
+Disallow: /wp-admin/
+Crawl-delay: 600
+
+# START APPLE BOT
+# ---------------------------
+User-agent: Applebot         # apple
+Allow: /                     # Allow everything (also true if omitted)
+Disallow: /wp-admin/         # disallow this directory
+Disallow: /wp-login.php      # disallow this file
+# ---------------------------
+# END APPLE BOT
+
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+Sitemap: http://marginalrevolution.com/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK

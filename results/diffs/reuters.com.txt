@@ -1,0 +1,1391 @@
+robots.txt history for reuters.com (news)
+158 versions, 2015-12-28 to 2026-10-11
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-12-28  →  2016-12-27   (+1 / -0 lines)
+  before: https://web.archive.org/web/20151228220057/http://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20161227192454/http://www.reuters.com/robots.txt
+@@ -5,4 +5,5 @@
+ Disallow: /search
+ Disallow: /beta
++Disallow: /designtech*
+ SITEMAP: http://www.reuters.com/sitemap_news_index.xml
+ SITEMAP: http://www.reuters.com/sitemap_video_index.xml
+
+==============================================================================
+2016-12-27  →  2017-12-31   (+8 / -2 lines)
+  before: https://web.archive.org/web/20161227192454/http://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20171231194035/https://www.reuters.com/robots.txt
+@@ -1,3 +1,4 @@
+ # robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
+ Disallow: /finance/stocks/option
+@@ -6,6 +7,11 @@
+ Disallow: /beta
+ Disallow: /designtech*
+-SITEMAP: http://www.reuters.com/sitemap_news_index.xml
+-SITEMAP: http://www.reuters.com/sitemap_video_index.xml
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++SITEMAP: https://www.reuters.com/sitemap_index.xml
++SITEMAP: https://www.reuters.com/sitemap_news_index.xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/sitemap_market_index.xml
+ User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+2017-12-31  →  2018-12-31   (+9 / -0 lines)
+  before: https://web.archive.org/web/20171231194035/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20181231193929/https://www.reuters.com/robots.txt
+@@ -10,4 +10,7 @@
+ Disallow: /energy-test
+ Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
+ SITEMAP: https://www.reuters.com/sitemap_index.xml
+ SITEMAP: https://www.reuters.com/sitemap_news_index.xml
+@@ -16,2 +19,8 @@
+ User-agent: Pipl
+ Disallow: /
++User-Agent: omgilibot
++Disallow: /
++User-Agent: omgili
++Disallow: /
++User-agent: omgili/0.5 +https://omgili.com
++Disallow: /
+
+==============================================================================
+2018-12-31  →  2019-12-31   (+4 / -1 lines)
+  before: https://web.archive.org/web/20181231193929/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20191231123359/https://www.reuters.com/robots.txt
+@@ -13,8 +13,11 @@
+ Disallow: /sponsored/previewarticle
+ Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
+ SITEMAP: https://www.reuters.com/sitemap_index.xml
+ SITEMAP: https://www.reuters.com/sitemap_news_index.xml
+ SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/sitemap_market_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
+ User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+2020-12-31  →  2021-12-31   (+3 / -8 lines)
+  before: https://web.archive.org/web/20201231225250/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20211231212519/https://www.reuters.com/robots.txt
+@@ -5,4 +5,5 @@
+ Disallow: /finance/stocks/financialHighlights
+ Disallow: /search
++Disallow: /site-search/
+ Disallow: /beta
+ Disallow: /designtech*
+@@ -16,14 +17,8 @@
+ Disallow: /news/archive/commentary
+ Disallow: /brandfeatures/venture-capital*
+-SITEMAP: https://www.reuters.com/sitemap_index.xml
+-SITEMAP: https://www.reuters.com/sitemap_news_index.xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+ SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+ SITEMAP: https://www.reuters.com/brandfeature/sitemap
+ User-agent: Pipl
+ Disallow: /
+-User-Agent: omgilibot
+-Disallow: /
+-User-Agent: omgili
+-Disallow: /
+-User-agent: omgili/0.5 +https://omgili.com
+-Disallow: /
+
+==============================================================================
+2021-12-31  →  2022-06-30   (+2 / -0 lines)
+  before: https://web.archive.org/web/20211231212519/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220630202424/https://www.reuters.com./robots.txt
+@@ -17,4 +17,6 @@
+ Disallow: /news/archive/commentary
+ Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+
+==============================================================================
+[AI] 2022-06-30  →  2022-07-01   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220630202424/https://www.reuters.com./robots.txt
+  after:  https://web.archive.org/web/20220701021623/http://reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-07-01  →  2022-07-02   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220701021623/http://reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220702215924/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-07-04  →  2022-07-06   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220704163528/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220706070004/http://reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-07-06  →  2022-07-07   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220706070004/http://reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220707073256/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-07-07  →  2022-07-08   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220707073256/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220708082748/http://reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-07-08  →  2022-07-08   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220708082748/http://reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220708195526/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-07-12  →  2022-07-13   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220712193050/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220713233201/http://reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-07-13  →  2022-07-14   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220713233201/http://reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220714220359/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-07-15  →  2022-07-16   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220715140436/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220716181447/http://reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-07-19  →  2022-07-20   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220719002054/http://reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220720205159/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-07-29  →  2022-07-31   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220729163227/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220731075828/http://reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-07-31  →  2022-08-02   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220731075828/http://reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220802002016/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-08-06  →  2022-08-08   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220806130848/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220808013506/http://reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-08-08  →  2022-08-09   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220808013506/http://reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220809143107/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-08-13  →  2022-08-15   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220813210459/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220815154434/http://reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-08-15  →  2022-08-16   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220815154434/http://reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220816210346/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-08-21  →  2022-08-23   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220821204014/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220823214236/http://reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-08-23  →  2022-08-25   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220823214236/http://reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220825213043/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-08-26  →  2022-08-28   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220826201423/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220828045216/http://reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-08-29  →  2022-08-31   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220829054444/http://reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220831030849/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-08-31  →  2022-09-01   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220831030849/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220901031618/http://reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-09-01  →  2022-09-02   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220901031618/http://reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220902013405/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-09-19  →  2022-09-20   (+0 / -24 lines)
+  before: https://web.archive.org/web/20220919153515/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20220920054533/https://reuters.com./robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,26 +1,2 @@
+-# robots_allow.txt for www.reuters.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: *
+-Disallow: /finance/stocks/option
+-Disallow: /finance/stocks/financialHighlights
+-Disallow: /search
+-Disallow: /site-search/
+-Disallow: /beta
+-Disallow: /designtech*
+-Disallow: /featured-optimize
+-Disallow: /energy-test
+-Disallow: /article/beta
+-Disallow: /sponsored/previewcampaign
+-Disallow: /sponsored/previewarticle
+-Disallow: /test/
+-Disallow: /commentary
+-Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
+-Disallow: /journalists/
+-Disallow: /assets/siteindex
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+[AI] 2022-09-20  →  2022-09-21   (+24 / -0 lines)
+  before: https://web.archive.org/web/20220920054533/https://reuters.com./robots.txt
+  after:  https://web.archive.org/web/20220921123151/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,26 @@
++# robots_allow.txt for www.reuters.com
++# Disallow: /*/key-developments/article/*
+ User-agent: *
++Disallow: /finance/stocks/option
++Disallow: /finance/stocks/financialHighlights
++Disallow: /search
++Disallow: /site-search/
++Disallow: /beta
++Disallow: /designtech*
++Disallow: /featured-optimize
++Disallow: /energy-test
++Disallow: /article/beta
++Disallow: /sponsored/previewcampaign
++Disallow: /sponsored/previewarticle
++Disallow: /test/
++Disallow: /commentary
++Disallow: /news/archive/commentary
++Disallow: /brandfeatures/venture-capital*
++Disallow: /journalists/
++Disallow: /assets/siteindex
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/brandfeature/sitemap
++User-agent: Pipl
+ Disallow: /
+
+==============================================================================
+2022-11-09  →  2022-11-11   (+1 / -0 lines)
+  before: https://web.archive.org/web/20221109190412/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20221111181718/https://www.reuters.com/robots.txt
+@@ -19,4 +19,5 @@
+ Disallow: /journalists/
+ Disallow: /assets/siteindex
++Disallow: /article/api/
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+
+==============================================================================
+[AI] 2023-03-12  →  2023-08-24   (+16 / -6 lines)
+  before: https://web.archive.org/web/20230312135219/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20230824071454/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; CCBot: allowed→blocked
+@@ -1,4 +1,11 @@
+-# robots_allow.txt for www.reuters.com
++# robots.txt for www.reuters.com
++# from outboundfeeds.reuters.arcpublishing.com
+ # Disallow: /*/key-developments/article/*
++User-agent: PiplBot
++Disallow: /
++User-agent: CCbot
++Disallow: /
++User-agent: GPTBot
++Disallow: /
+ User-agent: *
+ Disallow: /finance/stocks/option
+@@ -7,5 +14,5 @@
+ Disallow: /site-search/
+ Disallow: /beta
+-Disallow: /designtech*
++Disallow: /designtech
+ Disallow: /featured-optimize
+ Disallow: /energy-test
+@@ -16,12 +23,15 @@
+ Disallow: /commentary
+ Disallow: /news/archive/commentary
+-Disallow: /brandfeatures/venture-capital*
++Disallow: /brandfeatures/venture-capital
+ Disallow: /journalists/
+ Disallow: /assets/siteindex
+ Disallow: /article/api/
++Disallow: /practical-law-the-journal/search/
++Disallow: /practical-law-the-journal/contributors/
++Disallow: /fr/
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+ SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+-SITEMAP: https://www.reuters.com/brandfeature/sitemap
+-User-agent: Pipl
+-Disallow: /
++SITEMAP: https://www.reuters.com/plus/sitemap-index.xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-plj-index/?outputType=xml
++SITEMAP: https://www.reuters.com/graphics/sitemap.xml
+
+==============================================================================
+[AI] 2023-08-24  →  2024-05-01   (+9 / -3 lines)
+  before: https://web.archive.org/web/20230824071454/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20240501234217/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; anthropic-ai: allowed→blocked; Google-Extended: allowed→blocked
+@@ -1,10 +1,14 @@
+ # robots.txt for www.reuters.com
+-# from outboundfeeds.reuters.arcpublishing.com
+-# Disallow: /*/key-developments/article/*
+ User-agent: PiplBot
+ Disallow: /
+ User-agent: CCbot
+ Disallow: /
+-User-agent: GPTBot
++User-agent: anthropic-ai
++Disallow: /
++User-agent: Claude-Web
++Disallow: /
++User-agent: Google-Extended
++Disallow: /
++User-agent: FacebookBot
+ Disallow: /
+ User-agent: *
+@@ -36,2 +40,4 @@
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-plj-index/?outputType=xml
+ SITEMAP: https://www.reuters.com/graphics/sitemap.xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/pictures/?outputType=xml
++SITEMAP: https://www.reuters.com/static/video-sitemap/us/sitemap_video_index.xml
+
+==============================================================================
+2024-05-01  →  2024-07-30   (+5 / -1 lines)
+  before: https://web.archive.org/web/20240501234217/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20240730142516/https://www.reuters.com/robots.txt
+@@ -32,6 +32,8 @@
+ Disallow: /article/api/
+ Disallow: /practical-law-the-journal/search/
+-Disallow: /practical-law-the-journal/contributors/
+ Disallow: /fr/
++Disallow: /info-pages/terms-of-use/custom-services-agreement-23-10/
++Disallow: /info-pages/custom-services-agreement-23-10/
++Disallow: /info-pages/advertising-guidelines/
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+@@ -42,2 +44,4 @@
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/pictures/?outputType=xml
+ SITEMAP: https://www.reuters.com/static/video-sitemap/us/sitemap_video_index.xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/topic-sitemap/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/author-sitemap/?outputType=xml
+
+==============================================================================
+[AI] 2024-07-30  →  2025-06-16   (+33 / -7 lines)
+  before: https://web.archive.org/web/20240730142516/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20250616175350/https://www.reuters.com/robots.txt
+  AI changes: ClaudeBot: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked
+@@ -4,11 +4,33 @@
+ User-agent: CCbot
+ Disallow: /
++# ADO-657700
++User-agent: Meta-ExternalAgent
++Disallow: /
++User-agent: Meta-ExternalFetcher
++Disallow: /
++User-agent: Google-Extended
++Disallow: /
++#
++User-agent: FacebookBot
++Disallow: /
++# ADO-658177
+ User-agent: anthropic-ai
++Disallow: /
++User-agent: ClaudeBot
++Disallow: /
++User-agent: cohere-ai
++Disallow: /
++User-agent: Timpibot
++Disallow: /
++User-agent: Diffbot
++Disallow: /
++User-agent: Bytespider
+ Disallow: /
+ User-agent: Claude-Web
+ Disallow: /
+-User-agent: Google-Extended
++User-agent: PerplexityBot
+ Disallow: /
+-User-agent: FacebookBot
++# ADO-661811
++User-agent: Applebot-Extended
+ Disallow: /
+ User-agent: *
+@@ -28,15 +50,17 @@
+ Disallow: /news/archive/commentary
+ Disallow: /brandfeatures/venture-capital
+-Disallow: /journalists/
+ Disallow: /assets/siteindex
+ Disallow: /article/api/
+ Disallow: /practical-law-the-journal/search/
++Disallow: /pf/api/
+ Disallow: /fr/
+-Disallow: /info-pages/terms-of-use/custom-services-agreement-23-10/
+-Disallow: /info-pages/custom-services-agreement-23-10/
+-Disallow: /info-pages/advertising-guidelines/
++Disallow: /it/
++Disallow: /es/
++Disallow: /pt/
++Disallow: /de/
++Disallow: /ar/
++Disallow: /account/subscribe/payment/
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+-SITEMAP: https://www.reuters.com/sitemap_video_index.xml
+ SITEMAP: https://www.reuters.com/plus/sitemap-index.xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-plj-index/?outputType=xml
+@@ -46,2 +70,4 @@
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/topic-sitemap/?outputType=xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/author-sitemap/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/pressrelease-sitemap/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index1/?outputType=xml
+
+==============================================================================
+[AI] 2025-06-16  →  2026-02-13   (+36 / -34 lines)
+  before: https://web.archive.org/web/20250616175350/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20260213135259/https://www.reuters.com/robots.txt
+  AI changes: Claude-SearchBot: allowed→blocked
+@@ -1,36 +1,41 @@
+ # robots.txt for www.reuters.com
++User-agent: AI2Bot
++User-agent: AI2Bot-Dolma
++User-agent: Alibaba.Security.Heimdall
++User-agent: AliyunSecBot/Aliyun
++User-agent: anthropic-ai
++User-agent: Applebot-Extended
++User-agent: archive.org_bot
++User-agent: bedrockbot
++User-agent: Bytespider
++User-agent: CCBot
++User-agent: ChatGLM-Spider
++User-agent: Claude-SearchBot
++User-agent: Claude-Web
++User-agent: ClaudeBot
++User-agent: cohere-ai
++User-agent: cohere-training-data-crawler
++User-agent: Crawlspace
++User-agent: DeepSeekBot
++User-agent: Diffbot
++User-agent: FacebookBot
++User-agent: Feedfetcher-Google
++User-agent: Gemini-Deep-Research
++User-agent: Google-CloudVertexBot
++User-agent: Google-Extended
++User-agent: GoogleOther
++User-agent: Grok
++User-agent: ia_archiver
++User-agent: ia_archiver-web.archive.org
++User-agent: img2dataset
++User-agent: MistralAI-User
++User-agent: Meta-ExternalAgent
++User-agent: Meta-ExternalFetcher
++User-agent: PanguBot
++User-agent: PerplexityBot
+ User-agent: PiplBot
+-Disallow: /
+-User-agent: CCbot
+-Disallow: /
+-# ADO-657700
+-User-agent: Meta-ExternalAgent
+-Disallow: /
+-User-agent: Meta-ExternalFetcher
+-Disallow: /
+-User-agent: Google-Extended
+-Disallow: /
+-#
+-User-agent: FacebookBot
+-Disallow: /
+-# ADO-658177
+-User-agent: anthropic-ai
+-Disallow: /
+-User-agent: ClaudeBot
+-Disallow: /
+-User-agent: cohere-ai
+-Disallow: /
+ User-agent: Timpibot
+-Disallow: /
+-User-agent: Diffbot
+-Disallow: /
+-User-agent: Bytespider
+-Disallow: /
+-User-agent: Claude-Web
+-Disallow: /
+-User-agent: PerplexityBot
+-Disallow: /
+-# ADO-661811
+-User-agent: Applebot-Extended
++User-agent: VelenPublicWebCrawler
++User-agent: YouBot
+ Disallow: /
+ User-agent: *
+@@ -47,5 +52,4 @@
+ Disallow: /sponsored/previewarticle
+ Disallow: /test/
+-Disallow: /commentary
+ Disallow: /news/archive/commentary
+ Disallow: /brandfeatures/venture-capital
+@@ -59,5 +63,4 @@
+ Disallow: /pt/
+ Disallow: /de/
+-Disallow: /ar/
+ Disallow: /account/subscribe/payment/
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+@@ -71,3 +74,2 @@
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/author-sitemap/?outputType=xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/pressrelease-sitemap/?outputType=xml
+-SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index1/?outputType=xml
+
+==============================================================================
+[AI] 2026-02-13  →  2026-06-10   (+90 / -40 lines)
+  before: https://web.archive.org/web/20260213135259/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20260610013843/https://www.reuters.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: now named (allowed); ChatGPT-User: now named (allowed); ClaudeBot: no longer named (blocked); anthropic-ai: no longer named (blocked); Claude-SearchBot: no longer named (blocked); Claude-User: allowed→blocked; Google-Extended: no longer named (blocked); Applebot-Extended: no longer named (blocked); PerplexityBot: no longer named (blocked); Perplexity-User: allowed→blocked; CCBot: no longer named (blocked); Bytespider: no longer named (blocked); meta-externalagent: no longer named (blocked); meta-webindexer: now named (allowed); meta-externalfetcher: no longer named (blocked); cohere-ai: no longer named (blocked); Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: now named (allowed); * group: now blocks all unlisted crawlers
+@@ -1,43 +1,88 @@
+-# robots.txt for www.reuters.com
+-User-agent: AI2Bot
+-User-agent: AI2Bot-Dolma
+-User-agent: Alibaba.Security.Heimdall
+-User-agent: AliyunSecBot/Aliyun
+-User-agent: anthropic-ai
+-User-agent: Applebot-Extended
+-User-agent: archive.org_bot
+-User-agent: bedrockbot
+-User-agent: Bytespider
+-User-agent: CCBot
+-User-agent: ChatGLM-Spider
+-User-agent: Claude-SearchBot
+-User-agent: Claude-Web
+-User-agent: ClaudeBot
+-User-agent: cohere-ai
+-User-agent: cohere-training-data-crawler
+-User-agent: Crawlspace
+-User-agent: DeepSeekBot
+-User-agent: Diffbot
+-User-agent: FacebookBot
+-User-agent: Feedfetcher-Google
+-User-agent: Gemini-Deep-Research
+-User-agent: Google-CloudVertexBot
+-User-agent: Google-Extended
++User-agent: AASA-Bot
++User-agent: ADmantX
++User-agent: AdsBot-Google
++User-agent: AdsBot-Google-Mobile
++User-agent: AmazonAdBot
++User-agent: Amzn-User
++User-agent: Applebot
++User-agent: AppleNewsBot
++User-agent: Bingbot
++User-agent: BingPreview
++User-agent: BrightEdge
++User-agent: BrightEdgeOnCrawl
++User-agent: CensysInspect
++User-agent: ChatGPT-User
++User-agent: Cision
++User-agent: Clickagy
++User-agent: Concert
++User-agent: ContextualBot
++User-agent: CriteoBot
++User-agent: DatadogSynthetics
++User-agent: datadome-pageprotect-scanner
++User-agent: Discordbot
++User-agent: doubleverify
++User-agent: DuckDuckBot
++User-agent: ElevenlabsBot
++User-agent: Embedly
++User-agent: facebookexternalhit
++User-agent: Googlebot
++User-agent: Googlebot Smartphone
++User-agent: Googlebot-News
++User-agent: Google-Display-Ads-Bot
++User-agent: Google-InspectionTool
+ User-agent: GoogleOther
+-User-agent: Grok
+-User-agent: ia_archiver
+-User-agent: ia_archiver-web.archive.org
+-User-agent: img2dataset
+-User-agent: MistralAI-User
+-User-agent: Meta-ExternalAgent
+-User-agent: Meta-ExternalFetcher
+-User-agent: PanguBot
+-User-agent: PerplexityBot
+-User-agent: PiplBot
+-User-agent: Timpibot
+-User-agent: VelenPublicWebCrawler
+-User-agent: YouBot
+-Disallow: /
+-User-agent: *
++User-agent: Google-Read-Aloud
++User-agent: Google-Safety
++User-agent: Google-Site-Verification
++User-agent: GTmetrix
++User-agent: GumGumBot
++User-agent: ias_crawler
++User-agent: Iframely
++User-agent: leiki
++User-agent: LinkedInBot
++User-agent: LinkTiger
++User-agent: Mantisbot
++User-agent: Mediapartners-Google
++User-agent: meta-externalads
++User-agent: meta-webindexer
++User-agent: MicrosoftPreview
++User-agent: MJ12bot
++User-agent: Moreover
++User-agent: msnbot
++User-agent: NFBNewslineRobot
++User-agent: OAI-SearchBot
++User-agent: Oncrawl
++User-agent: Opebot-v
++User-agent: Opoint
++User-agent: Optimizer
++User-agent: outbrain
++User-agent: Pinterestbot
++User-agent: Prerender
++User-agent: Proofpoint
++User-agent: proximic
++User-agent: PubMatic Crawler Bot
++User-agent: Quantcastbot
++User-agent: Qwantbot
++User-agent: Reuters SEO Screaming Frog Spider 007
++User-agent: Reuters-NAUWI
++User-agent: Scom-Crawler-For-Reuters
++User-agent: SinceraSyntheticUser
++User-agent: Slurp
++User-agent: SmartologyBot
++User-agent: snews
++User-agent: SocialFlow
++User-agent: StatusCake
++User-agent: Storebot-Google
++User-agent: Stripebot
++User-agent: TTD-Content
++User-agent: Twitterbot
++User-agent: URLDefense
++User-agent: Verity
++User-agent: vuln_scan_by_trustedsite_com_halo_security
++User-agent: WISEbot
++User-agent: Xenu Link Sleuth
++User-agent: Yahoo Link Preview
++User-agent: Yahoo! JAPAN
++User-agent: YahooMailProxy
+ Disallow: /finance/stocks/option
+ Disallow: /finance/stocks/financialHighlights
+@@ -63,5 +108,10 @@
+ Disallow: /pt/
+ Disallow: /de/
++Disallow: /latam/
+ Disallow: /account/subscribe/payment/
++# Block all other bots
++User-agent: *
++Allow: /plus/
++Disallow: /
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+
+==============================================================================
+[AI] 2026-06-10  →  2026-09-15   (+15 / -2 lines)
+  before: https://web.archive.org/web/20260610013843/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20260915191349/https://www.reuters.com/robots.txt
+  AI changes: Applebot-Extended: now named (blocked)
+@@ -1,4 +1,14 @@
++# NOTICE: Collection of content, data and/or information from reuters.com through
++# automated means is prohibited unless you have prior written consent from Reuters
++# and may only be conducted for the purposes explicitly described in such permission.
++#
++# The terms and conditions for reuters.com may be found at
++# https://www.reuters.com/info-pages/terms-of-use/
++#
++# If you would like to seek permission to license the content and/or other materials
++# of Reuters, please contact https://reutersagency.com/contact-us/enquire/
+ User-agent: AASA-Bot
+ User-agent: ADmantX
++User-agent: AdmiralBot
+ User-agent: AdsBot-Google
+ User-agent: AdsBot-Google-Mobile
+@@ -22,5 +32,4 @@
+ User-agent: Discordbot
+ User-agent: doubleverify
+-User-agent: DuckDuckBot
+ User-agent: ElevenlabsBot
+ User-agent: Embedly
+@@ -109,5 +118,7 @@
+ Disallow: /de/
+ Disallow: /latam/
+-Disallow: /account/subscribe/payment/
++Disallow: /account/subscribe/payment
++User-agent: Applebot-Extended
++Disallow: /
+ # Block all other bots
+ User-agent: *
+@@ -124,2 +135,4 @@
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/author-sitemap/?outputType=xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/pressrelease-sitemap/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-ar-index/?outputType=xml
++SITEMAP: https://www.reuters.com/service/archive-sitemap/sitemap.xml
+
+==============================================================================
+2026-09-15  →  2026-10-11   (+3 / -0 lines)
+  before: https://web.archive.org/web/20260915191349/https://www.reuters.com/robots.txt
+  after:  https://web.archive.org/web/20261011092054/https://www.reuters.com/robots.txt
+@@ -119,4 +119,5 @@
+ Disallow: /latam/
+ Disallow: /account/subscribe/payment
++Disallow: /*/site-search/
+ User-agent: Applebot-Extended
+ Disallow: /
+@@ -126,4 +127,5 @@
+ Disallow: /
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/?outputType=xml
++SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-jp-index/?outputType=xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/news-sitemap-index/?outputType=xml
+ SITEMAP: https://www.reuters.com/plus/sitemap-index.xml
+@@ -131,4 +133,5 @@
+ SITEMAP: https://www.reuters.com/graphics/sitemap.xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/sitemap-index/pictures/?outputType=xml
++SITEMAP: https://www.reuters.com/static/video-sitemap/jp/sitemap_video_index.xml
+ SITEMAP: https://www.reuters.com/static/video-sitemap/us/sitemap_video_index.xml
+ SITEMAP: https://www.reuters.com/arc/outboundfeeds/topic-sitemap/?outputType=xml

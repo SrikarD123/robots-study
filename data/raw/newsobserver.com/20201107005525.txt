@@ -1,0 +1,210 @@
+# Global allow for Mediapartners - this is used by Google to place ads in content,
+# not indexing purposes.
+
+User-agent: Mediapartners-Google
+Disallow:
+
+# Global allow for the Klangoo bot
+User-agent: Magnetbot
+Disallow:
+
+# Temporary throttles to decrease load during launch
+User-agent: Yandex
+Crawl-delay: 3
+
+User-agent: Baiduspider
+Crawl-delay: 3
+
+User-agent: bingbot
+Crawl-delay: 2
+
+User-agent: Slurp
+Crawl-delay: 2
+
+# Temporary blocks of uninteresting bots
+
+User-Agent: Genieo
+Disallow: /
+
+User-Agent: ecoResearch
+Disallow: /
+
+User-Agent: Spinn3r
+Disallow: /
+
+User-Agent: BLP_bbot
+Disallow: /
+
+User-Agent: R6_CommentReader
+Disallow: /
+
+User-Agent: omgilibot
+Disallow: /
+
+User-Agent: EasouSpider
+Disallow: /
+
+User-Agent: A6-Indexer
+Disallow: /
+
+User-Agent: magpie-crawler
+Disallow: /
+
+# Block indexing of search results page
+User-Agent: *
+Disallow: /search
+Disallow: /web
+Disallow: /mrcontent
+Disallow: /webapi-public
+Disallow: /404
+Disallow: /410
+Disallow: /newsletter-signup
+Disallow: /plus
+Disallow: /rss
+Disallow: /books
+Disallow: /celebrities
+Disallow: /ent-columns-blogs
+Disallow: /comics
+Disallow: /games-puzzles
+Disallow: /horoscopes
+Disallow: /movies-news-reviews
+Disallow: /music-news-reviews
+Disallow: /tv
+Disallow: /family
+Disallow: /fashion
+Disallow: /food-drink
+Disallow: /living/food-drink/mouthful-blog
+Disallow: /health-fitness
+Disallow: /home-garden
+Disallow: /liv-columns-blogs
+Disallow: /past-times
+Disallow: /pets
+Disallow: /travel
+Disallow: /m-best-week
+Disallow: /m-business
+Disallow: /m-life-arts
+Disallow: /m-local
+Disallow: /m-sports
+Disallow: /m-top-stories
+Disallow: /watchup
+Disallow: /biz-columns-blogs
+Disallow: /health-care
+Disallow: /personal-finance
+Disallow: /small-business
+Disallow: /storefront
+Disallow: /coal-ash-issue
+Disallow: /community
+Disallow: /thumbs-up
+Disallow: /unc-scandal
+Disallow: /wake-ed-blog
+Disallow: /news-columns-blogs
+Disallow: /politics-columns-blogs
+Disallow: /rob-christensen
+Disallow: /road-worrier-blog
+Disallow: /clear-weather-blog
+Disallow: /weird
+Disallow: /dwane-powell
+Disallow: /opinion-influencers
+Disallow: /seeing-the-invisible
+Disallow: /opn-columns-blogs
+Disallow: /j-peder-zane
+Disallow: /jim-jenkins
+Disallow: /opinion-shop
+Disallow: /homes
+Disallow: /mlb
+Disallow: /nba
+Disallow: /charlotte-hornets
+Disallow: /aac
+Disallow: /clemson-university
+Disallow: /spt-columns-blogs
+Disallow: /joe-giglio
+Disallow: /nccu
+Disallow: /tim-stevens
+Disallow: /tom-sorensen
+Disallow: /golf
+Disallow: /preps-now-blog
+Disallow: /nhl
+Disallow: /canes-now
+Disallow: /nascar-auto-racing
+Disallow: /olympics
+Disallow: /outdoors
+Disallow: /mls
+Disallow: /sports-on-the-air
+Disallow: /tennis
+Disallow: /newsletters
+Disallow: /business-nl
+Disallow: /carolina-breaking-news-alerts
+Disallow: /cary-news-nl
+Disallow: /clayton-news-star-nl
+Disallow: /college-sports
+Disallow: /crime-nl
+Disallow: /duke-nl
+Disallow: /durham-news-nl
+Disallow: /east-carolina-nl
+Disallow: /eastern-wake-nl
+Disallow: /site-services/newsletters/editorials
+Disallow: /site-services/newsletters/education 
+Disallow: /family-community
+Disallow: /food-nl
+Disallow: /garner-cleveland-record-nl
+Disallow: /go-columbia-nl
+Disallow: /health-nl
+Disallow: /preps-nl
+Disallow: /home-garden-nl
+Disallow: /carolina-hurricanes-nl
+Disallow: /lifestyles
+Disallow: /local-state
+Disallow: /midtown-raleigh-nl
+Disallow: /morning-newsletter
+Disallow: /nc-state-nl
+Disallow: /north-raleigh-nl
+Disallow: /plan-your-weekend-nl
+Disallow: /politics-government-nl
+Disallow: /smithfield-herald-nl
+Disallow: /southwest-wake-nl
+Disallow: /sports-newsletter
+Disallow: /technology-nl
+Disallow: /moms-nl
+Disallow: /university-north-carolina-nl
+Disallow: /wake-forest-nl
+Disallow: /advertise/advertorial
+Disallow: /advertise/circulars
+Disallow: /welcome
+Disallow: /announcements-celebrations
+Disallow: /contact
+Disallow: /contests-promotions
+Disallow: /marketing
+Disallow: /feed-the-need
+Disallow: /special-offers
+Disallow: /offer-a
+Disallow: /offer-b  
+Disallow: /offer-c
+Disallow: /dbm
+Disallow: /unlimited
+Disallow: /others
+Disallow: /zone-subscriber-rewards
+Disallow: /text-alerts
+Disallow: /where-to-buy-paper
+Disallow: /testing
+Disallow: /welcome-page
+Allow: /place_announcement
+Allow: /customer-service/subscription/special-offers/digital
+Allow: /warm-tv-blog
+Allow: /ac-snow
+Allow: /best-kept-secrets
+Allow: /under-the-dome
+Allow: /ned-barnett
+Allow: /east-carolina-university
+Allow: /luke-decock
+Allow: /scott-fowler
+
+Sitemap: https://www.newsobserver.com/sitemap/story/update.xml
+Sitemap: https://www.newsobserver.com/sitemap/story/archive.xml
+Sitemap: https://www.newsobserver.com/sitemap/story/googlenews.xml
+Sitemap: https://www.newsobserver.com/sitemap/blogpost/update.xml
+Sitemap: https://www.newsobserver.com/sitemap/blogpost/archive.xml
+Sitemap: https://www.newsobserver.com/sitemap/blogpost/googlenews.xml
+Sitemap: https://www.newsobserver.com/sitemap/video/update.xml
+Sitemap: https://www.newsobserver.com/sitemap/video/archive.xml
+Sitemap: https://www.newsobserver.com/sitemap/update/sections.xml
+Sitemap: https://www.newsobserver.com/sitemap/archive/sections.xml

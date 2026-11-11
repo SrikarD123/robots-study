@@ -1,0 +1,146 @@
+robots.txt history for ncsu.edu (government)
+8 versions, 2015-12-31 to 2022-03-23
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-12-31  →  2016-12-31   (+21 / -1 lines)
+  before: https://web.archive.org/web/20151231052906/https://www.ncsu.edu/robots.txt
+  after:  https://web.archive.org/web/20161231035547/http://www4.ncsu.edu/robots.txt
+@@ -1,2 +1,22 @@
++# robots.txt for www4.ncsu.edu
++# slow down Yahoo! Slurp
++User-agent: Slurp
++Crawl-delay: 30
++Disallow: /*.AVI$
++Disallow: /*.avi$
++Disallow: /*.mov$
++Disallow: /*.m4a$
++Disallow: /*.m4b$
++Disallow: /*.mp3$
++Disallow: /*.ppt$
++Disallow: /*.wmv$
++# don't index certain media at all, anywhere
+ User-agent: *
+-Disallow: /wp/wp-admin/
++Disallow: /*.AVI$
++Disallow: /*.avi$
++Disallow: /*.m4a$
++Disallow: /*.m4b$
++Disallow: /*.mov$
++Disallow: /*.mp3$
++Disallow: /*.ppt$
++Disallow: /*.wmv$
+
+==============================================================================
+2016-12-31  →  2017-12-26   (+3 / -21 lines)
+  before: https://web.archive.org/web/20161231035547/http://www4.ncsu.edu/robots.txt
+  after:  https://web.archive.org/web/20171226060356/https://www.ncsu.edu/robots.txt
+@@ -1,22 +1,4 @@
+-# robots.txt for www4.ncsu.edu
+-# slow down Yahoo! Slurp
+-User-agent: Slurp
+-Crawl-delay: 30
+-Disallow: /*.AVI$
+-Disallow: /*.avi$
+-Disallow: /*.mov$
+-Disallow: /*.m4a$
+-Disallow: /*.m4b$
+-Disallow: /*.mp3$
+-Disallow: /*.ppt$
+-Disallow: /*.wmv$
+-# don't index certain media at all, anywhere
+ User-agent: *
+-Disallow: /*.AVI$
+-Disallow: /*.avi$
+-Disallow: /*.m4a$
+-Disallow: /*.m4b$
+-Disallow: /*.mov$
+-Disallow: /*.mp3$
+-Disallow: /*.ppt$
+-Disallow: /*.wmv$
++Disallow: /wp/wp-admin/
++Allow: /wp/wp-admin/admin-ajax.php
++Sitemap: https://www.ncsu.edu/sitemap.xml
+
+==============================================================================
+2017-12-26  →  2018-12-31   (+21 / -3 lines)
+  before: https://web.archive.org/web/20171226060356/https://www.ncsu.edu/robots.txt
+  after:  https://web.archive.org/web/20181231175049/http://www4.ncsu.edu/robots.txt
+@@ -1,4 +1,22 @@
++# robots.txt for www4.ncsu.edu
++# slow down Yahoo! Slurp
++User-agent: Slurp
++Crawl-delay: 30
++Disallow: /*.AVI$
++Disallow: /*.avi$
++Disallow: /*.mov$
++Disallow: /*.m4a$
++Disallow: /*.m4b$
++Disallow: /*.mp3$
++Disallow: /*.ppt$
++Disallow: /*.wmv$
++# don't index certain media at all, anywhere
+ User-agent: *
+-Disallow: /wp/wp-admin/
+-Allow: /wp/wp-admin/admin-ajax.php
+-Sitemap: https://www.ncsu.edu/sitemap.xml
++Disallow: /*.AVI$
++Disallow: /*.avi$
++Disallow: /*.m4a$
++Disallow: /*.m4b$
++Disallow: /*.mov$
++Disallow: /*.mp3$
++Disallow: /*.ppt$
++Disallow: /*.wmv$
+
+==============================================================================
+2018-12-31  →  2019-11-27   (+7 / -21 lines)
+  before: https://web.archive.org/web/20181231175049/http://www4.ncsu.edu/robots.txt
+  after:  https://web.archive.org/web/20191127124419/https://www.ncsu.edu/robots.txt
+@@ -1,22 +1,8 @@
+-# robots.txt for www4.ncsu.edu
+-# slow down Yahoo! Slurp
+-User-agent: Slurp
+-Crawl-delay: 30
+-Disallow: /*.AVI$
+-Disallow: /*.avi$
+-Disallow: /*.mov$
+-Disallow: /*.m4a$
+-Disallow: /*.m4b$
+-Disallow: /*.mp3$
+-Disallow: /*.ppt$
+-Disallow: /*.wmv$
+-# don't index certain media at all, anywhere
+ User-agent: *
+-Disallow: /*.AVI$
+-Disallow: /*.avi$
+-Disallow: /*.m4a$
+-Disallow: /*.m4b$
+-Disallow: /*.mov$
+-Disallow: /*.mp3$
+-Disallow: /*.ppt$
+-Disallow: /*.wmv$
++Disallow: /wp/wp-admin/
++Disallow: /dailyhistory
++Disallow: /about/history-and-tradition/this-day-at-nc-state/
++Disallow: /about/engaging-north-carolina/
++Disallow: /discover/
++Allow: /wp/wp-admin/admin-ajax.php
++Sitemap: https://www.ncsu.edu/sitemap.xml
+
+==============================================================================
+2021-08-27  →  2022-03-23   (+3 / -7 lines)
+  before: https://web.archive.org/web/20210827180147/https://www.ncsu.edu/robots.txt
+  after:  https://web.archive.org/web/20220323153906/https://www.ncsu.edu/robots.txt
+@@ -1,8 +1,4 @@
+ User-agent: *
+-Disallow: /wp/wp-admin/
+-Disallow: /dailyhistory
+-Disallow: /about/history-and-tradition/this-day-at-nc-state/
+-Disallow: /about/engaging-north-carolina/
+-Disallow: /discover/
+-Allow: /wp/wp-admin/admin-ajax.php
+-Sitemap: https://www.ncsu.edu/sitemap.xml
++Disallow: /wp-admin/
++Allow: /wp-admin/admin-ajax.php
++Sitemap: https://www.ncsu.edu/wp-sitemap.xml

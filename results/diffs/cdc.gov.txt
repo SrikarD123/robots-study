@@ -1,0 +1,135 @@
+robots.txt history for cdc.gov (government)
+158 versions, 2015-03-25 to 2026-09-10
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2017-12-31  →  2018-12-31   (+23 / -0 lines)
+  before: https://web.archive.org/web/20171231212041/https://www.cdc.gov/robots.txt
+  after:  https://web.archive.org/web/20181231055737/https://www.cdc.gov/robots.txt
+@@ -19,4 +19,25 @@
+ Disallow: /Features/SpinaBifidaProgram/
+ Disallow: /concussion/HeadsUp/training/
++Disallow: /niosh/archive/
++Disallow: /TemplatePackage/examples
++Disallow: /TemplatePackage/gadgets
++Disallow: /TemplatePackage/modules
++Disallow: /TemplatePackage/subtopic
++Disallow: /TemplatePackage/Templates
++Disallow: /TemplatePackage/3.0/examples
++Disallow: /TemplatePackage/3.0/Templates
++Disallow: /TemplatePackage/4.0/docs
++Disallow: /TemplatePackage/4.0/gallery-internal
++Disallow: /templatepackage/examples
++Disallow: /templatepackage/gadgets
++Disallow: /templatepackage/modules
++Disallow: /templatepackage/subtopic
++Disallow: /templatepackage/Templates
++Disallow: /templatepackage/templates
++Disallow: /templatepackage/3.0/examples
++Disallow: /templatepackage/3.0/Templates
++Disallow: /templatepackage/3.0/templates
++Disallow: /templatepackage/4.0/docs
++Disallow: /templatepackage/4.0/gallery-internal
+ # Don't spider search pages
+ Disallow: /search.do
+@@ -36,2 +57,4 @@
+ # Sitemap link per CR14586
+ Sitemap: http://www.cdc.gov/niosh/sitemaps/sitemapsNIOSH.xml
++Sitemap: https://www.cdc.gov/std/STDsitemap1.xml
++Sitemap: https://www.cdc.gov/grand-rounds/sitemap.xml
+
+==============================================================================
+2018-12-31  →  2019-12-31   (+13 / -1 lines)
+  before: https://web.archive.org/web/20181231055737/https://www.cdc.gov/robots.txt
+  after:  https://web.archive.org/web/20191231200106/https://www.cdc.gov/robots.txt
+@@ -56,5 +56,17 @@
+ Disallow: /
+ # Sitemap link per CR14586
+-Sitemap: http://www.cdc.gov/niosh/sitemaps/sitemapsNIOSH.xml
++Sitemap: https://www.cdc.gov/niosh/sitemaps/sitemapsNIOSH.xml
+ Sitemap: https://www.cdc.gov/std/STDsitemap1.xml
+ Sitemap: https://www.cdc.gov/grand-rounds/sitemap.xml
++Sitemap: https://www.cdc.gov/injury/injury-oc-sitemap.xml
++Sitemap: https://www.cdc.gov/violenceprevention/NCIPC-ViolencePrevention-SiteMap.xml
++Sitemap: https://www.cdc.gov/traumaticbraininjury/NCIPC-TraumaticBrainInjury-SiteMap.xml
++Sitemap: https://www.cdc.gov/steadi/NCIPC-STEADI-SiteMap.xml
++Sitemap: https://www.cdc.gov/safechild/NCIPC-SafeChild-SiteMap.xml
++Sitemap: https://www.cdc.gov/rxawareness/NCIPC-RXawareness-SiteMap.xml
++Sitemap: https://www.cdc.gov/parentsarethekey/NCIPC-ParentsAreTheKey-SiteMap.xml
++Sitemap: https://www.cdc.gov/parents/essentials/NCIPC-Essentials-SiteMap.xml
++Sitemap: https://www.cdc.gov/opioids/NCIPC-OpioidsPortal-SiteMap.xml
++Sitemap: https://www.cdc.gov/motorvehiclesafety/NCIPC-MotorVehicleSafety-SiteMap.xml
++Sitemap: https://www.cdc.gov/homeandrecreationalsafety/NCIPC-HomeandRec-SiteMap.xml
++Sitemap: https://www.cdc.gov/drugoverdose/NCIPC-DrugOverdose-SiteMap.xml
+
+==============================================================================
+2019-12-31  →  2020-12-30   (+2 / -0 lines)
+  before: https://web.archive.org/web/20191231200106/https://www.cdc.gov/robots.txt
+  after:  https://web.archive.org/web/20201230022731/https://www.cdc.gov/robots.txt
+@@ -71,2 +71,4 @@
+ Sitemap: https://www.cdc.gov/homeandrecreationalsafety/NCIPC-HomeandRec-SiteMap.xml
+ Sitemap: https://www.cdc.gov/drugoverdose/NCIPC-DrugOverdose-SiteMap.xml
++Sitemap: https://www.cdc.gov/coronavirus/sitemap.xml
++Sitemap: https://www.cdc.gov/covid-data-tracker/sitemap.txt
+
+==============================================================================
+2020-12-30  →  2021-12-28   (+1 / -2 lines)
+  before: https://web.archive.org/web/20201230022731/https://www.cdc.gov/robots.txt
+  after:  https://web.archive.org/web/20211228172146/https://www.cdc.gov/robots.txt
+@@ -57,5 +57,4 @@
+ # Sitemap link per CR14586
+ Sitemap: https://www.cdc.gov/niosh/sitemaps/sitemapsNIOSH.xml
+-Sitemap: https://www.cdc.gov/std/STDsitemap1.xml
+ Sitemap: https://www.cdc.gov/grand-rounds/sitemap.xml
+ Sitemap: https://www.cdc.gov/injury/injury-oc-sitemap.xml
+@@ -72,3 +71,3 @@
+ Sitemap: https://www.cdc.gov/drugoverdose/NCIPC-DrugOverdose-SiteMap.xml
+ Sitemap: https://www.cdc.gov/coronavirus/sitemap.xml
+-Sitemap: https://www.cdc.gov/covid-data-tracker/sitemap.txt
++Sitemap: https://www.cdc.gov/wcms-auto-sitemap-index.xml
+
+==============================================================================
+2024-05-15  →  2024-05-20   (+0 / -21 lines)
+  before: https://web.archive.org/web/20240515180515/https://www.cdc.gov/robots.txt
+  after:  https://web.archive.org/web/20240520123018/https://www.cdc.gov/robots.txt
+@@ -40,10 +40,4 @@
+ Disallow: /templatepackage/4.0/docs
+ Disallow: /templatepackage/4.0/gallery-internal
+-# Don't spider search pages
+-Disallow: /search.do
+-# Don't spider email-this-page pages
+-Disallow: /email.do
+-# Don't spider printer-friendly versions of pages
+-Disallow: /print.do
+ # Rover is a bad dog
+ User-agent: Roverbot
+@@ -56,18 +50,3 @@
+ Disallow: /
+ # Sitemap link per CR14586
+-Sitemap: https://www.cdc.gov/niosh/sitemaps/sitemapsNIOSH.xml
+-Sitemap: https://www.cdc.gov/grand-rounds/sitemap.xml
+-Sitemap: https://www.cdc.gov/injury/injury-oc-sitemap.xml
+-Sitemap: https://www.cdc.gov/violenceprevention/NCIPC-ViolencePrevention-SiteMap.xml
+-Sitemap: https://www.cdc.gov/traumaticbraininjury/NCIPC-TraumaticBrainInjury-SiteMap.xml
+-Sitemap: https://www.cdc.gov/steadi/NCIPC-STEADI-SiteMap.xml
+-Sitemap: https://www.cdc.gov/safechild/NCIPC-SafeChild-SiteMap.xml
+-Sitemap: https://www.cdc.gov/rxawareness/NCIPC-RXawareness-SiteMap.xml
+-Sitemap: https://www.cdc.gov/parentsarethekey/NCIPC-ParentsAreTheKey-SiteMap.xml
+-Sitemap: https://www.cdc.gov/parents/essentials/NCIPC-Essentials-SiteMap.xml
+-Sitemap: https://www.cdc.gov/opioids/NCIPC-OpioidsPortal-SiteMap.xml
+-Sitemap: https://www.cdc.gov/motorvehiclesafety/NCIPC-MotorVehicleSafety-SiteMap.xml
+-Sitemap: https://www.cdc.gov/homeandrecreationalsafety/NCIPC-HomeandRec-SiteMap.xml
+-Sitemap: https://www.cdc.gov/drugoverdose/NCIPC-DrugOverdose-SiteMap.xml
+-Sitemap: https://www.cdc.gov/coronavirus/sitemap.xml
+ Sitemap: https://www.cdc.gov/wcms-auto-sitemap-index.xml
+
+==============================================================================
+2025-04-14  →  2026-09-10   (+1 / -0 lines)
+  before: https://web.archive.org/web/20250414102940/https://www.cdc.gov/robots.txt
+  after:  https://web.archive.org/web/20260910002717/https://cdc.gov/robots.txt
+@@ -40,4 +40,5 @@
+ Disallow: /templatepackage/4.0/docs
+ Disallow: /templatepackage/4.0/gallery-internal
++Disallow: /templatepackage/dmat
+ # Rover is a bad dog
+ User-agent: Roverbot

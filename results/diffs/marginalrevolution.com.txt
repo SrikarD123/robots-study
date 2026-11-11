@@ -1,0 +1,113 @@
+robots.txt history for marginalrevolution.com (blog)
+157 versions, 2015-11-02 to 2026-02-18
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-11-02  →  2016-11-17   (+1 / -0 lines)
+  before: https://web.archive.org/web/20151102200129/http://marginalrevolution.com/robots.txt
+  after:  https://web.archive.org/web/20161117204535/http://marginalrevolution.com/robots.txt
+@@ -1,2 +1,3 @@
+ User-agent: *
+ Disallow: /wp-admin/
++Allow: /wp-admin/admin-ajax.php
+
+==============================================================================
+2019-10-06  →  2020-12-31   (+1 / -0 lines)
+  before: https://web.archive.org/web/20191006221034/https://marginalrevolution.com/robots.txt
+  after:  https://web.archive.org/web/20201231080659/http://marginalrevolution.com/robots.txt
+@@ -2,2 +2,3 @@
+ Disallow: /wp-admin/
+ Allow: /wp-admin/admin-ajax.php
++Sitemap: http://marginalrevolution.com/wp-sitemap.xml
+
+==============================================================================
+2020-12-31  →  2021-01-15   (+0 / -1 lines)
+  before: https://web.archive.org/web/20201231080659/http://marginalrevolution.com/robots.txt
+  after:  https://web.archive.org/web/20210115055758/https://marginalrevolution.com/robots.txt
+@@ -2,3 +2,2 @@
+ Disallow: /wp-admin/
+ Allow: /wp-admin/admin-ajax.php
+-Sitemap: http://marginalrevolution.com/wp-sitemap.xml
+
+==============================================================================
+2021-01-15  →  2022-06-30   (+2 / -2 lines)
+  before: https://web.archive.org/web/20210115055758/https://marginalrevolution.com/robots.txt
+  after:  https://web.archive.org/web/20220630092221/https://marginalrevolution.com/robots.txt
+@@ -1,3 +1,3 @@
+ User-agent: *
+-Disallow: /wp-admin/
+-Allow: /wp-admin/admin-ajax.php
++Disallow:
++Sitemap: http://marginalrevolution.com/sitemap_index.xml
+
+==============================================================================
+2022-09-26  →  2022-09-28   (+4 / -0 lines)
+  before: https://web.archive.org/web/20220926031716/https://marginalrevolution.com/robots.txt
+  after:  https://web.archive.org/web/20220928071431/https://marginalrevolution.com/robots.txt
+@@ -1,3 +1,7 @@
++# START YOAST BLOCK
++# ---------------------------
+ User-agent: *
+ Disallow:
+ Sitemap: http://marginalrevolution.com/sitemap_index.xml
++# ---------------------------
++# END YOAST BLOCK
+
+==============================================================================
+2022-10-22  →  2022-10-27   (+4 / -0 lines)
+  before: https://web.archive.org/web/20221022170757/https://marginalrevolution.com/robots.txt
+  after:  https://web.archive.org/web/20221027070257/https://marginalrevolution.com/robots.txt
+@@ -1,2 +1,6 @@
++User-agent: *
++Disallow: /wp-login.php
++Disallow: /wp-admin/
++Crawl-delay: 600
+ # START YOAST BLOCK
+ # ---------------------------
+
+==============================================================================
+2022-11-26  →  2022-11-29   (+8 / -0 lines)
+  before: https://web.archive.org/web/20221126165033/https://marginalrevolution.com/robots.txt
+  after:  https://web.archive.org/web/20221129200507/https://marginalrevolution.com/robots.txt
+@@ -3,4 +3,12 @@
+ Disallow: /wp-admin/
+ Crawl-delay: 600
++# START APPLE BOT
++# ---------------------------
++User-agent: Applebot         # apple
++Allow: /                     # Allow everything (also true if omitted)
++Disallow: /wp-admin/         # disallow this directory
++Disallow: /wp-login.php      # disallow this file
++# ---------------------------
++# END APPLE BOT
+ # START YOAST BLOCK
+ # ---------------------------
+
+==============================================================================
+2023-03-02  →  2023-03-07   (+0 / -8 lines)
+  before: https://web.archive.org/web/20230302181242/https://marginalrevolution.com/robots.txt
+  after:  https://web.archive.org/web/20230307082709/https://marginalrevolution.com/robots.txt
+@@ -3,12 +3,4 @@
+ Disallow: /wp-admin/
+ Crawl-delay: 600
+-# START APPLE BOT
+-# ---------------------------
+-User-agent: Applebot         # apple
+-Allow: /                     # Allow everything (also true if omitted)
+-Disallow: /wp-admin/         # disallow this directory
+-Disallow: /wp-login.php      # disallow this file
+-# ---------------------------
+-# END APPLE BOT
+ # START YOAST BLOCK
+ # ---------------------------
+
+==============================================================================
+2023-06-12  →  2023-06-15   (+3 / -0 lines)
+  before: https://web.archive.org/web/20230612161637/http://marginalrevolution.com/robots.txt
+  after:  https://web.archive.org/web/20230615071302/https://marginalrevolution.com/robots.txt
+@@ -10,2 +10,5 @@
+ # ---------------------------
+ # END YOAST BLOCK
++#WP Import Export Rule
++User-agent: *
++Disallow: /wp-content/uploads/wp-import-export-lite/

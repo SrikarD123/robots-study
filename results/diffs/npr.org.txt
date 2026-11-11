@@ -1,0 +1,867 @@
+robots.txt history for npr.org (news)
+31 versions, 2015-01-01 to 2026-09-22
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-01-01  →  2016-12-30   (+2 / -0 lines)
+  before: https://web.archive.org/web/20150101045120/http://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20161230153114/http://www.npr.org/robots.txt
+@@ -13,2 +13,4 @@
+ Disallow: /rundowns/segment.php?
+ Disallow: /templates/search/
++Disallow: /2013/03/21/174840895/
++Disallow: /sections/ombudsman/2008/01/frequently_asked_questions_1.html
+
+==============================================================================
+2016-12-30  →  2017-11-30   (+5 / -0 lines)
+  before: https://web.archive.org/web/20161230153114/http://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20171130205850/https://www.npr.org/robots.txt
+@@ -1,6 +1,10 @@
++# robots.txt for www.npr.org
++# Changes are tracked in npr_seamus
+ User-agent: *
+ Disallow: /mpx/
+ Disallow: /cgi-bin
+ Disallow: /ramfiles/
++Disallow: /oauth2/
++Disallow: /account/
+ Disallow: /*.smil
+ Disallow: /*.asx
+@@ -15,2 +19,3 @@
+ Disallow: /2013/03/21/174840895/
+ Disallow: /sections/ombudsman/2008/01/frequently_asked_questions_1.html
++Disallow: /sections/health-shots/2013/03/11/173816690/new-voices-for-the-voiceless-synthetic-speech-gets-an-upgrade
+
+==============================================================================
+2017-11-30  →  2018-12-31   (+1 / -0 lines)
+  before: https://web.archive.org/web/20171130205850/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20181231223433/https://www.npr.org/robots.txt
+@@ -17,4 +17,5 @@
+ Disallow: /rundowns/segment.php?
+ Disallow: /templates/search/
++Disallow: /search
+ Disallow: /2013/03/21/174840895/
+ Disallow: /sections/ombudsman/2008/01/frequently_asked_questions_1.html
+
+==============================================================================
+2018-12-31  →  2019-12-31   (+1 / -0 lines)
+  before: https://web.archive.org/web/20181231223433/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20191231205451/https://www.npr.org/robots.txt
+@@ -21,2 +21,3 @@
+ Disallow: /sections/ombudsman/2008/01/frequently_asked_questions_1.html
+ Disallow: /sections/health-shots/2013/03/11/173816690/new-voices-for-the-voiceless-synthetic-speech-gets-an-upgrade
++Disallow: /transcripts/470280334*
+
+==============================================================================
+2019-12-31  →  2020-12-21   (+8 / -1 lines)
+  before: https://web.archive.org/web/20191231205451/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20201221202743/https://www.npr.org/robots.txt
+@@ -1,4 +1,4 @@
+ # robots.txt for www.npr.org
+-# Changes are tracked in npr_seamus
++# Changes are tracked in www-render
+ User-agent: *
+ Disallow: /mpx/
+@@ -7,4 +7,5 @@
+ Disallow: /oauth2/
+ Disallow: /account/
++Disallow: /proxy/
+ Disallow: /*.smil
+ Disallow: /*.asx
+@@ -22,2 +23,8 @@
+ Disallow: /sections/health-shots/2013/03/11/173816690/new-voices-for-the-voiceless-synthetic-speech-gets-an-upgrade
+ Disallow: /transcripts/470280334*
++Disallow: /tags*
++# Ensures that we're using the correct sitemap. The fact that this is legacy*.npr.org is OK because the crawler will only accept
++# URLs in this sitemap to match www*.npr.org
++Sitemap: https://legacy.npr.org/googlecrawl/sitemap_index.xml
++Sitemap: https://legacy.npr.org/googlecrawl/sitemap_news.xml
++Sitemap: https://legacy.npr.org/googlecrawl/sitemap_video.xml
+
+==============================================================================
+2020-12-21  →  2021-10-19   (+2 / -0 lines)
+  before: https://web.archive.org/web/20201221202743/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20211019180245/https://www.npr.org/robots.txt
+@@ -24,4 +24,5 @@
+ Disallow: /transcripts/470280334*
+ Disallow: /tags*
++Disallow: /sureroute
+ # Ensures that we're using the correct sitemap. The fact that this is legacy*.npr.org is OK because the crawler will only accept
+ # URLs in this sitemap to match www*.npr.org
+@@ -29,2 +30,3 @@
+ Sitemap: https://legacy.npr.org/googlecrawl/sitemap_news.xml
+ Sitemap: https://legacy.npr.org/googlecrawl/sitemap_video.xml
++Sitemap: https://www.npr.org/live-updates/sitemap.xml
+
+==============================================================================
+2021-10-19  →  2022-05-11   (+5 / -0 lines)
+  before: https://web.archive.org/web/20211019180245/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20220511193239/https://www.npr.org/robots.txt
+@@ -23,6 +23,11 @@
+ Disallow: /sections/health-shots/2013/03/11/173816690/new-voices-for-the-voiceless-synthetic-speech-gets-an-upgrade
+ Disallow: /transcripts/470280334*
++Disallow: /2015/07/04/419570939/chasing-memories-in-their-refugee-camp-40-years-after-they-fled-vietnam
++Disallow: /transcripts/419570939*
++Disallow: /sections/parallels/2016/08/15/480128005/for-french-teens-smoking-still-has-more-allure-than-stigma
++Disallow: /transcripts/480128005*
+ Disallow: /tags*
+ Disallow: /sureroute
++Disallow: /*/partials*
+ # Ensures that we're using the correct sitemap. The fact that this is legacy*.npr.org is OK because the crawler will only accept
+ # URLs in this sitemap to match www*.npr.org
+
+==============================================================================
+2022-05-11  →  2022-07-15   (+2 / -2 lines)
+  before: https://web.archive.org/web/20220511193239/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20220715162618/https://www.npr.org/robots.txt
+@@ -17,6 +17,6 @@
+ Disallow: /stations/force/force_localization.php?
+ Disallow: /rundowns/segment.php?
+-Disallow: /templates/search/
+-Disallow: /search
++Disallow: /templates/search/*
++Disallow: /search*
+ Disallow: /2013/03/21/174840895/
+ Disallow: /sections/ombudsman/2008/01/frequently_asked_questions_1.html
+
+==============================================================================
+2022-07-15  →  2022-07-26   (+2 / -0 lines)
+  before: https://web.archive.org/web/20220715162618/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20220726224202/https://www.npr.org/robots.txt
+@@ -19,4 +19,6 @@
+ Disallow: /templates/search/*
+ Disallow: /search*
++Disallow: /search/*
++Disallow: /search/?query=*
+ Disallow: /2013/03/21/174840895/
+ Disallow: /sections/ombudsman/2008/01/frequently_asked_questions_1.html
+
+==============================================================================
+2022-07-26  →  2022-07-28   (+0 / -3 lines)
+  before: https://web.archive.org/web/20220726224202/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20220728220916/https://www.npr.org/robots.txt
+@@ -18,7 +18,4 @@
+ Disallow: /rundowns/segment.php?
+ Disallow: /templates/search/*
+-Disallow: /search*
+-Disallow: /search/*
+-Disallow: /search/?query=*
+ Disallow: /2013/03/21/174840895/
+ Disallow: /sections/ombudsman/2008/01/frequently_asked_questions_1.html
+
+==============================================================================
+2022-07-28  →  2022-12-20   (+5 / -0 lines)
+  before: https://web.archive.org/web/20220728220916/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20221220204137/https://www.npr.org/robots.txt
+@@ -29,4 +29,9 @@
+ Disallow: /sureroute
+ Disallow: /*/partials*
++Disallow: /*?live=*
++Disallow: /*?cacheKill=*
++Disallow: /*?skipCache=*
++Disallow: /*?forceCds=*
++Disallow: /*?forceXml=*
+ # Ensures that we're using the correct sitemap. The fact that this is legacy*.npr.org is OK because the crawler will only accept
+ # URLs in this sitemap to match www*.npr.org
+
+==============================================================================
+2022-12-20  →  2023-01-30   (+0 / -1 lines)
+  before: https://web.archive.org/web/20221220204137/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20230130200128/https://www.npr.org/robots.txt
+@@ -26,5 +26,4 @@
+ Disallow: /sections/parallels/2016/08/15/480128005/for-french-teens-smoking-still-has-more-allure-than-stigma
+ Disallow: /transcripts/480128005*
+-Disallow: /tags*
+ Disallow: /sureroute
+ Disallow: /*/partials*
+
+==============================================================================
+[AI] 2023-01-30  →  2023-09-07   (+6 / -0 lines)
+  before: https://web.archive.org/web/20230130200128/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20230907143247/https://www.npr.org/robots.txt
+  AI changes: GPTBot: allowed→blocked; ChatGPT-User: allowed→blocked
+@@ -33,4 +33,10 @@
+ Disallow: /*?forceCds=*
+ Disallow: /*?forceXml=*
++# Disallowing the OpenAI web crawler
++User-agent: GPTBot
++Disallow: /
++# Disallowing OpenAI plugins
++User-agent: ChatGPT-User
++Disallow: /
+ # Ensures that we're using the correct sitemap. The fact that this is legacy*.npr.org is OK because the crawler will only accept
+ # URLs in this sitemap to match www*.npr.org
+
+==============================================================================
+2023-09-07  →  2023-12-12   (+4 / -0 lines)
+  before: https://web.archive.org/web/20230907143247/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20231212234103/https://www.npr.org/robots.txt
+@@ -26,4 +26,8 @@
+ Disallow: /sections/parallels/2016/08/15/480128005/for-french-teens-smoking-still-has-more-allure-than-stigma
+ Disallow: /transcripts/480128005*
++Disallow: /2020/04/08/830237502/episode-989-what-if-no-one-pays-rent
++Disallow: /transcripts/830237502*
++Disallow: /sections/goatsandsoda/2015/06/09/406744975/a-gender-revolution-hits-the-streets-two-wheels-at-a-time
++Disallow: /transcripts/406744975*
+ Disallow: /sureroute
+ Disallow: /*/partials*
+
+==============================================================================
+[AI] 2023-12-12  →  2024-02-08   (+6 / -0 lines)
+  before: https://web.archive.org/web/20231212234103/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20240208181556/https://www.npr.org/robots.txt
+  AI changes: Google-Extended: allowed→blocked
+@@ -43,4 +43,10 @@
+ User-agent: ChatGPT-User
+ Disallow: /
++# Disallowing Google Bard and Vertex AI web crawlers
++User-agent: Google-Extended
++Disallow: /
++# Explicitly allowing the TTD contextual crawler
++User-agent: Mozilla/5.0 (compatible; TTD-Content; +https://www.thetradedesk.com/general/ttd-content)
++Allow: /
+ # Ensures that we're using the correct sitemap. The fact that this is legacy*.npr.org is OK because the crawler will only accept
+ # URLs in this sitemap to match www*.npr.org
+
+==============================================================================
+2024-02-08  →  2024-03-14   (+9 / -0 lines)
+  before: https://web.archive.org/web/20240208181556/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20240314150727/https://www.npr.org/robots.txt
+@@ -46,4 +46,13 @@
+ User-agent: Google-Extended
+ Disallow: /
++# Allow Google Search Console for sitemap crawling
++User-agent: Google-InspectionTool
++Allow: /
++User-agent: Google-Image
++Allow: /
++User-agent: Google-Video
++Allow: /
++User-agent: Googlebot
++Allow: /
+ # Explicitly allowing the TTD contextual crawler
+ User-agent: Mozilla/5.0 (compatible; TTD-Content; +https://www.thetradedesk.com/general/ttd-content)
+
+==============================================================================
+2024-03-14  →  2024-05-16   (+4 / -4 lines)
+  before: https://web.archive.org/web/20240314150727/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20240516154333/https://www.npr.org/robots.txt
+@@ -58,8 +58,8 @@
+ User-agent: Mozilla/5.0 (compatible; TTD-Content; +https://www.thetradedesk.com/general/ttd-content)
+ Allow: /
+-# Ensures that we're using the correct sitemap. The fact that this is legacy*.npr.org is OK because the crawler will only accept
++# Ensures that we're using the correct sitemap. The fact that this is googlecrawl*.npr.org is OK because the crawler will only accept
+ # URLs in this sitemap to match www*.npr.org
+-Sitemap: https://legacy.npr.org/googlecrawl/sitemap_index.xml
+-Sitemap: https://legacy.npr.org/googlecrawl/sitemap_news.xml
+-Sitemap: https://legacy.npr.org/googlecrawl/sitemap_video.xml
++Sitemap: https://googlecrawl.npr.org/standard/sitemap_index.xml
++Sitemap: https://googlecrawl.npr.org/news/sitemap_news.xml
++Sitemap: https://googlecrawl.npr.org/video/sitemap_video.xml
+ Sitemap: https://www.npr.org/live-updates/sitemap.xml
+
+==============================================================================
+2024-05-16  →  2024-06-18   (+8 / -0 lines)
+  before: https://web.archive.org/web/20240516154333/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20240618163610/https://www.npr.org/robots.txt
+@@ -37,4 +37,12 @@
+ Disallow: /*?forceCds=*
+ Disallow: /*?forceXml=*
++# Disallowing non-canonical URLs that contain query strings
++User-agent: *
++Disallow: /*?*
++# Disallowing non-audience-facing URLs
++User-agent: *
++Disallow: /proxy/*
++Disallow: /player/*
++Disallow: /get/*
+ # Disallowing the OpenAI web crawler
+ User-agent: GPTBot
+
+==============================================================================
+[AI] 2024-06-18  →  2024-06-28   (+26 / -0 lines)
+  before: https://web.archive.org/web/20240618163610/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20240628133323/https://www.npr.org/robots.txt
+  AI changes: ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; cohere-ai: allowed→blocked
+@@ -51,6 +51,32 @@
+ User-agent: ChatGPT-User
+ Disallow: /
++# Disallowing Common Crawl
++User-agent: CCBot
++Disallow: /
+ # Disallowing Google Bard and Vertex AI web crawlers
+ User-agent: Google-Extended
++Disallow: /
++# Disallowing various bots
++User-agent: anthropic-ai
++Disallow: /
++User-agent: Applebot-Extended
++Disallow: /
++User-agent: Bytespider
++Disallow: /
++User-agent: ClaudeBot
++Disallow: /
++User-agent: Claude-Web
++Disallow: /
++User-agent: cohere-ai
++Disallow: /
++User-agent: Diffbot
++Disallow: /
++User-agent: FacebookBot
++Disallow: /
++User-agent: omgili
++Disallow: /
++User-agent: omgilibot
++Disallow: /
++User-agent: PerplexityBot
+ Disallow: /
+ # Allow Google Search Console for sitemap crawling
+
+==============================================================================
+2024-06-28  →  2024-07-11   (+1 / -9 lines)
+  before: https://web.archive.org/web/20240628133323/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20240711153445/https://www.npr.org/robots.txt
+@@ -32,17 +32,9 @@
+ Disallow: /sureroute
+ Disallow: /*/partials*
+-Disallow: /*?live=*
+-Disallow: /*?cacheKill=*
+-Disallow: /*?skipCache=*
+-Disallow: /*?forceCds=*
+-Disallow: /*?forceXml=*
+-# Disallowing non-canonical URLs that contain query strings
+-User-agent: *
+ Disallow: /*?*
+-# Disallowing non-audience-facing URLs
+-User-agent: *
+ Disallow: /proxy/*
+ Disallow: /player/*
+ Disallow: /get/*
++Disallow: /geolocation
+ # Disallowing the OpenAI web crawler
+ User-agent: GPTBot
+
+==============================================================================
+2024-07-11  →  2025-04-16   (+28 / -1 lines)
+  before: https://web.archive.org/web/20240711153445/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20250416092718/https://www.npr.org/robots.txt
+@@ -81,6 +81,33 @@
+ User-agent: Googlebot
+ Allow: /
+-# Explicitly allowing the TTD contextual crawler
++# Explicitly allowing the TTD contextual crawler for Sponsorship
+ User-agent: Mozilla/5.0 (compatible; TTD-Content; +https://www.thetradedesk.com/general/ttd-content)
++Allow: /
++# Explicitly allowing the Google-Mediapartners crawler for Sponsorship
++User-agent: Mediapartners-Google
++Allow: /
++# Explicitly allowing the Google-Display-Ads-Bot crawler for Sponsorship
++User-agent: Google-Display-Ads-Bot
++Allow: /
++# Explicitly allowing the IAB tech lab crawler for Sponsorship
++User-agent: IAB-Tech-Lab
++Allow: /
++# Explicitly allowing the TTD ads fraud/IVT prevention crawler for Sponsorship
++User-agent: Trade Desk ads.txt & sellers.json crawler
++Allow: /
++# Explicitly allowing the IAS crawler for Sponsorship
++User-agent: ias_crawler; http://integralads.com/site-indexing-policy/
++Allow: /
++# Explicitly allowing the IAS Wombles crawler for Sponsorship
++User-agent: ias_wombles; http://integralads.com/site-indexing-policy/
++Allow: /
++# Explicitly allowing the Amazon Standards crawler for Sponsorship
++User-agent: Amazon-Advertising-ad-standards-bot/1.0
++Allow: /
++# Explicitly allowing the Audigent crawler for Sponsorship
++User-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; AudigentAdBot; +http://www.audigent.com/bot.html) Chrome/W.X.Y.Z Safari/537.36
++Allow: /
++# Explicitly allowing the Concert crawler for Sponsorship
++User-agent: Concert/1.0
+ Allow: /
+ # Ensures that we're using the correct sitemap. The fact that this is googlecrawl*.npr.org is OK because the crawler will only accept
+
+==============================================================================
+[AI] 2025-04-16  →  2025-05-13   (+13 / -9 lines)
+  before: https://web.archive.org/web/20250416092718/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20250513233431/https://www.npr.org/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: now named (allowed); ChatGPT-User: blocked→allowed; Google-Extended: blocked→allowed; PerplexityBot: blocked→allowed
+@@ -37,15 +37,21 @@
+ Disallow: /get/*
+ Disallow: /geolocation
+-# Disallowing the OpenAI web crawler
++# For the OpenAI web crawler
+ User-agent: GPTBot
+-Disallow: /
+-# Disallowing OpenAI plugins
++Allow: /
++# For OpenAI plugins
+ User-agent: ChatGPT-User
+-Disallow: /
++Allow: /
++User-agent: OAI-SearchBot
++Allow: /
++# For Google Bard and Vertex AI web crawlers
++User-agent: Google-Extended
++Allow: /
++User-agent: PerplexityBot
++Allow: /
++User-agent: PerplexityUser
++Allow: /
+ # Disallowing Common Crawl
+ User-agent: CCBot
+-Disallow: /
+-# Disallowing Google Bard and Vertex AI web crawlers
+-User-agent: Google-Extended
+ Disallow: /
+ # Disallowing various bots
+@@ -69,6 +75,4 @@
+ Disallow: /
+ User-agent: omgilibot
+-Disallow: /
+-User-agent: PerplexityBot
+ Disallow: /
+ # Allow Google Search Console for sitemap crawling
+
+==============================================================================
+2025-05-13  →  2025-05-15   (+1 / -1 lines)
+  before: https://web.archive.org/web/20250513233431/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20250515220052/https://www.npr.org/robots.txt
+@@ -119,4 +119,4 @@
+ Sitemap: https://googlecrawl.npr.org/standard/sitemap_index.xml
+ Sitemap: https://googlecrawl.npr.org/news/sitemap_news.xml
+-Sitemap: https://googlecrawl.npr.org/video/sitemap_video.xml
++Sitemap: https://googlecrawl.npr.org/video/sitemap_index.xml
+ Sitemap: https://www.npr.org/live-updates/sitemap.xml
+
+==============================================================================
+[AI] 2025-05-15  →  2025-06-18   (+13 / -13 lines)
+  before: https://web.archive.org/web/20250515220052/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20250618000311/https://www.npr.org/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; Google-Extended: allowed→blocked; PerplexityBot: allowed→blocked
+@@ -37,21 +37,17 @@
+ Disallow: /get/*
+ Disallow: /geolocation
+-# For the OpenAI web crawler
++# Disallowing the OpenAI web crawler
+ User-agent: GPTBot
+-Allow: /
+-# For OpenAI plugins
++Disallow: /
++# Disallowing OpenAI plugins
+ User-agent: ChatGPT-User
+-Allow: /
+-User-agent: OAI-SearchBot
+-Allow: /
+-# For Google Bard and Vertex AI web crawlers
+-User-agent: Google-Extended
+-Allow: /
+-User-agent: PerplexityBot
+-Allow: /
+-User-agent: PerplexityUser
+-Allow: /
++Disallow: /
+ # Disallowing Common Crawl
+ User-agent: CCBot
++Disallow: /
++User-agent: OAI-SearchBot
++Disallow: /
++# Disallowing Google Bard and Vertex AI web crawlers
++User-agent: Google-Extended
+ Disallow: /
+ # Disallowing various bots
+@@ -75,4 +71,8 @@
+ Disallow: /
+ User-agent: omgilibot
++Disallow: /
++User-agent: PerplexityBot
++Disallow: /
++User-agent: PerplexityUser
+ Disallow: /
+ # Allow Google Search Console for sitemap crawling
+
+==============================================================================
+[AI] 2025-06-18  →  2025-07-14   (+0 / -120 lines)
+  before: https://web.archive.org/web/20250618000311/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20250714073646/https://www.npr.org/robots.txt
+  AI changes: GPTBot: no longer named (blocked); OAI-SearchBot: no longer named (blocked); ChatGPT-User: no longer named (blocked); ClaudeBot: no longer named (blocked); anthropic-ai: no longer named (blocked); Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: no longer named (blocked); Applebot-Extended: no longer named (blocked); PerplexityBot: no longer named (blocked); Perplexity-User: allowed→blocked; CCBot: no longer named (blocked); Bytespider: no longer named (blocked); meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: no longer named (blocked); Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,122 +1,2 @@
+-# robots.txt for www.npr.org
+-# Changes are tracked in www-render
+ User-agent: *
+-Disallow: /mpx/
+-Disallow: /cgi-bin
+-Disallow: /ramfiles/
+-Disallow: /oauth2/
+-Disallow: /account/
+-Disallow: /proxy/
+-Disallow: /*.smil
+-Disallow: /*.asx
+-Disallow: /*.ram
+-Disallow: /*.wav
+-Disallow: /*.rmm
+-Disallow: /*.js
+-Disallow: /*.au
+-Disallow: /stations/force/force_localization.php?
+-Disallow: /rundowns/segment.php?
+-Disallow: /templates/search/*
+-Disallow: /2013/03/21/174840895/
+-Disallow: /sections/ombudsman/2008/01/frequently_asked_questions_1.html
+-Disallow: /sections/health-shots/2013/03/11/173816690/new-voices-for-the-voiceless-synthetic-speech-gets-an-upgrade
+-Disallow: /transcripts/470280334*
+-Disallow: /2015/07/04/419570939/chasing-memories-in-their-refugee-camp-40-years-after-they-fled-vietnam
+-Disallow: /transcripts/419570939*
+-Disallow: /sections/parallels/2016/08/15/480128005/for-french-teens-smoking-still-has-more-allure-than-stigma
+-Disallow: /transcripts/480128005*
+-Disallow: /2020/04/08/830237502/episode-989-what-if-no-one-pays-rent
+-Disallow: /transcripts/830237502*
+-Disallow: /sections/goatsandsoda/2015/06/09/406744975/a-gender-revolution-hits-the-streets-two-wheels-at-a-time
+-Disallow: /transcripts/406744975*
+-Disallow: /sureroute
+-Disallow: /*/partials*
+-Disallow: /*?*
+-Disallow: /proxy/*
+-Disallow: /player/*
+-Disallow: /get/*
+-Disallow: /geolocation
+-# Disallowing the OpenAI web crawler
+-User-agent: GPTBot
+ Disallow: /
+-# Disallowing OpenAI plugins
+-User-agent: ChatGPT-User
+-Disallow: /
+-# Disallowing Common Crawl
+-User-agent: CCBot
+-Disallow: /
+-User-agent: OAI-SearchBot
+-Disallow: /
+-# Disallowing Google Bard and Vertex AI web crawlers
+-User-agent: Google-Extended
+-Disallow: /
+-# Disallowing various bots
+-User-agent: anthropic-ai
+-Disallow: /
+-User-agent: Applebot-Extended
+-Disallow: /
+-User-agent: Bytespider
+-Disallow: /
+-User-agent: ClaudeBot
+-Disallow: /
+-User-agent: Claude-Web
+-Disallow: /
+-User-agent: cohere-ai
+-Disallow: /
+-User-agent: Diffbot
+-Disallow: /
+-User-agent: FacebookBot
+-Disallow: /
+-User-agent: omgili
+-Disallow: /
+-User-agent: omgilibot
+-Disallow: /
+-User-agent: PerplexityBot
+-Disallow: /
+-User-agent: PerplexityUser
+-Disallow: /
+-# Allow Google Search Console for sitemap crawling
+-User-agent: Google-InspectionTool
+-Allow: /
+-User-agent: Google-Image
+-Allow: /
+-User-agent: Google-Video
+-Allow: /
+-User-agent: Googlebot
+-Allow: /
+-# Explicitly allowing the TTD contextual crawler for Sponsorship
+-User-agent: Mozilla/5.0 (compatible; TTD-Content; +https://www.thetradedesk.com/general/ttd-content)
+-Allow: /
+-# Explicitly allowing the Google-Mediapartners crawler for Sponsorship
+-User-agent: Mediapartners-Google
+-Allow: /
+-# Explicitly allowing the Google-Display-Ads-Bot crawler for Sponsorship
+-User-agent: Google-Display-Ads-Bot
+-Allow: /
+-# Explicitly allowing the IAB tech lab crawler for Sponsorship
+-User-agent: IAB-Tech-Lab
+-Allow: /
+-# Explicitly allowing the TTD ads fraud/IVT prevention crawler for Sponsorship
+-User-agent: Trade Desk ads.txt & sellers.json crawler
+-Allow: /
+-# Explicitly allowing the IAS crawler for Sponsorship
+-User-agent: ias_crawler; http://integralads.com/site-indexing-policy/
+-Allow: /
+-# Explicitly allowing the IAS Wombles crawler for Sponsorship
+-User-agent: ias_wombles; http://integralads.com/site-indexing-policy/
+-Allow: /
+-# Explicitly allowing the Amazon Standards crawler for Sponsorship
+-User-agent: Amazon-Advertising-ad-standards-bot/1.0
+-Allow: /
+-# Explicitly allowing the Audigent crawler for Sponsorship
+-User-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; AudigentAdBot; +http://www.audigent.com/bot.html) Chrome/W.X.Y.Z Safari/537.36
+-Allow: /
+-# Explicitly allowing the Concert crawler for Sponsorship
+-User-agent: Concert/1.0
+-Allow: /
+-# Ensures that we're using the correct sitemap. The fact that this is googlecrawl*.npr.org is OK because the crawler will only accept
+-# URLs in this sitemap to match www*.npr.org
+-Sitemap: https://googlecrawl.npr.org/standard/sitemap_index.xml
+-Sitemap: https://googlecrawl.npr.org/news/sitemap_news.xml
+-Sitemap: https://googlecrawl.npr.org/video/sitemap_index.xml
+-Sitemap: https://www.npr.org/live-updates/sitemap.xml
+
+==============================================================================
+[AI] 2025-07-14  →  2025-07-15   (+120 / -0 lines)
+  before: https://web.archive.org/web/20250714073646/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20250715141323/https://www.npr.org/robots.txt
+  AI changes: GPTBot: now named (blocked); OAI-SearchBot: now named (blocked); ChatGPT-User: now named (blocked); ClaudeBot: now named (blocked); anthropic-ai: now named (blocked); Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: now named (blocked); Applebot-Extended: now named (blocked); PerplexityBot: now named (blocked); Perplexity-User: blocked→allowed; CCBot: now named (blocked); Bytespider: now named (blocked); meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: now named (blocked); Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,2 +1,122 @@
++# robots.txt for www.npr.org
++# Changes are tracked in www-render
+ User-agent: *
++Disallow: /mpx/
++Disallow: /cgi-bin
++Disallow: /ramfiles/
++Disallow: /oauth2/
++Disallow: /account/
++Disallow: /proxy/
++Disallow: /*.smil
++Disallow: /*.asx
++Disallow: /*.ram
++Disallow: /*.wav
++Disallow: /*.rmm
++Disallow: /*.js
++Disallow: /*.au
++Disallow: /stations/force/force_localization.php?
++Disallow: /rundowns/segment.php?
++Disallow: /templates/search/*
++Disallow: /2013/03/21/174840895/
++Disallow: /sections/ombudsman/2008/01/frequently_asked_questions_1.html
++Disallow: /sections/health-shots/2013/03/11/173816690/new-voices-for-the-voiceless-synthetic-speech-gets-an-upgrade
++Disallow: /transcripts/470280334*
++Disallow: /2015/07/04/419570939/chasing-memories-in-their-refugee-camp-40-years-after-they-fled-vietnam
++Disallow: /transcripts/419570939*
++Disallow: /sections/parallels/2016/08/15/480128005/for-french-teens-smoking-still-has-more-allure-than-stigma
++Disallow: /transcripts/480128005*
++Disallow: /2020/04/08/830237502/episode-989-what-if-no-one-pays-rent
++Disallow: /transcripts/830237502*
++Disallow: /sections/goatsandsoda/2015/06/09/406744975/a-gender-revolution-hits-the-streets-two-wheels-at-a-time
++Disallow: /transcripts/406744975*
++Disallow: /sureroute
++Disallow: /*/partials*
++Disallow: /*?*
++Disallow: /proxy/*
++Disallow: /player/*
++Disallow: /get/*
++Disallow: /geolocation
++# Disallowing the OpenAI web crawler
++User-agent: GPTBot
+ Disallow: /
++# Disallowing OpenAI plugins
++User-agent: ChatGPT-User
++Disallow: /
++# Disallowing Common Crawl
++User-agent: CCBot
++Disallow: /
++User-agent: OAI-SearchBot
++Disallow: /
++# Disallowing Google Bard and Vertex AI web crawlers
++User-agent: Google-Extended
++Disallow: /
++# Disallowing various bots
++User-agent: anthropic-ai
++Disallow: /
++User-agent: Applebot-Extended
++Disallow: /
++User-agent: Bytespider
++Disallow: /
++User-agent: ClaudeBot
++Disallow: /
++User-agent: Claude-Web
++Disallow: /
++User-agent: cohere-ai
++Disallow: /
++User-agent: Diffbot
++Disallow: /
++User-agent: FacebookBot
++Disallow: /
++User-agent: omgili
++Disallow: /
++User-agent: omgilibot
++Disallow: /
++User-agent: PerplexityBot
++Disallow: /
++User-agent: PerplexityUser
++Disallow: /
++# Allow Google Search Console for sitemap crawling
++User-agent: Google-InspectionTool
++Allow: /
++User-agent: Google-Image
++Allow: /
++User-agent: Google-Video
++Allow: /
++User-agent: Googlebot
++Allow: /
++# Explicitly allowing the TTD contextual crawler for Sponsorship
++User-agent: Mozilla/5.0 (compatible; TTD-Content; +https://www.thetradedesk.com/general/ttd-content)
++Allow: /
++# Explicitly allowing the Google-Mediapartners crawler for Sponsorship
++User-agent: Mediapartners-Google
++Allow: /
++# Explicitly allowing the Google-Display-Ads-Bot crawler for Sponsorship
++User-agent: Google-Display-Ads-Bot
++Allow: /
++# Explicitly allowing the IAB tech lab crawler for Sponsorship
++User-agent: IAB-Tech-Lab
++Allow: /
++# Explicitly allowing the TTD ads fraud/IVT prevention crawler for Sponsorship
++User-agent: Trade Desk ads.txt & sellers.json crawler
++Allow: /
++# Explicitly allowing the IAS crawler for Sponsorship
++User-agent: ias_crawler; http://integralads.com/site-indexing-policy/
++Allow: /
++# Explicitly allowing the IAS Wombles crawler for Sponsorship
++User-agent: ias_wombles; http://integralads.com/site-indexing-policy/
++Allow: /
++# Explicitly allowing the Amazon Standards crawler for Sponsorship
++User-agent: Amazon-Advertising-ad-standards-bot/1.0
++Allow: /
++# Explicitly allowing the Audigent crawler for Sponsorship
++User-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; AudigentAdBot; +http://www.audigent.com/bot.html) Chrome/W.X.Y.Z Safari/537.36
++Allow: /
++# Explicitly allowing the Concert crawler for Sponsorship
++User-agent: Concert/1.0
++Allow: /
++# Ensures that we're using the correct sitemap. The fact that this is googlecrawl*.npr.org is OK because the crawler will only accept
++# URLs in this sitemap to match www*.npr.org
++Sitemap: https://googlecrawl.npr.org/standard/sitemap_index.xml
++Sitemap: https://googlecrawl.npr.org/news/sitemap_news.xml
++Sitemap: https://googlecrawl.npr.org/video/sitemap_index.xml
++Sitemap: https://www.npr.org/live-updates/sitemap.xml
+
+==============================================================================
+2025-07-15  →  2025-10-24   (+48 / -16 lines)
+  before: https://web.archive.org/web/20250715141323/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20251024160544/https://www.npr.org/robots.txt
+@@ -85,33 +85,65 @@
+ User-agent: Googlebot
+ Allow: /
+-# Explicitly allowing the TTD contextual crawler for Sponsorship
+-User-agent: Mozilla/5.0 (compatible; TTD-Content; +https://www.thetradedesk.com/general/ttd-content)
++# Allowing the TTD contextual crawler for Sponsorship
++User-agent: TTD-Content
+ Allow: /
+-# Explicitly allowing the Google-Mediapartners crawler for Sponsorship
++# Allowing the TTD ads fraud/IVT prevention crawler for Sponsorship
++User-agent: Trade Desk ads.txt & sellers.json crawler
++Allow: /
++# Allowing the AdsBot-Google crawler for Sponsorship
++User-agent: AdsBot-Google
++Allow: /
++# Allowing the AdsBot-Google-Mobile crawler for Sponsorship
++User-agent: AdsBot-Google-Mobile
++Allow: /
++# Allowing the Google-Mediapartners crawler for Sponsorship
+ User-agent: Mediapartners-Google
+ Allow: /
+-# Explicitly allowing the Google-Display-Ads-Bot crawler for Sponsorship
++# Allowing the Google-Display-Ads-Bot crawler for Sponsorship
+ User-agent: Google-Display-Ads-Bot
+ Allow: /
+-# Explicitly allowing the IAB tech lab crawler for Sponsorship
++# Allowing the IAB tech lab crawler for Sponsorship
+ User-agent: IAB-Tech-Lab
+ Allow: /
+-# Explicitly allowing the TTD ads fraud/IVT prevention crawler for Sponsorship
+-User-agent: Trade Desk ads.txt & sellers.json crawler
++# Allowing the IAS crawler for Sponsorship
++User-agent: ias_crawler
+ Allow: /
+-# Explicitly allowing the IAS crawler for Sponsorship
+-User-agent: ias_crawler; http://integralads.com/site-indexing-policy/
++# Allowing the IAS Wombles crawler for Sponsorship
++User-agent: ias_wombles
+ Allow: /
+-# Explicitly allowing the IAS Wombles crawler for Sponsorship
+-User-agent: ias_wombles; http://integralads.com/site-indexing-policy/
+-Allow: /
+-# Explicitly allowing the Amazon Standards crawler for Sponsorship
++# Allowing the Amazon Standards crawler for Sponsorship
+ User-agent: Amazon-Advertising-ad-standards-bot/1.0
+ Allow: /
+-# Explicitly allowing the Audigent crawler for Sponsorship
+-User-agent: Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; AudigentAdBot; +http://www.audigent.com/bot.html) Chrome/W.X.Y.Z Safari/537.36
++# (fetches ads.txt, app-ads.txt, sellers.json)
++User-agent: APS-ad-standards-bot/1.0
+ Allow: /
+-# Explicitly allowing the Concert crawler for Sponsorship
++# Allowing the Audigent crawler for Sponsorship
++User-agent: AudigentAdBot
++Allow: /
++# Allowing the Concert crawler for Sponsorship
+ User-agent: Concert/1.0
++Allow: /
++# Allowing Centro/Basis
++User-agent: Centro
++Allow: /
++# Allowing BidSwitch (AdX DSP)
++User-agent: bidswitchbot/1.0
++Allow: /
++# Allowing Roku (AdX DSP)
++User-agent: DataXu/1.0
++Allow: /
++# Allowing PubMatic
++User-agent: PubMatic
++Allow: /
++# Allowing AdForm
++User-agent: IAB ATQ team adform robot site.adform.com/general/url-fetcher
++Allow: /
++# Allowing StackAdapt
++User-agent: StackAdapt
++Allow: /
++# Allowing Quantcast
++User-agent: Quantcastbot/1.0
++Allow: /
++User-agent: Quantcastbot/2.0
+ Allow: /
+ # Ensures that we're using the correct sitemap. The fact that this is googlecrawl*.npr.org is OK because the crawler will only accept
+
+==============================================================================
+2025-10-24  →  2026-01-14   (+3 / -0 lines)
+  before: https://web.archive.org/web/20251024160544/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20260114213054/https://www.npr.org/robots.txt
+@@ -147,4 +147,7 @@
+ User-agent: Quantcastbot/2.0
+ Allow: /
++# Facebook sharing
++User-agent: facebookexternalhit
++Allow: /
+ # Ensures that we're using the correct sitemap. The fact that this is googlecrawl*.npr.org is OK because the crawler will only accept
+ # URLs in this sitemap to match www*.npr.org
+
+==============================================================================
+2026-01-14  →  2026-02-04   (+3 / -0 lines)
+  before: https://web.archive.org/web/20260114213054/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20260204234133/https://www.npr.org/robots.txt
+@@ -118,4 +118,7 @@
+ User-agent: APS-ad-standards-bot/1.0
+ Allow: /
++# New requirement as of 3/2/26 to be eligible for demand from Amazon ads.
++User-agent: AmazonAdBot
++Allow: /
+ # Allowing the Audigent crawler for Sponsorship
+ User-agent: AudigentAdBot
+
+==============================================================================
+[AI] 2026-02-04  →  2026-09-22   (+4 / -0 lines)
+  before: https://web.archive.org/web/20260204234133/https://www.npr.org/robots.txt
+  after:  https://web.archive.org/web/20260922194134/https://www.npr.org/robots.txt
+  AI changes: Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked
+@@ -59,4 +59,8 @@
+ Disallow: /
+ User-agent: ClaudeBot
++Disallow: /
++User-agent: Claude-SearchBot
++Disallow: /
++User-agent: Claude-User
+ Disallow: /
+ User-agent: Claude-Web

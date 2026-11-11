@@ -1,0 +1,1094 @@
+robots.txt history for reddit.com (forum)
+158 versions, 2015-12-23 to 2026-10-05
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-12-23  →  2016-12-23   (+11 / -0 lines)
+  before: https://web.archive.org/web/20151223053447/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20161223044255/https://www.reddit.com/robots.txt
+@@ -1,4 +1,7 @@
+ # 80legs
+ User-agent: 008
++Disallow: /
++# 80legs' new crawler
++User-agent: voltron
+ Disallow: /
+ User-Agent: bender
+@@ -6,4 +9,6 @@
+ User-Agent: Gort
+ Disallow: /earth
++User-agent: MJ12bot
++Disallow: /
+ User-Agent: *
+ Disallow: /*.json
+@@ -30,3 +35,9 @@
+ Disallow: /search
+ Disallow: /r/*/search
++Disallow: /r/*/user/
++Disallow: /gold?
++Allow: /partner_api/
+ Allow: /
++Allow: /sitemaps/*.xml
++Sitemap: https://www.reddit.com/sitemaps/subreddit-sitemaps.xml
++Sitemap: https://www.reddit.com/sitemaps/comment-page-sitemaps.xml
+
+==============================================================================
+2016-12-23  →  2017-12-26   (+2 / -0 lines)
+  before: https://web.archive.org/web/20161223044255/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20171226205054/https://www.reddit.com/robots.txt
+@@ -10,4 +10,6 @@
+ Disallow: /earth
+ User-agent: MJ12bot
++Disallow: /
++User-agent: PiplBot
+ Disallow: /
+ User-Agent: *
+
+==============================================================================
+2018-12-31  →  2019-12-31   (+3 / -6 lines)
+  before: https://web.archive.org/web/20181231191015/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20191231231712/https://www.reddit.com/robots.txt
+@@ -24,5 +24,6 @@
+ Disallow: /r/*/comments/*/*/c*
+ Disallow: /comments/*/*/c*
+-Disallow: /r/*/submit
++Disallow: /r/*/submit$
++Disallow: /r/*/submit/$
+ Disallow: /message/compose*
+ Disallow: /api
+@@ -34,7 +35,4 @@
+ Disallow: /domain/*t=
+ Disallow: /login
+-Disallow: /reddits/search
+-Disallow: /search
+-Disallow: /r/*/search
+ Disallow: /r/*/user/
+ Disallow: /gold?
+@@ -42,4 +40,3 @@
+ Allow: /
+ Allow: /sitemaps/*.xml
+-Sitemap: https://www.reddit.com/sitemaps/subreddit-sitemaps.xml
+-Sitemap: https://www.reddit.com/sitemaps/comment-page-sitemaps.xml
++Allow: /posts/*
+
+==============================================================================
+2019-12-31  →  2020-12-31   (+6 / -1 lines)
+  before: https://web.archive.org/web/20191231231712/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20201231200242/https://www.reddit.com/robots.txt
+@@ -35,7 +35,12 @@
+ Disallow: /domain/*t=
+ Disallow: /login
++Disallow: /remove_email/t2_*
+ Disallow: /r/*/user/
+ Disallow: /gold?
+-Allow: /partner_api/
++Disallow: /static/button/button1.js
++Disallow: /static/button/button1.html
++Disallow: /static/button/button2.html
++Disallow: /static/button/button3.html
++Disallow: /buttonlite.js
+ Allow: /
+ Allow: /sitemaps/*.xml
+
+==============================================================================
+2020-12-31  →  2021-12-31   (+7 / -2 lines)
+  before: https://web.archive.org/web/20201231200242/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20211231200157/https://www.reddit.com/robots.txt
+@@ -19,9 +19,11 @@
+ Disallow: /*.xml
+ Disallow: /*.rss
++Allow: /r/*.rss
++Disallow: /r/*/comments/*.rss
++Disallow: /r/*/config/*.rss
++Disallow: /r/*/wiki/*.rss
+ Disallow: /*.i
+ Disallow: /*.embed
+ Disallow: /*/comments/*?*sort=
+-Disallow: /r/*/comments/*/*/c*
+-Disallow: /comments/*/*/c*
+ Disallow: /r/*/submit$
+ Disallow: /r/*/submit/$
+@@ -43,4 +45,7 @@
+ Disallow: /static/button/button3.html
+ Disallow: /buttonlite.js
++Disallow: /timings/perf
++Disallow: /counters/client-screenview
++Disallow: /*?*feed=
+ Allow: /
+ Allow: /sitemaps/*.xml
+
+==============================================================================
+2021-12-31  →  2022-06-30   (+4 / -0 lines)
+  before: https://web.archive.org/web/20211231200157/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20220630234524/https://www.reddit.com/robots.txt
+@@ -26,4 +26,5 @@
+ Disallow: /*.embed
+ Disallow: /*/comments/*?*sort=
++Disallow: */comment/*
+ Disallow: /r/*/submit$
+ Disallow: /r/*/submit/$
+@@ -48,4 +49,7 @@
+ Disallow: /counters/client-screenview
+ Disallow: /*?*feed=
++Disallow: /svc/shreddit/experiences
++Disallow: /svc/shreddit/perfMetrics
++Disallow: /svc/shreddit/v2j
+ Allow: /
+ Allow: /sitemaps/*.xml
+
+==============================================================================
+2022-11-29  →  2022-12-01   (+1 / -3 lines)
+  before: https://web.archive.org/web/20221129132706/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20221201214114/https://www.reddit.com/robots.txt
+@@ -49,7 +49,5 @@
+ Disallow: /counters/client-screenview
+ Disallow: /*?*feed=
+-Disallow: /svc/shreddit/experiences
+-Disallow: /svc/shreddit/perfMetrics
+-Disallow: /svc/shreddit/v2j
++Disallow: /svc/shreddit/*
+ Allow: /
+ Allow: /sitemaps/*.xml
+
+==============================================================================
+2023-02-13  →  2023-02-16   (+0 / -1 lines)
+  before: https://web.archive.org/web/20230213194411/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20230216194401/https://www.reddit.com/robots.txt
+@@ -34,5 +34,4 @@
+ Disallow: /submit
+ Disallow: /goto
+-Disallow: /*after=
+ Disallow: /*before=
+ Disallow: /domain/*t=
+
+==============================================================================
+2023-02-21  →  2023-02-24   (+1 / -0 lines)
+  before: https://web.archive.org/web/20230221203744/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20230224193346/https://www.reddit.com/robots.txt
+@@ -49,4 +49,5 @@
+ Disallow: /*?*feed=
+ Disallow: /svc/shreddit/*
++Disallow: /errors$
+ Allow: /
+ Allow: /sitemaps/*.xml
+
+==============================================================================
+[AI] 2023-05-31  →  2024-07-02   (+6 / -53 lines)
+  before: https://web.archive.org/web/20230531043417/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20240702121054/https://www.reddit.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,54 +1,7 @@
+-# 80legs
+-User-agent: 008
++# Welcome to Reddit's robots.txt
++# Reddit believes in an open internet, but not the misuse of public content.
++# See https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy Reddit's Public Content Policy for access and use restrictions to Reddit content.
++# See https://www.reddit.com/r/reddit4researchers/ for details on how Reddit continues to support research and non-commercial use.
++# policy: https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy
++User-agent: *
+ Disallow: /
+-# 80legs' new crawler
+-User-agent: voltron
+-Disallow: /
+-User-Agent: bender
+-Disallow: /my_shiny_metal_ass
+-User-Agent: Gort
+-Disallow: /earth
+-User-agent: MJ12bot
+-Disallow: /
+-User-agent: PiplBot
+-Disallow: /
+-User-Agent: *
+-Disallow: /*.json
+-Disallow: /*.json-compact
+-Disallow: /*.json-html
+-Disallow: /*.xml
+-Disallow: /*.rss
+-Allow: /r/*.rss
+-Disallow: /r/*/comments/*.rss
+-Disallow: /r/*/config/*.rss
+-Disallow: /r/*/wiki/*.rss
+-Disallow: /*.i
+-Disallow: /*.embed
+-Disallow: /*/comments/*?*sort=
+-Disallow: */comment/*
+-Disallow: /r/*/submit$
+-Disallow: /r/*/submit/$
+-Disallow: /message/compose*
+-Disallow: /api
+-Disallow: /post
+-Disallow: /submit
+-Disallow: /goto
+-Disallow: /*before=
+-Disallow: /domain/*t=
+-Disallow: /login
+-Disallow: /remove_email/t2_*
+-Disallow: /r/*/user/
+-Disallow: /gold?
+-Disallow: /static/button/button1.js
+-Disallow: /static/button/button1.html
+-Disallow: /static/button/button2.html
+-Disallow: /static/button/button3.html
+-Disallow: /buttonlite.js
+-Disallow: /timings/perf
+-Disallow: /counters/client-screenview
+-Disallow: /*?*feed=
+-Disallow: /svc/shreddit/*
+-Disallow: /errors$
+-Allow: /
+-Allow: /sitemaps/*.xml
+-Allow: /posts/*
+
+==============================================================================
+[AI] 2024-07-18  →  2024-07-28   (+82 / -6 lines)
+  before: https://web.archive.org/web/20240718160652/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20240728021335/https://www.reddit.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,7 +1,83 @@
+-# Welcome to Reddit's robots.txt
+-# Reddit believes in an open internet, but not the misuse of public content.
+-# See https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy Reddit's Public Content Policy for access and use restrictions to Reddit content.
+-# See https://www.reddit.com/r/reddit4researchers/ for details on how Reddit continues to support research and non-commercial use.
+-# policy: https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy
+-User-agent: *
++# Our robots.txt is for search engines
++# 80legs
++User-agent: 008
+ Disallow: /
++# 80legs' new crawler
++User-agent: voltron
++Disallow: /
++User-Agent: bender
++Disallow: /my_shiny_metal_ass
++User-Agent: Gort
++Disallow: /earth
++User-agent: MJ12bot
++Disallow: /
++User-agent: PiplBot
++Disallow: /
++User-Agent: *
++Disallow: /*.json
++Disallow: /*.json-compact
++Disallow: /*.json-html
++Disallow: /*.xml
++Disallow: /*.rss
++Allow: /r/*.rss
++Disallow: /r/*/search.rss
++Disallow: /r/*/comments/*.rss
++Disallow: /r/*/config/*.rss
++Disallow: /r/*/wiki/*.rss
++Disallow: /*.i
++Disallow: /*.embed
++Disallow: /*/comments/*?*sort=
++Disallow: */comment/*
++Allow: /r/*/comments/*/*/de/*
++Allow: /r/*/comments/*/*/es/*
++Allow: /r/*/comments/*/*/fr/*
++Allow: /r/*/comments/*/*/pt/*
++Allow: /r/*/comments/*/*/it/*
++Disallow: /r/*/comments/*/*/*/*
++Disallow: /r/*/submit$
++Disallow: /r/*/submit/$
++Disallow: /message/compose*
++Disallow: /api
++Disallow: /post
++Disallow: /submit
++Disallow: /goto
++Disallow: /*before=
++Disallow: /user/*after=
++Disallow: /u/*after=
++Disallow: /domain/*t=
++Disallow: /login
++Disallow: /remove_email/t2_*
++Disallow: /r/*/user/
++Disallow: /gold?
++Disallow: /search$
++Disallow: /search?q=
++Disallow: /search?title=
++Disallow: /search/
++Disallow: /*/search?
++Disallow: /*/search/?
++Disallow: /*/search$
++Disallow: /*/search/$
++Disallow: /search.compact$
++Disallow: /*/search.compact$
++Allow: /r/*/comments/*/search/$
++Allow: /r/*/comments/*/search$
++Disallow: /static/button/button1.js
++Disallow: /static/button/button1.html
++Disallow: /static/button/button2.html
++Disallow: /static/button/button3.html
++Disallow: /subreddits/*
++Disallow: /buttonlite.js
++Disallow: /timings/perf
++Disallow: /counters/client-screenview
++Disallow: /*?*feed=
++Disallow: /svc/shreddit/*
++Disallow: /svc/sh/*
++Disallow: /svc/web/*
++Disallow: /graphql
++Disallow: /errors$
++Disallow: /live/*
++Disallow: /mediaembed/*
++Disallow: /media
++Allow: /
++Allow: /sitemaps/*.xml
++Allow: /posts/*
+
+==============================================================================
+[AI] 2024-08-05  →  2024-08-11   (+6 / -82 lines)
+  before: https://web.archive.org/web/20240805163700/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20240811191926/https://www.reddit.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,83 +1,7 @@
+-# Our robots.txt is for search engines
+-# 80legs
+-User-agent: 008
++# Welcome to Reddit's robots.txt
++# Reddit believes in an open internet, but not the misuse of public content.
++# See https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy Reddit's Public Content Policy for access and use restrictions to Reddit content.
++# See https://www.reddit.com/r/reddit4researchers/ for details on how Reddit continues to support research and non-commercial use.
++# policy: https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy
++User-agent: *
+ Disallow: /
+-# 80legs' new crawler
+-User-agent: voltron
+-Disallow: /
+-User-Agent: bender
+-Disallow: /my_shiny_metal_ass
+-User-Agent: Gort
+-Disallow: /earth
+-User-agent: MJ12bot
+-Disallow: /
+-User-agent: PiplBot
+-Disallow: /
+-User-Agent: *
+-Disallow: /*.json
+-Disallow: /*.json-compact
+-Disallow: /*.json-html
+-Disallow: /*.xml
+-Disallow: /*.rss
+-Allow: /r/*.rss
+-Disallow: /r/*/search.rss
+-Disallow: /r/*/comments/*.rss
+-Disallow: /r/*/config/*.rss
+-Disallow: /r/*/wiki/*.rss
+-Disallow: /*.i
+-Disallow: /*.embed
+-Disallow: /*/comments/*?*sort=
+-Disallow: */comment/*
+-Allow: /r/*/comments/*/*/de/*
+-Allow: /r/*/comments/*/*/es/*
+-Allow: /r/*/comments/*/*/fr/*
+-Allow: /r/*/comments/*/*/pt/*
+-Allow: /r/*/comments/*/*/it/*
+-Disallow: /r/*/comments/*/*/*/*
+-Disallow: /r/*/submit$
+-Disallow: /r/*/submit/$
+-Disallow: /message/compose*
+-Disallow: /api
+-Disallow: /post
+-Disallow: /submit
+-Disallow: /goto
+-Disallow: /*before=
+-Disallow: /user/*after=
+-Disallow: /u/*after=
+-Disallow: /domain/*t=
+-Disallow: /login
+-Disallow: /remove_email/t2_*
+-Disallow: /r/*/user/
+-Disallow: /gold?
+-Disallow: /search$
+-Disallow: /search?q=
+-Disallow: /search?title=
+-Disallow: /search/
+-Disallow: /*/search?
+-Disallow: /*/search/?
+-Disallow: /*/search$
+-Disallow: /*/search/$
+-Disallow: /search.compact$
+-Disallow: /*/search.compact$
+-Allow: /r/*/comments/*/search/$
+-Allow: /r/*/comments/*/search$
+-Disallow: /static/button/button1.js
+-Disallow: /static/button/button1.html
+-Disallow: /static/button/button2.html
+-Disallow: /static/button/button3.html
+-Disallow: /subreddits/*
+-Disallow: /buttonlite.js
+-Disallow: /timings/perf
+-Disallow: /counters/client-screenview
+-Disallow: /*?*feed=
+-Disallow: /svc/shreddit/*
+-Disallow: /svc/sh/*
+-Disallow: /svc/web/*
+-Disallow: /graphql
+-Disallow: /errors$
+-Disallow: /live/*
+-Disallow: /mediaembed/*
+-Disallow: /media
+-Allow: /
+-Allow: /sitemaps/*.xml
+-Allow: /posts/*
+
+==============================================================================
+[AI] 2024-08-27  →  2024-09-09   (+82 / -6 lines)
+  before: https://web.archive.org/web/20240827032511/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20240909214553/https://www.reddit.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,7 +1,83 @@
+-# Welcome to Reddit's robots.txt
+-# Reddit believes in an open internet, but not the misuse of public content.
+-# See https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy Reddit's Public Content Policy for access and use restrictions to Reddit content.
+-# See https://www.reddit.com/r/reddit4researchers/ for details on how Reddit continues to support research and non-commercial use.
+-# policy: https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy
+-User-agent: *
++# Our robots.txt is for search engines
++# 80legs
++User-agent: 008
+ Disallow: /
++# 80legs' new crawler
++User-agent: voltron
++Disallow: /
++User-Agent: bender
++Disallow: /my_shiny_metal_ass
++User-Agent: Gort
++Disallow: /earth
++User-agent: MJ12bot
++Disallow: /
++User-agent: PiplBot
++Disallow: /
++User-Agent: *
++Disallow: /*.json
++Disallow: /*.json-compact
++Disallow: /*.json-html
++Disallow: /*.xml
++Disallow: /*.rss
++Allow: /r/*.rss
++Disallow: /r/*/search.rss
++Disallow: /r/*/comments/*.rss
++Disallow: /r/*/config/*.rss
++Disallow: /r/*/wiki/*.rss
++Disallow: /*.i
++Disallow: /*.embed
++Disallow: /*/comments/*?*sort=
++Disallow: */comment/*
++Allow: /r/*/comments/*/*/de/*
++Allow: /r/*/comments/*/*/es/*
++Allow: /r/*/comments/*/*/fr/*
++Allow: /r/*/comments/*/*/pt/*
++Allow: /r/*/comments/*/*/it/*
++Disallow: /r/*/comments/*/*/*/*
++Disallow: /r/*/submit$
++Disallow: /r/*/submit/$
++Disallow: /message/compose*
++Disallow: /api
++Disallow: /post
++Disallow: /submit
++Disallow: /goto
++Disallow: /*before=
++Disallow: /user/*after=
++Disallow: /u/*after=
++Disallow: /domain/*t=
++Disallow: /login
++Disallow: /remove_email/t2_*
++Disallow: /r/*/user/
++Disallow: /gold?
++Disallow: /search$
++Disallow: /search?q=
++Disallow: /search?title=
++Disallow: /search/
++Disallow: /*/search?
++Disallow: /*/search/?
++Disallow: /*/search$
++Disallow: /*/search/$
++Disallow: /search.compact$
++Disallow: /*/search.compact$
++Allow: /r/*/comments/*/search/$
++Allow: /r/*/comments/*/search$
++Disallow: /static/button/button1.js
++Disallow: /static/button/button1.html
++Disallow: /static/button/button2.html
++Disallow: /static/button/button3.html
++Disallow: /subreddits/*
++Disallow: /buttonlite.js
++Disallow: /timings/perf
++Disallow: /counters/client-screenview
++Disallow: /*?*feed=
++Disallow: /svc/shreddit/*
++Disallow: /svc/sh/*
++Disallow: /svc/web/*
++Disallow: /graphql
++Disallow: /errors$
++Disallow: /live/*
++Disallow: /mediaembed/*
++Disallow: /media
++Allow: /
++Allow: /sitemaps/*.xml
++Allow: /posts/*
+
+==============================================================================
+2024-09-09  →  2024-09-24   (+1 / -4 lines)
+  before: https://web.archive.org/web/20240909214553/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20240924175155/https://www.reddit.com/robots.txt
+@@ -50,8 +50,5 @@
+ Disallow: /r/*/user/
+ Disallow: /gold?
+-Disallow: /search$
+-Disallow: /search?q=
+-Disallow: /search?title=
+-Disallow: /search/
++Disallow: /search*
+ Disallow: /*/search?
+ Disallow: /*/search/?
+
+==============================================================================
+[AI] 2024-09-24  →  2024-10-07   (+6 / -79 lines)
+  before: https://web.archive.org/web/20240924175155/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20241007112254/https://www.reddit.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,80 +1,7 @@
+-# Our robots.txt is for search engines
+-# 80legs
+-User-agent: 008
++# Welcome to Reddit's robots.txt
++# Reddit believes in an open internet, but not the misuse of public content.
++# See https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy Reddit's Public Content Policy for access and use restrictions to Reddit content.
++# See https://www.reddit.com/r/reddit4researchers/ for details on how Reddit continues to support research and non-commercial use.
++# policy: https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy
++User-agent: *
+ Disallow: /
+-# 80legs' new crawler
+-User-agent: voltron
+-Disallow: /
+-User-Agent: bender
+-Disallow: /my_shiny_metal_ass
+-User-Agent: Gort
+-Disallow: /earth
+-User-agent: MJ12bot
+-Disallow: /
+-User-agent: PiplBot
+-Disallow: /
+-User-Agent: *
+-Disallow: /*.json
+-Disallow: /*.json-compact
+-Disallow: /*.json-html
+-Disallow: /*.xml
+-Disallow: /*.rss
+-Allow: /r/*.rss
+-Disallow: /r/*/search.rss
+-Disallow: /r/*/comments/*.rss
+-Disallow: /r/*/config/*.rss
+-Disallow: /r/*/wiki/*.rss
+-Disallow: /*.i
+-Disallow: /*.embed
+-Disallow: /*/comments/*?*sort=
+-Disallow: */comment/*
+-Allow: /r/*/comments/*/*/de/*
+-Allow: /r/*/comments/*/*/es/*
+-Allow: /r/*/comments/*/*/fr/*
+-Allow: /r/*/comments/*/*/pt/*
+-Allow: /r/*/comments/*/*/it/*
+-Disallow: /r/*/comments/*/*/*/*
+-Disallow: /r/*/submit$
+-Disallow: /r/*/submit/$
+-Disallow: /message/compose*
+-Disallow: /api
+-Disallow: /post
+-Disallow: /submit
+-Disallow: /goto
+-Disallow: /*before=
+-Disallow: /user/*after=
+-Disallow: /u/*after=
+-Disallow: /domain/*t=
+-Disallow: /login
+-Disallow: /remove_email/t2_*
+-Disallow: /r/*/user/
+-Disallow: /gold?
+-Disallow: /search*
+-Disallow: /*/search?
+-Disallow: /*/search/?
+-Disallow: /*/search$
+-Disallow: /*/search/$
+-Disallow: /search.compact$
+-Disallow: /*/search.compact$
+-Allow: /r/*/comments/*/search/$
+-Allow: /r/*/comments/*/search$
+-Disallow: /static/button/button1.js
+-Disallow: /static/button/button1.html
+-Disallow: /static/button/button2.html
+-Disallow: /static/button/button3.html
+-Disallow: /subreddits/*
+-Disallow: /buttonlite.js
+-Disallow: /timings/perf
+-Disallow: /counters/client-screenview
+-Disallow: /*?*feed=
+-Disallow: /svc/shreddit/*
+-Disallow: /svc/sh/*
+-Disallow: /svc/web/*
+-Disallow: /graphql
+-Disallow: /errors$
+-Disallow: /live/*
+-Disallow: /mediaembed/*
+-Disallow: /media
+-Allow: /
+-Allow: /sitemaps/*.xml
+-Allow: /posts/*
+
+==============================================================================
+[AI] 2024-11-01  →  2024-11-16   (+81 / -6 lines)
+  before: https://web.archive.org/web/20241101202632/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20241116185841/https://www.reddit.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,7 +1,82 @@
+-# Welcome to Reddit's robots.txt
+-# Reddit believes in an open internet, but not the misuse of public content.
+-# See https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy Reddit's Public Content Policy for access and use restrictions to Reddit content.
+-# See https://www.reddit.com/r/reddit4researchers/ for details on how Reddit continues to support research and non-commercial use.
+-# policy: https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy
+-User-agent: *
++# Our robots.txt is for search engines
++# 80legs
++User-agent: 008
+ Disallow: /
++# 80legs' new crawler
++User-agent: voltron
++Disallow: /
++User-Agent: bender
++Disallow: /my_shiny_metal_ass
++User-Agent: Gort
++Disallow: /earth
++User-agent: MJ12bot
++Disallow: /
++User-agent: PiplBot
++Disallow: /
++User-Agent: *
++Disallow: /*.json
++Disallow: /*.json-compact
++Disallow: /*.json-html
++Disallow: /*.xml
++Disallow: /*.rss
++Allow: /r/*.rss
++Disallow: /r/*/search.rss
++Disallow: /r/*/comments/*.rss
++Disallow: /r/*/config/*.rss
++Disallow: /r/*/wiki/*.rss
++Disallow: /*.i
++Disallow: /*.embed
++Disallow: /*/comments/*?*sort=
++Disallow: */comment/*
++Allow: /r/*/comments/*/*/de/*
++Allow: /r/*/comments/*/*/es/*
++Allow: /r/*/comments/*/*/fr/*
++Allow: /r/*/comments/*/*/pt/*
++Allow: /r/*/comments/*/*/it/*
++Disallow: /r/*/comments/*/*/*/*
++Disallow: /r/*/submit$
++Disallow: /r/*/submit/$
++Disallow: /message/compose*
++Disallow: /api
++Disallow: /post
++Disallow: /submit
++Disallow: /goto
++Disallow: /*before=
++Disallow: /user/*after=
++Disallow: /u/*after=
++Disallow: /domain/*t=
++Disallow: /login
++Disallow: /remove_email/t2_*
++Disallow: /r/*/user/
++Disallow: /gold?
++Disallow: /search*
++Disallow: /*/search?
++Disallow: /*/search/?
++Disallow: /*/search$
++Disallow: /*/search/$
++Disallow: /search.compact$
++Disallow: /*/search.compact$
++Allow: /r/*/comments/*/search/$
++Allow: /r/*/comments/*/search$
++Disallow: /static/button/button1.js
++Disallow: /static/button/button1.html
++Disallow: /static/button/button2.html
++Disallow: /static/button/button3.html
++Disallow: /subreddits/*
++Disallow: /buttonlite.js
++Disallow: /timings/perf
++Disallow: /counters/client-screenview
++Disallow: /*?*feed=
++Disallow: /svc/shreddit/*
++Disallow: /svc/sh/*
++Disallow: /svc/web/*
++Disallow: /graphql
++Disallow: /errors$
++Disallow: /live/*
++Disallow: /mediaembed/*
++Disallow: /media
++Disallow: /gallery/*
++Disallow: /poll/*
++Allow: /
++Allow: /sitemaps/*.xml
++Allow: /posts/*
+
+==============================================================================
+2024-12-03  →  2024-12-17   (+3 / -0 lines)
+  before: https://web.archive.org/web/20241203031008/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20241217144246/https://www.reddit.com/robots.txt
+@@ -81,2 +81,5 @@
+ Allow: /sitemaps/*.xml
+ Allow: /posts/*
++Disallow: /answers/*
++Allow: /answers$
++Allow: /answers/$
+
+==============================================================================
+[AI] 2024-12-17  →  2024-12-30   (+6 / -84 lines)
+  before: https://web.archive.org/web/20241217144246/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20241230064553/https://www.reddit.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,85 +1,7 @@
+-# Our robots.txt is for search engines
+-# 80legs
+-User-agent: 008
++# Welcome to Reddit's robots.txt
++# Reddit believes in an open internet, but not the misuse of public content.
++# See https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy Reddit's Public Content Policy for access and use restrictions to Reddit content.
++# See https://www.reddit.com/r/reddit4researchers/ for details on how Reddit continues to support research and non-commercial use.
++# policy: https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy
++User-agent: *
+ Disallow: /
+-# 80legs' new crawler
+-User-agent: voltron
+-Disallow: /
+-User-Agent: bender
+-Disallow: /my_shiny_metal_ass
+-User-Agent: Gort
+-Disallow: /earth
+-User-agent: MJ12bot
+-Disallow: /
+-User-agent: PiplBot
+-Disallow: /
+-User-Agent: *
+-Disallow: /*.json
+-Disallow: /*.json-compact
+-Disallow: /*.json-html
+-Disallow: /*.xml
+-Disallow: /*.rss
+-Allow: /r/*.rss
+-Disallow: /r/*/search.rss
+-Disallow: /r/*/comments/*.rss
+-Disallow: /r/*/config/*.rss
+-Disallow: /r/*/wiki/*.rss
+-Disallow: /*.i
+-Disallow: /*.embed
+-Disallow: /*/comments/*?*sort=
+-Disallow: */comment/*
+-Allow: /r/*/comments/*/*/de/*
+-Allow: /r/*/comments/*/*/es/*
+-Allow: /r/*/comments/*/*/fr/*
+-Allow: /r/*/comments/*/*/pt/*
+-Allow: /r/*/comments/*/*/it/*
+-Disallow: /r/*/comments/*/*/*/*
+-Disallow: /r/*/submit$
+-Disallow: /r/*/submit/$
+-Disallow: /message/compose*
+-Disallow: /api
+-Disallow: /post
+-Disallow: /submit
+-Disallow: /goto
+-Disallow: /*before=
+-Disallow: /user/*after=
+-Disallow: /u/*after=
+-Disallow: /domain/*t=
+-Disallow: /login
+-Disallow: /remove_email/t2_*
+-Disallow: /r/*/user/
+-Disallow: /gold?
+-Disallow: /search*
+-Disallow: /*/search?
+-Disallow: /*/search/?
+-Disallow: /*/search$
+-Disallow: /*/search/$
+-Disallow: /search.compact$
+-Disallow: /*/search.compact$
+-Allow: /r/*/comments/*/search/$
+-Allow: /r/*/comments/*/search$
+-Disallow: /static/button/button1.js
+-Disallow: /static/button/button1.html
+-Disallow: /static/button/button2.html
+-Disallow: /static/button/button3.html
+-Disallow: /subreddits/*
+-Disallow: /buttonlite.js
+-Disallow: /timings/perf
+-Disallow: /counters/client-screenview
+-Disallow: /*?*feed=
+-Disallow: /svc/shreddit/*
+-Disallow: /svc/sh/*
+-Disallow: /svc/web/*
+-Disallow: /graphql
+-Disallow: /errors$
+-Disallow: /live/*
+-Disallow: /mediaembed/*
+-Disallow: /media
+-Disallow: /gallery/*
+-Disallow: /poll/*
+-Allow: /
+-Allow: /sitemaps/*.xml
+-Allow: /posts/*
+-Disallow: /answers/*
+-Allow: /answers$
+-Allow: /answers/$
+
+==============================================================================
+[AI] 2025-01-20  →  2025-02-14   (+84 / -6 lines)
+  before: https://web.archive.org/web/20250120090159/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20250214083106/https://www.reddit.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: blocked→allowed; Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; meta-webindexer: blocked→allowed; meta-externalfetcher: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: blocked→allowed; Amzn-SearchBot: blocked→allowed; Amzn-User: blocked→allowed; * group: no longer blocks all
+@@ -1,7 +1,85 @@
+-# Welcome to Reddit's robots.txt
+-# Reddit believes in an open internet, but not the misuse of public content.
+-# See https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy Reddit's Public Content Policy for access and use restrictions to Reddit content.
+-# See https://www.reddit.com/r/reddit4researchers/ for details on how Reddit continues to support research and non-commercial use.
+-# policy: https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy
+-User-agent: *
++# Our robots.txt is for search engines
++# 80legs
++User-agent: 008
+ Disallow: /
++# 80legs' new crawler
++User-agent: voltron
++Disallow: /
++User-Agent: bender
++Disallow: /my_shiny_metal_ass
++User-Agent: Gort
++Disallow: /earth
++User-agent: MJ12bot
++Disallow: /
++User-agent: PiplBot
++Disallow: /
++User-Agent: *
++Disallow: /*.json
++Disallow: /*.json-compact
++Disallow: /*.json-html
++Disallow: /*.xml
++Disallow: /*.rss
++Allow: /r/*.rss
++Disallow: /r/*/search.rss
++Disallow: /r/*/comments/*.rss
++Disallow: /r/*/config/*.rss
++Disallow: /r/*/wiki/*.rss
++Disallow: /*.i
++Disallow: /*.embed
++Disallow: /*/comments/*?*sort=
++Disallow: */comment/*
++Allow: /r/*/comments/*/*/de/*
++Allow: /r/*/comments/*/*/es/*
++Allow: /r/*/comments/*/*/fr/*
++Allow: /r/*/comments/*/*/pt/*
++Allow: /r/*/comments/*/*/it/*
++Disallow: /r/*/comments/*/*/*/*
++Disallow: /r/*/submit$
++Disallow: /r/*/submit/$
++Disallow: /message/compose*
++Disallow: /api
++Disallow: /post
++Disallow: /submit
++Disallow: /goto
++Disallow: /*before=
++Disallow: /user/*after=
++Disallow: /u/*after=
++Disallow: /domain/*t=
++Disallow: /login
++Disallow: /remove_email/t2_*
++Disallow: /r/*/user/
++Disallow: /gold?
++Disallow: /search*
++Disallow: /*/search?
++Disallow: /*/search/?
++Disallow: /*/search$
++Disallow: /*/search/$
++Disallow: /search.compact$
++Disallow: /*/search.compact$
++Allow: /r/*/comments/*/search/$
++Allow: /r/*/comments/*/search$
++Disallow: /static/button/button1.js
++Disallow: /static/button/button1.html
++Disallow: /static/button/button2.html
++Disallow: /static/button/button3.html
++Disallow: /subreddits/*
++Disallow: /buttonlite.js
++Disallow: /timings/perf
++Disallow: /counters/client-screenview
++Disallow: /*?*feed=
++Disallow: /svc/shreddit/*
++Disallow: /svc/sh/*
++Disallow: /svc/web/*
++Disallow: /graphql
++Disallow: /errors$
++Disallow: /live/*
++Disallow: /mediaembed/*
++Disallow: /media
++Disallow: /gallery/*
++Disallow: /poll/*
++Allow: /
++Allow: /sitemaps/*.xml
++Allow: /posts/*
++Disallow: /answers/*
++Allow: /answers$
++Allow: /answers/$
+
+==============================================================================
+2025-02-14  →  2025-04-23   (+9 / -0 lines)
+  before: https://web.archive.org/web/20250214083106/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20250423001809/https://www.reddit.com/robots.txt
+@@ -80,6 +80,15 @@
+ Allow: /
+ Allow: /sitemaps/*.xml
++Allow: /rssfeeds/*.xml
+ Allow: /posts/*
+ Disallow: /answers/*
+ Allow: /answers$
+ Allow: /answers/$
++User-agent: AdsBot-Google
++Disallow: /search*
++Disallow: /*/search?
++Disallow: /*/search/?
++Disallow: /*/search$
++Disallow: /*/search/$
++Disallow: /search.compact$
++Disallow: /*/search.compact$
+
+==============================================================================
+[AI] 2025-04-23  →  2025-07-02   (+6 / -93 lines)
+  before: https://web.archive.org/web/20250423001809/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20250702144705/https://www.reddit.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; OAI-SearchBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; Perplexity-User: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; meta-webindexer: allowed→blocked; meta-externalfetcher: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked; Amzn-SearchBot: allowed→blocked; Amzn-User: allowed→blocked; * group: now blocks all unlisted crawlers
+@@ -1,94 +1,7 @@
+-# Our robots.txt is for search engines
+-# 80legs
+-User-agent: 008
++# Welcome to Reddit's robots.txt
++# Reddit believes in an open internet, but not the misuse of public content.
++# See https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy Reddit's Public Content Policy for access and use restrictions to Reddit content.
++# See https://www.reddit.com/r/reddit4researchers/ for details on how Reddit continues to support research and non-commercial use.
++# policy: https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy
++User-agent: *
+ Disallow: /
+-# 80legs' new crawler
+-User-agent: voltron
+-Disallow: /
+-User-Agent: bender
+-Disallow: /my_shiny_metal_ass
+-User-Agent: Gort
+-Disallow: /earth
+-User-agent: MJ12bot
+-Disallow: /
+-User-agent: PiplBot
+-Disallow: /
+-User-Agent: *
+-Disallow: /*.json
+-Disallow: /*.json-compact
+-Disallow: /*.json-html
+-Disallow: /*.xml
+-Disallow: /*.rss
+-Allow: /r/*.rss
+-Disallow: /r/*/search.rss
+-Disallow: /r/*/comments/*.rss
+-Disallow: /r/*/config/*.rss
+-Disallow: /r/*/wiki/*.rss
+-Disallow: /*.i
+-Disallow: /*.embed
+-Disallow: /*/comments/*?*sort=
+-Disallow: */comment/*
+-Allow: /r/*/comments/*/*/de/*
+-Allow: /r/*/comments/*/*/es/*
+-Allow: /r/*/comments/*/*/fr/*
+-Allow: /r/*/comments/*/*/pt/*
+-Allow: /r/*/comments/*/*/it/*
+-Disallow: /r/*/comments/*/*/*/*
+-Disallow: /r/*/submit$
+-Disallow: /r/*/submit/$
+-Disallow: /message/compose*
+-Disallow: /api
+-Disallow: /post
+-Disallow: /submit
+-Disallow: /goto
+-Disallow: /*before=
+-Disallow: /user/*after=
+-Disallow: /u/*after=
+-Disallow: /domain/*t=
+-Disallow: /login
+-Disallow: /remove_email/t2_*
+-Disallow: /r/*/user/
+-Disallow: /gold?
+-Disallow: /search*
+-Disallow: /*/search?
+-Disallow: /*/search/?
+-Disallow: /*/search$
+-Disallow: /*/search/$
+-Disallow: /search.compact$
+-Disallow: /*/search.compact$
+-Allow: /r/*/comments/*/search/$
+-Allow: /r/*/comments/*/search$
+-Disallow: /static/button/button1.js
+-Disallow: /static/button/button1.html
+-Disallow: /static/button/button2.html
+-Disallow: /static/button/button3.html
+-Disallow: /subreddits/*
+-Disallow: /buttonlite.js
+-Disallow: /timings/perf
+-Disallow: /counters/client-screenview
+-Disallow: /*?*feed=
+-Disallow: /svc/shreddit/*
+-Disallow: /svc/sh/*
+-Disallow: /svc/web/*
+-Disallow: /graphql
+-Disallow: /errors$
+-Disallow: /live/*
+-Disallow: /mediaembed/*
+-Disallow: /media
+-Disallow: /gallery/*
+-Disallow: /poll/*
+-Allow: /
+-Allow: /sitemaps/*.xml
+-Allow: /rssfeeds/*.xml
+-Allow: /posts/*
+-Disallow: /answers/*
+-Allow: /answers$
+-Allow: /answers/$
+-User-agent: AdsBot-Google
+-Disallow: /search*
+-Disallow: /*/search?
+-Disallow: /*/search/?
+-Disallow: /*/search$
+-Disallow: /*/search/$
+-Disallow: /search.compact$
+-Disallow: /*/search.compact$
+
+==============================================================================
+2025-07-02  →  2025-09-23   (+4 / -1 lines)
+  before: https://web.archive.org/web/20250702144705/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20250923200115/https://www.reddit.com/robots.txt
+@@ -4,4 +4,7 @@
+ # See https://www.reddit.com/r/reddit4researchers/ for details on how Reddit continues to support research and non-commercial use.
+ # policy: https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy
+-User-agent: *
++# Allowed for archiving
++# =====================
++User-Agent: *
++Allow: /$
+ Disallow: /
+
+==============================================================================
+2026-02-10  →  2026-10-05   (+1 / -4 lines)
+  before: https://web.archive.org/web/20260210223432/https://www.reddit.com/robots.txt
+  after:  https://web.archive.org/web/20261005000338/https://www.reddit.com/robots.txt
+@@ -4,7 +4,4 @@
+ # See https://www.reddit.com/r/reddit4researchers/ for details on how Reddit continues to support research and non-commercial use.
+ # policy: https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy
+-# Allowed for archiving
+-# =====================
+-User-Agent: *
+-Allow: /$
++User-agent: *
+ Disallow: /

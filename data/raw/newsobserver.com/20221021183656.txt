@@ -1,0 +1,337 @@
+# Global allow for Mediapartners - this is used by Google to place ads in content,
+# not indexing purposes.
+
+
+
+
+User-agent: Mediapartners-Google
+Disallow:
+
+
+
+
+# Global allow for the Klangoo bot
+User-agent: Magnetbot
+Disallow:
+
+
+
+
+# Temporary throttles to decrease load during launch
+User-agent: Yandex
+Crawl-delay: 3
+
+
+
+
+User-agent: Baiduspider
+Crawl-delay: 3
+
+
+
+
+User-agent: bingbot
+Crawl-delay: 2
+
+
+
+
+User-agent: Slurp
+Crawl-delay: 2
+
+
+
+
+# Temporary blocks of uninteresting bots
+
+
+
+
+User-Agent: Genieo
+Disallow: /
+
+
+
+
+User-Agent: ecoResearch
+Disallow: /
+
+
+
+
+User-Agent: Spinn3r
+Disallow: /
+
+
+
+
+User-Agent: BLP_bbot
+Disallow: /
+
+
+
+
+User-Agent: R6_CommentReader
+Disallow: /
+
+
+
+
+User-Agent: omgilibot
+Disallow: /
+
+
+
+
+User-Agent: EasouSpider
+Disallow: /
+
+
+
+
+User-Agent: A6-Indexer
+Disallow: /
+
+
+
+
+User-Agent: magpie-crawler
+Disallow: /
+
+
+
+
+# Block indexing of search results page
+User-Agent: *
+Disallow: /search
+Disallow: /web
+Disallow: /mrcontent
+Disallow: /webapi-public
+Disallow: /adperfect
+Disallow: /entertainment/books
+Disallow: /entertainment/celebrities
+Disallow: /entertainment/comics
+Disallow: /entertainment/ent-columns-blogs
+Disallow: /entertainment/ent-columns-blogs/video-now-blog
+Disallow: /entertainment/games-puzzles
+Disallow: /entertainment/horoscopes
+Disallow: /entertainment/movies-news-reviews
+Disallow: /entertainment/music-news-reviews
+Disallow: /entertainment/music-news-reviews/bluegrass-raleigh
+Disallow: /entertainment/music-news-reviews/on-the-beat-blog
+Disallow: /entertainment/music-news-reviews/world-of-bluegrass-blog
+Disallow: /entertainment/tv
+Disallow: /homes
+Disallow: /homes/featured-homes
+Disallow: /living/family
+Disallow: /living/family/moms
+Disallow: /living/fashion
+Disallow: /living/food-drink/flights-blog
+Disallow: /living/food-drink/mouthful-blog
+Disallow: /living/health-fitness
+Disallow: /living/home-garden
+Disallow: /living/liv-columns-blogs
+Disallow: /living/liv-columns-blogs/past-times
+Disallow: /news/business/biz-columns-blogs
+Disallow: /news/business/biz-columns-blogs/centsible-saver
+Disallow: /news/business/health-care
+Disallow: /news/business/small-business
+Disallow: /news/business/small-business/shop-talk-blog
+Disallow: /news/business/storefront
+Disallow: /news/local/coal-ash-issue
+Disallow: /news/local/community
+Disallow: /news/local/community/cary-news
+Disallow: /news/local/community/cary-news/cn-announcements-celebrations
+Disallow: /news/local/community/cary-news/cn-community
+Disallow: /news/local/community/cary-news/cn-obituaries
+Disallow: /news/local/community/cary-news/cn-opinion
+Disallow: /news/local/community/cary-news/cn-sports
+Disallow: /news/local/community/chapel-hill-news
+Disallow: /news/local/community/chapel-hill-news/chn-announcements-celebrations
+Disallow: /news/local/community/chapel-hill-news/chn-community
+Disallow: /news/local/community/chapel-hill-news/chn-obituaries
+Disallow: /news/local/community/chapel-hill-news/chn-opinion
+Disallow: /news/local/community/chapel-hill-news/chn-sports
+Disallow: /news/local/community/clayton-news-star
+Disallow: /news/local/community/clayton-news-star/cns-announcements-celebrations
+Disallow: /news/local/community/clayton-news-star/cns-community
+Disallow: /news/local/community/clayton-news-star/cns-obituaries
+Disallow: /news/local/community/clayton-news-star/cns-opinion
+Disallow: /news/local/community/clayton-news-star/cns-sports
+Disallow: /news/local/community/durham-news
+Disallow: /news/local/community/durham-news/dn-announcements-celebrations
+Disallow: /news/local/community/durham-news/dn-community
+Disallow: /news/local/community/durham-news/dn-obituaries
+Disallow: /news/local/community/durham-news/dn-opinion
+Disallow: /news/local/community/durham-news/dn-sports
+Disallow: /news/local/community/eastern-wake-news
+Disallow: /news/local/community/eastern-wake-news/ewn-announcements-celebrations
+Disallow: /news/local/community/eastern-wake-news/ewn-community
+Disallow: /news/local/community/eastern-wake-news/ewn-obituaries
+Disallow: /news/local/community/eastern-wake-news/ewn-opinion
+Disallow: /news/local/community/eastern-wake-news/ewn-sports
+Disallow: /news/local/community/garner-cleveland-record
+Disallow: /news/local/community/garner-cleveland-record/gcr-announcements-celebrations
+Disallow: /news/local/community/garner-cleveland-record/gcr-community
+Disallow: /news/local/community/garner-cleveland-record/gcr-obituaries
+Disallow: /news/local/community/garner-cleveland-record/gcr-opinion
+Disallow: /news/local/community/garner-cleveland-record/gcr-sports
+Disallow: /news/local/community/midtown-raleigh-news
+Disallow: /news/local/community/midtown-raleigh-news/mrn-announcements-celebrations
+Disallow: /news/local/community/midtown-raleigh-news/mrn-community
+Disallow: /news/local/community/midtown-raleigh-news/mrn-obituaries
+Disallow: /news/local/community/midtown-raleigh-news/mrn-sports
+Disallow: /news/local/community/north-raleigh-news
+Disallow: /news/local/community/north-raleigh-news/nrn-announcements-celebrations
+Disallow: /news/local/community/north-raleigh-news/nrn-community
+Disallow: /news/local/community/north-raleigh-news/nrn-obituaries
+Disallow: /news/local/community/north-raleigh-news/nrn-sports
+Disallow: /news/local/community/smithfield-herald
+Disallow: /news/local/community/smithfield-herald/sh-announcements-celebrations
+Disallow: /news/local/community/smithfield-herald/sh-community
+Disallow: /news/local/community/smithfield-herald/sh-obituaries
+Disallow: /news/local/community/smithfield-herald/sh-opinion
+Disallow: /news/local/community/smithfield-herald/sh-sports
+Disallow: /news/local/community/southwest-wake-news
+Disallow: /news/local/community/southwest-wake-news/swn-announcements-celebrations
+Disallow: /news/local/community/southwest-wake-news/swn-community
+Disallow: /news/local/community/southwest-wake-news/swn-obituaries
+Disallow: /news/local/community/southwest-wake-news/swn-opinion
+Disallow: /news/local/community/southwest-wake-news/swn-sports
+Disallow: /news/local/education/thumbs-up
+Disallow: /news/local/education/unc-scandal
+Disallow: /news/local/education/wake-ed-blog
+Disallow: /news/local/news-columns-blogs
+Disallow: /news/local/news-columns-blogs/barry-saunders
+Disallow: /news/local/news-columns-blogs/editors-blog
+Disallow: /news/local/news-columns-blogs/investigations-blog
+Disallow: /news/local/news-columns-blogs/john-drescher
+Disallow: /news/local/news-columns-blogs/josh-shaffer
+Disallow: /news/politics-government/politics-columns-blogs
+Disallow: /news/politics-government/politics-columns-blogs/rob-christensen
+Disallow: /news/traffic/road-worrier-blog
+Disallow: /news/weather/clear-weather-blog
+Disallow: /opinion/editorial-cartoons/dwane-powell
+Disallow: /opinion/op-ed/seeing-the-invisible
+Disallow: /opinion/opinion-influencers
+Disallow: /opinion/opn-columns-blogs
+Disallow: /opinion/opn-columns-blogs/j-peder-zane
+Disallow: /opinion/opn-columns-blogs/jim-jenkins
+Disallow: /opinion/opn-columns-blogs/opinion-shop
+Disallow: /sports/college/aac
+Disallow: /sports/college/acc/clemson-university
+Disallow: /sports/high-school/preps-now-blog
+Disallow: /sports/mlb
+Disallow: /sports/nascar-auto-racing
+Disallow: /sports/nba
+Disallow: /sports/nba/charlotte-hornets
+Disallow: /sports/nhl
+Disallow: /sports/nhl/carolina-hurricanes/canes-now
+Disallow: /sports/olympics
+Disallow: /sports/outdoors
+Disallow: /sports/soccer/mls
+Disallow: /sports/sports-on-the-air
+Disallow: /sports/spt-columns-blogs
+Disallow: /sports/spt-columns-blogs/joe-giglio
+Disallow: /sports/spt-columns-blogs/nccu
+Disallow: /sports/spt-columns-blogs/tim-stevens
+Disallow: /sports/spt-columns-blogs/tom-sorensen
+Disallow: /sports/tennis
+Disallow: /customer-service/404
+Disallow: /customer-service/410
+Disallow: /customer-service/newsletter-signup
+Disallow: /customer-service/plus
+Disallow: /customer-service/rss
+Disallow: /mobile/m-best-week
+Disallow: /mobile/m-business
+Disallow: /mobile/m-life-arts
+Disallow: /mobile/m-local
+Disallow: /mobile/m-sports
+Disallow: /mobile/m-top-stories
+Disallow: /mobile/watchup
+Disallow: /site-services/newsletters
+Disallow: /site-services/testing/codetest
+Disallow: /site-services/testing/contest-test
+Disallow: /site-services/testing/newsgate-testing
+Disallow: /site-services/testing/rss_test
+Disallow: /site-services/testing/test-test
+Disallow: /advertise/advertorial
+Disallow: /advertise/advertorial/plaid-Friday
+Disallow: /advertise/advertorial/shop-dine-play
+Disallow: /advertise/advertorial/sponsored-travel-gallery
+Disallow: /advertise/circulars
+Disallow: /advertise/welcome
+Disallow: /advertise/welcome/welcome-page-xs
+Disallow: /advertise/welcome/welcome-page-lg
+Disallow: /advertise/welcome/welcome-page-md
+Disallow: /advertise/welcome/welcome-page-sm
+Disallow: /customer-service/announcements-celebrations
+Disallow: /customer-service/announcements-celebrations/anniversaries
+Disallow: /customer-service/announcements-celebrations/birthdays
+Disallow: /customer-service/announcements-celebrations/births
+Disallow: /customer-service/announcements-celebrations/engagements
+Disallow: /customer-service/announcements-celebrations/weddings
+Disallow: /customer-service/contact
+Disallow: /customer-service/contests-promotions
+Disallow: /customer-service/e-edition
+Disallow: /customer-service/marketing
+Disallow: /customer-service/marketing/feed-the-need
+Disallow: /customer-service/subscription/special-offers/offer-b
+Disallow: /customer-service/subscription/special-offers/offer-c
+Disallow: /customer-service/subscription/special-offers/dbm
+Disallow: /customer-service/subscription/special-offers/unlimited
+Disallow: /customer-service/subscription/special-offers/others
+Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-attractions-entertainment
+Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-special-events
+Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-movies
+Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-music-theater
+Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-special-offers
+Disallow: /customer-service/text-alerts
+Disallow: /customer-service/where-to-buy-paper
+Disallow: /site-services/testing
+Disallow: /site-services/testing/ad-ops-testing
+Disallow: /welcome-page
+
+
+
+
+Allow: /entertainment/tv/warm-tv-blog
+Allow: /living/liv-columns-blogs/ac-snow
+Allow: /living/travel/best-kept-secrets
+Allow: /news/politics-government/politics-columns-blogs/under-the-dome
+Allow: /opinion/opn-columns-blogs/ned-barnett
+Allow: /sports/college/aac/east-carolina-university
+Allow: /sports/nhl/carolina-hurricanes
+Allow: /sports/spt-columns-blogs/luke-decock
+Allow: /sports/spt-columns-blogs/scott-fowler
+Allow: /customer-service/announcements-celebrations/place_announcement
+Allow: /customer-service/subscription/special-offers/digital
+
+
+
+
+# Disallow Durham subpub - REMOVE THIS SECTION IN NOVEMBER 2021
+Disallow: /herald-sun
+Disallow: /herald-sun/durham-news
+Disallow: /herald-sun/durham-news/local-news
+Disallow: /herald-sun/durham-news/education-news
+Disallow: /herald-sun/durham-news/crime-news
+Disallow: /herald-sun/sports-hs
+Disallow: /herald-sun/sports-hs/high-school-sports
+
+
+
+
+# N&O Sitemaps
+Sitemap: https://www.newsobserver.com/sitemap/story/update.xml
+Sitemap: https://www.newsobserver.com/sitemap/story/archive.xml
+Sitemap: https://www.newsobserver.com/sitemap/story/googlenews.xml
+Sitemap: https://www.newsobserver.com/sitemap/blogpost/update.xml
+Sitemap: https://www.newsobserver.com/sitemap/blogpost/archive.xml
+Sitemap: https://www.newsobserver.com/sitemap/blogpost/googlenews.xml
+Sitemap: https://www.newsobserver.com/sitemap/video/update.xml
+Sitemap: https://www.newsobserver.com/sitemap/video/archive.xml
+Sitemap: https://www.newsobserver.com/sitemap/section/update.xml
+Sitemap: https://www.newsobserver.com/sitemap/section/archive.xml
+Sitemap: https://www.newsobserver.com/sitemap/topic/archive.xml
+Sitemap: https://www.newsobserver.com/sitemap/topic/update.xml

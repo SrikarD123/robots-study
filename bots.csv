@@ -1,0 +1,24 @@
+token,company,role,ai,source,notes
+GPTBot,OpenAI,training,yes,https://developers.openai.com/api/docs/bots,"Disallowing it ""indicates a site's content should not be used in training generative AI foundation models"""
+OAI-SearchBot,OpenAI,search,yes,https://developers.openai.com/api/docs/bots,Controls appearance in ChatGPT search answers; independent of GPTBot
+ChatGPT-User,OpenAI,user,yes,https://developers.openai.com/api/docs/bots,"User-initiated fetches; OpenAI says ""robots.txt rules may not apply"""
+ClaudeBot,Anthropic,training,yes,https://support.claude.com/en/articles/8896518,Collects public web content that may be used for model training
+anthropic-ai,Anthropic,training,yes,,Legacy token; not in Anthropic's current documentation; kept because sites named it in 2023-24
+Claude-SearchBot,Anthropic,search,yes,https://support.claude.com/en/articles/8896518,Crawls to improve search result quality
+Claude-User,Anthropic,user,yes,https://support.claude.com/en/articles/8896518,Fetches pages when a Claude user's request needs them
+Google-Extended,Google,training,yes,https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers,"Control token, not a crawler: governs Gemini training/grounding use of pages Google crawls; ""does not impact a site's inclusion in Google Search"""
+Googlebot,Google,search,no,https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers,Main Google Search crawler
+Applebot-Extended,Apple,training,yes,https://support.apple.com/en-us/119829,"Control token, not a crawler (""does not crawl webpages""): opts out of foundation-model training on Applebot-crawled data"
+Applebot,Apple,search,no,https://support.apple.com/en-us/119829,"Search for Spotlight, Siri, Safari; Apple says its data may also train models unless Applebot-Extended is disallowed"
+PerplexityBot,Perplexity,search,yes,https://docs.perplexity.ai/guides/bots,"Search indexing; ""not used to crawl content for AI foundation models"""
+Perplexity-User,Perplexity,user,yes,https://docs.perplexity.ai/guides/bots,"User-initiated; Perplexity says it ""generally ignores robots.txt rules"""
+CCBot,Common Crawl,training,yes,https://commoncrawl.org/ccbot,Nonprofit open crawl; Common Crawl's page doesn't state the use. Training label rests on secondary evidence (e.g. Baack FAccT 2024) - cite that
+Bytespider,ByteDance,training,yes,,UNVERIFIED: no official ByteDance documentation found; label is from secondary sources only
+meta-externalagent,Meta,training,yes,https://developers.facebook.com/docs/sharing/webmasters/web-crawlers,"Crawls ""for use cases such as training foundation AI models or improving products by indexing content"""
+meta-webindexer,Meta,search,yes,https://developers.facebook.com/docs/sharing/webmasters/web-crawlers,Improves Meta AI search results and citations
+meta-externalfetcher,Meta,user,yes,https://developers.facebook.com/docs/sharing/webmasters/web-crawlers,User-requested fetches; Meta says it may bypass robots.txt
+cohere-ai,Cohere,unverified,yes,,UNVERIFIED: no official Cohere documentation found; secondary sources disagree on its purpose
+Amazonbot,Amazon,training,yes,https://developer.amazon.com/amazonbot,"Improves Amazon products and ""may be used to train Amazon AI models"""
+Amzn-SearchBot,Amazon,search,yes,https://developer.amazon.com/amazonbot,"Search experiences such as Alexa; ""does not crawl content for generative AI model training"""
+Amzn-User,Amazon,user,yes,https://developer.amazon.com/amazonbot,User-initiated; Amazon says it may not follow all robots.txt directives
+Bingbot,Microsoft,search,no,,Bing search crawler

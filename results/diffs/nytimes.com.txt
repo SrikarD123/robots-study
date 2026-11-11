@@ -1,0 +1,1120 @@
+robots.txt history for nytimes.com (news)
+158 versions, 2015-12-31 to 2026-10-16
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-12-31  →  2016-12-31   (+2 / -7 lines)
+  before: https://web.archive.org/web/20151231201133/http://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20161231224013/http://www.nytimes.com/robots.txt
+@@ -18,5 +18,4 @@
+ Disallow: /paidcontent/
+ Disallow: /partners/
+-Disallow: /restaurants/search*
+ Disallow: /reuters/
+ Disallow: /register
+@@ -26,11 +25,7 @@
+ Disallow: /web-services/
+ Disallow: /gst/travel/travsearch*
+-User-agent: Mediapartners-Google
+-Disallow: /restaurants/search*
+-User-agent: AdsBot-Google
+-Disallow: /restaurants/search*
+-User-agent: adidxbot
+-Disallow: /restaurants/search*
+ Sitemap: http://spiderbites.nytimes.com/sitemaps/www.nytimes.com/sitemap.xml.gz
+ Sitemap: http://www.nytimes.com/sitemaps/sitemap_news/sitemap.xml.gz
+ Sitemap: http://spiderbites.nytimes.com/sitemaps/sitemap_video/sitemap.xml.gz
++Sitemap: http://spiderbites.nytimes.com/sitemaps/www.nytimes.com_realestate/sitemap.xml.gz
++Sitemap: http://spiderbites.nytimes.com/sitemaps/www.nytimes.com/2016_election_sitemap.xml.gz
+
+==============================================================================
+2016-12-31  →  2017-12-31   (+1 / -1 lines)
+  before: https://web.archive.org/web/20161231224013/http://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20171231171643/http://www.nytimes.com/robots.txt
+@@ -18,5 +18,4 @@
+ Disallow: /paidcontent/
+ Disallow: /partners/
+-Disallow: /reuters/
+ Disallow: /register
+ Disallow: /thestreet/
+@@ -25,4 +24,5 @@
+ Disallow: /web-services/
+ Disallow: /gst/travel/travsearch*
++Disallow: /1996/06/17/nyregion/guest-at-diplomat-s-party-accused-of-rape.html
+ Sitemap: http://spiderbites.nytimes.com/sitemaps/www.nytimes.com/sitemap.xml.gz
+ Sitemap: http://www.nytimes.com/sitemaps/sitemap_news/sitemap.xml.gz
+
+==============================================================================
+2017-12-31  →  2018-12-31   (+15 / -5 lines)
+  before: https://web.archive.org/web/20171231171643/http://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20181231034923/https://www.nytimes.com/robots.txt
+@@ -25,7 +25,17 @@
+ Disallow: /gst/travel/travsearch*
+ Disallow: /1996/06/17/nyregion/guest-at-diplomat-s-party-accused-of-rape.html
+-Sitemap: http://spiderbites.nytimes.com/sitemaps/www.nytimes.com/sitemap.xml.gz
+-Sitemap: http://www.nytimes.com/sitemaps/sitemap_news/sitemap.xml.gz
+-Sitemap: http://spiderbites.nytimes.com/sitemaps/sitemap_video/sitemap.xml.gz
+-Sitemap: http://spiderbites.nytimes.com/sitemaps/www.nytimes.com_realestate/sitemap.xml.gz
+-Sitemap: http://spiderbites.nytimes.com/sitemaps/www.nytimes.com/2016_election_sitemap.xml.gz
++Disallow: /*.amp.html$
++User-agent: googlebot
++Allow: /*.amp.html$
++User-agent: bingbot
++Allow: /*.amp.html$
++User-Agent: omgilibot
++Disallow: /
++User-Agent: omgili
++Disallow: /
++Sitemap: https://www.nytimes.com/sitemaps/www.nytimes.com/sitemap.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/sitemap_news/sitemap.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/sitemap_video/sitemap.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/www.nytimes.com_realestate/sitemap.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/www.nytimes.com/2016_election_sitemap.xml.gz
++Sitemap: https://www.nytimes.com/elections/2018/sitemap
+
+==============================================================================
+2018-12-31  →  2019-12-31   (+20 / -25 lines)
+  before: https://web.archive.org/web/20181231034923/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20191231234712/https://www.nytimes.com/robots.txt
+@@ -4,37 +4,32 @@
+ Disallow: /ads/
+ Disallow: /adx/bin/
+-Disallow: /archives/
+-Disallow: /auth/
+-Disallow: /cnet/
+-Disallow: /college/
+-Disallow: /external/
+-Disallow: /financialtimes/
+-Disallow: /idg/
+-Disallow: /indexes/
+-Disallow: /library/
+-Disallow: /nytimes-partners/
+-Disallow: /packages/flash/multimedia/TEMPLATES/
+-Disallow: /pages/college/
+-Disallow: /paidcontent/
+-Disallow: /partners/
++Disallow: /puzzles/leaderboards/invite/*
+ Disallow: /register
+-Disallow: /thestreet/
+ Disallow: /svc
+ Disallow: /video/embedded/*
+-Disallow: /web-services/
+-Disallow: /gst/travel/travsearch*
+ Disallow: /1996/06/17/nyregion/guest-at-diplomat-s-party-accused-of-rape.html
+-Disallow: /*.amp.html$
+-User-agent: googlebot
+-Allow: /*.amp.html$
+-User-agent: bingbot
+-Allow: /*.amp.html$
++Disallow: /search/
++Disallow: /*?*query=
++Disallow: /*.pdf$
++Disallow: /*?*utm_source=
++Disallow: /*?*login=
++Disallow: /*?*searchResultPosition=
++Disallow: /*?*campaignId=
++Disallow: /*?*mcubz=
++Disallow: /*?*smprod=
++Disallow: /*?*ProfileID=
++Disallow: /*?*ListingID=
+ User-Agent: omgilibot
+ Disallow: /
+ User-Agent: omgili
+ Disallow: /
+-Sitemap: https://www.nytimes.com/sitemaps/www.nytimes.com/sitemap.xml.gz
+-Sitemap: https://www.nytimes.com/sitemaps/sitemap_news/sitemap.xml.gz
+-Sitemap: https://www.nytimes.com/sitemaps/sitemap_video/sitemap.xml.gz
++User-agent: Googlebot
++Disallow: /*?*smid=
++Disallow: /*?*partner=
++Sitemap: https://www.nytimes.com/sitemaps/new/news.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/new/sitemap.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/new/wire.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/new/collections.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/new/video.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/www.nytimes.com_realestate/sitemap.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/www.nytimes.com/2016_election_sitemap.xml.gz
+
+==============================================================================
+2019-12-31  →  2020-12-22   (+18 / -3 lines)
+  before: https://web.archive.org/web/20191231234712/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20201222185230/https://www.nytimes.com/robots.txt
+@@ -9,8 +9,7 @@
+ Disallow: /video/embedded/*
+ Disallow: /1996/06/17/nyregion/guest-at-diplomat-s-party-accused-of-rape.html
+-Disallow: /search/
++Disallow: /search
+ Disallow: /*?*query=
+ Disallow: /*.pdf$
+-Disallow: /*?*utm_source=
+ Disallow: /*?*login=
+ Disallow: /*?*searchResultPosition=
+@@ -20,4 +19,15 @@
+ Disallow: /*?*ProfileID=
+ Disallow: /*?*ListingID=
++Disallow: /wirecutter/wp-admin/
++Disallow: /wirecutter/*.zip$
++Disallow: /wirecutter/*.csv$
++Disallow: /wirecutter/deals/beta
++Disallow: /wirecutter/data-requests
++Disallow: /wirecutter/out/link/
++Disallow: /wirecutter/search
++Disallow: /wirecutter/*?s=
++Disallow: /wirecutter/*&xid=
++Disallow: /wirecutter/*?q=
++Disallow: /wirecutter/*?l=
+ User-Agent: omgilibot
+ Disallow: /
+@@ -27,4 +37,6 @@
+ Disallow: /*?*smid=
+ Disallow: /*?*partner=
++Disallow: /*?*utm_source=
++Allow: /wirecutter/*?*utm_source=
+ Sitemap: https://www.nytimes.com/sitemaps/new/news.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/sitemap.xml.gz
+@@ -32,5 +44,8 @@
+ Sitemap: https://www.nytimes.com/sitemaps/new/collections.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/video.xml.gz
+-Sitemap: https://www.nytimes.com/sitemaps/www.nytimes.com_realestate/sitemap.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/new/cooking.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/new/recipe-collects.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/new/regions.xml
+ Sitemap: https://www.nytimes.com/sitemaps/www.nytimes.com/2016_election_sitemap.xml.gz
+ Sitemap: https://www.nytimes.com/elections/2018/sitemap
++Sitemap: https://www.nytimes.com/wirecutter/sitemapindex.xml
+
+==============================================================================
+2020-12-22  →  2021-12-31   (+15 / -10 lines)
+  before: https://web.archive.org/web/20201222185230/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20211231003259/https://www.nytimes.com/robots.txt
+@@ -1,13 +1,12 @@
+ User-agent: *
+-Allow: /ads/public/
+-Allow: /svc/news/v3/all/pshb.rss
+ Disallow: /ads/
+ Disallow: /adx/bin/
+ Disallow: /puzzles/leaderboards/invite/*
+-Disallow: /register
+ Disallow: /svc
+ Disallow: /video/embedded/*
+-Disallow: /1996/06/17/nyregion/guest-at-diplomat-s-party-accused-of-rape.html
+ Disallow: /search
++Disallow: /multiproduct/
++Disallow: /hd/
++Disallow: /inyt/
+ Disallow: /*?*query=
+ Disallow: /*.pdf$
+@@ -24,5 +23,4 @@
+ Disallow: /wirecutter/deals/beta
+ Disallow: /wirecutter/data-requests
+-Disallow: /wirecutter/out/link/
+ Disallow: /wirecutter/search
+ Disallow: /wirecutter/*?s=
+@@ -30,13 +28,19 @@
+ Disallow: /wirecutter/*?q=
+ Disallow: /wirecutter/*?l=
++Disallow: /search
++Disallow: /*?*smid=
++Disallow: /*?*partner=
++Disallow: /*?*utm_source=
++Allow: /wirecutter/*?*utm_source=
++Allow: /ads/public/
++Allow: /svc/news/v3/all/pshb.rss
++User-agent: Twitterbot
++Allow: /*?*smid=
+ User-Agent: omgilibot
+ Disallow: /
+ User-Agent: omgili
+ Disallow: /
+-User-agent: Googlebot
+-Disallow: /*?*smid=
+-Disallow: /*?*partner=
+-Disallow: /*?*utm_source=
+-Allow: /wirecutter/*?*utm_source=
++User-agent: ia_archiver
++Disallow: /
+ Sitemap: https://www.nytimes.com/sitemaps/new/news.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/sitemap.xml.gz
+@@ -47,4 +51,5 @@
+ Sitemap: https://www.nytimes.com/sitemaps/new/recipe-collects.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/regions.xml
++Sitemap: https://www.nytimes.com/sitemaps/new/best-sellers.xml
+ Sitemap: https://www.nytimes.com/sitemaps/www.nytimes.com/2016_election_sitemap.xml.gz
+ Sitemap: https://www.nytimes.com/elections/2018/sitemap
+
+==============================================================================
+2022-07-18  →  2022-07-25   (+0 / -1 lines)
+  before: https://web.archive.org/web/20220718221143/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20220725042236/https://www.nytimes.com/robots.txt
+@@ -45,5 +45,4 @@
+ Sitemap: https://www.nytimes.com/sitemaps/new/news.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/sitemap.xml.gz
+-Sitemap: https://www.nytimes.com/sitemaps/new/wire.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/collections.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/video.xml.gz
+
+==============================================================================
+2022-10-23  →  2022-10-27   (+6 / -0 lines)
+  before: https://web.archive.org/web/20221023230519/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20221027123355/https://www.nytimes.com/robots.txt
+@@ -4,4 +4,10 @@
+ Disallow: /puzzles/leaderboards/invite/*
+ Disallow: /svc
++Allow: /svc/crosswords
++Allow: /svc/games
++Allow: /svc/letter-boxed
++Allow: /svc/spelling-bee
++Allow: /svc/vertex
++Allow: /svc/wordle
+ Disallow: /video/embedded/*
+ Disallow: /search
+
+==============================================================================
+[AI] 2023-04-01  →  2023-04-04   (+2 / -0 lines)
+  before: https://web.archive.org/web/20230401040228/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20230404215123/https://www.nytimes.com/robots.txt
+  AI changes: CCBot: allowed→blocked
+@@ -49,4 +49,6 @@
+ User-agent: ia_archiver
+ Disallow: /
++User-agent: CCBot
++Disallow: /
+ Sitemap: https://www.nytimes.com/sitemaps/new/news.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/sitemap.xml.gz
+
+==============================================================================
+[AI] 2023-08-14  →  2023-08-19   (+8 / -6 lines)
+  before: https://web.archive.org/web/20230814183204/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20230819124251/https://www.nytimes.com/robots.txt
+  AI changes: GPTBot: allowed→blocked
+@@ -41,14 +41,16 @@
+ Allow: /ads/public/
+ Allow: /svc/news/v3/all/pshb.rss
+-User-agent: Twitterbot
+-Allow: /*?*smid=
+-User-Agent: omgilibot
++User-agent: CCBot
++Disallow: /
++User-agent: GPTBot
++Disallow: /
++User-agent: ia_archiver
+ Disallow: /
+ User-Agent: omgili
+ Disallow: /
+-User-agent: ia_archiver
++User-Agent: omgilibot
+ Disallow: /
+-User-agent: CCBot
+-Disallow: /
++User-agent: Twitterbot
++Allow: /*?*smid=
+ Sitemap: https://www.nytimes.com/sitemaps/new/news.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/sitemap.xml.gz
+
+==============================================================================
+[AI] 2023-10-10  →  2023-10-13   (+2 / -0 lines)
+  before: https://web.archive.org/web/20231010014345/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20231013084337/https://www.nytimes.com/robots.txt
+  AI changes: Google-Extended: allowed→blocked
+@@ -43,4 +43,6 @@
+ User-agent: CCBot
+ Disallow: /
++User-agent: Google-Extended
++Disallow: /
+ User-agent: GPTBot
+ Disallow: /
+
+==============================================================================
+[AI] 2023-12-17  →  2023-12-22   (+2 / -0 lines)
+  before: https://web.archive.org/web/20231217210718/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20231222221220/https://www.nytimes.com/robots.txt
+  AI changes: Bytespider: allowed→blocked
+@@ -41,4 +41,6 @@
+ Allow: /ads/public/
+ Allow: /svc/news/v3/all/pshb.rss
++User-agent: Bytespider
++Disallow: /
+ User-agent: CCBot
+ Disallow: /
+
+==============================================================================
+2024-01-25  →  2024-02-01   (+0 / -2 lines)
+  before: https://web.archive.org/web/20240125131724/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240201010122/https://www.nytimes.com/robots.txt
+@@ -49,6 +49,4 @@
+ User-agent: GPTBot
+ Disallow: /
+-User-agent: ia_archiver
+-Disallow: /
+ User-Agent: omgili
+ Disallow: /
+
+==============================================================================
+[AI] 2024-02-13  →  2024-02-19   (+17 / -2 lines)
+  before: https://web.archive.org/web/20240213191201/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240219114958/https://www.nytimes.com/robots.txt
+  AI changes: ClaudeBot: allowed→blocked; Amazonbot: allowed→blocked
+@@ -41,7 +41,18 @@
+ Allow: /ads/public/
+ Allow: /svc/news/v3/all/pshb.rss
++User-agent: Amazonbot
++Disallow: /
++User-agent: AwarioRssBot
++User-agent: AwarioSmartBot
++Disallow: /
+ User-agent: Bytespider
+ Disallow: /
+ User-agent: CCBot
++Disallow: /
++User-agent: ClaudeBot
++Disallow: /
++User-agent: DataForSeoBot
++Disallow: /
++User-agent: FacebookBot
+ Disallow: /
+ User-agent: Google-Extended
+@@ -49,7 +60,11 @@
+ User-agent: GPTBot
+ Disallow: /
+-User-Agent: omgili
++User-agent: magpie-crawler
+ Disallow: /
+-User-Agent: omgilibot
++User-agent: omgili
++Disallow: /
++User-agent: omgilibot
++Disallow: /
++User-agent: peer39_crawler
+ Disallow: /
+ User-agent: Twitterbot
+
+==============================================================================
+2024-02-19  →  2024-02-26   (+14 / -0 lines)
+  before: https://web.archive.org/web/20240219114958/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240226032333/https://www.nytimes.com/robots.txt
+@@ -1,2 +1,15 @@
++# New York Times content is made available for your personal, non-commercial
++# use subject to our Terms of Service here:
++# https://help.nytimes.com/hc/en-us/articles/115014893428-Terms-of-Service.
++# Use of any device, tool, or process designed to data mine or scrape the content
++# using automated means is prohibited without prior written permission from
++# The New York Times Company.  Prohibited uses include but are not limited to:
++# (1) text and data mining activities under Art. 4 of the EU Directive on Copyright in
++# the Digital Single Market;
++# (2) the development of any software, machine learning, artificial intelligence (AI),
++# and/or large language models (LLMs);
++# (3) creating or providing archived or cached data sets containing our content to others; and/or
++# (4) any commercial purposes.
++# Contact https://nytlicensing.com/contact/ for assistance.
+ User-agent: *
+ Disallow: /ads/
+@@ -67,4 +80,5 @@
+ Disallow: /
+ User-agent: peer39_crawler
++User-agent: peer39_crawler/1.0
+ Disallow: /
+ User-agent: Twitterbot
+
+==============================================================================
+[AI] 2024-02-26  →  2024-03-06   (+10 / -0 lines)
+  before: https://web.archive.org/web/20240226032333/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240306003930/https://www.nytimes.com/robots.txt
+  AI changes: ChatGPT-User: allowed→blocked; anthropic-ai: allowed→blocked; PerplexityBot: allowed→blocked
+@@ -56,4 +56,6 @@
+ User-agent: Amazonbot
+ Disallow: /
++User-agent: anthropic-ai
++Disallow: /
+ User-agent: AwarioRssBot
+ User-agent: AwarioSmartBot
+@@ -63,5 +65,9 @@
+ User-agent: CCBot
+ Disallow: /
++User-agent: ChatGPT-User
++Disallow: /
+ User-agent: ClaudeBot
++Disallow: /
++User-agent: Claude-Web
+ Disallow: /
+ User-agent: DataForSeoBot
+@@ -69,4 +75,6 @@
+ User-agent: FacebookBot
+ Disallow: /
++User-agent: facebookexternalhit
++Allow: /*?*smid=
+ User-agent: Google-Extended
+ Disallow: /
+@@ -81,4 +89,6 @@
+ User-agent: peer39_crawler
+ User-agent: peer39_crawler/1.0
++Disallow: /
++User-agent: PerplexityBot
+ Disallow: /
+ User-agent: Twitterbot
+
+==============================================================================
+[AI] 2024-03-06  →  2024-03-14   (+6 / -2 lines)
+  before: https://web.archive.org/web/20240306003930/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240314051052/https://www.nytimes.com/robots.txt
+  AI changes: cohere-ai: allowed→blocked
+@@ -54,4 +54,5 @@
+ Allow: /ads/public/
+ Allow: /svc/news/v3/all/pshb.rss
++# Disallow Rules
+ User-agent: Amazonbot
+ Disallow: /
+@@ -71,10 +72,10 @@
+ User-agent: Claude-Web
+ Disallow: /
++User-agent: cohere-ai
++Disallow: /
+ User-agent: DataForSeoBot
+ Disallow: /
+ User-agent: FacebookBot
+ Disallow: /
+-User-agent: facebookexternalhit
+-Allow: /*?*smid=
+ User-agent: Google-Extended
+ Disallow: /
+@@ -92,4 +93,7 @@
+ User-agent: PerplexityBot
+ Disallow: /
++# Other Bot Rules
++User-agent: facebookexternalhit
++Allow: /*?*smid=
+ User-agent: Twitterbot
+ Allow: /*?*smid=
+
+==============================================================================
+2024-04-08  →  2024-04-18   (+10 / -0 lines)
+  before: https://web.archive.org/web/20240408213556/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240418155353/https://www.nytimes.com/robots.txt
+@@ -76,4 +76,6 @@
+ User-agent: DataForSeoBot
+ Disallow: /
++User-agent: Diffbot
++Disallow: /
+ User-agent: FacebookBot
+ Disallow: /
+@@ -83,4 +85,8 @@
+ Disallow: /
+ User-agent: magpie-crawler
++Disallow: /
++User-agent: NewsNow
++Disallow: /
++User-agent: news-please
+ Disallow: /
+ User-agent: omgili
+@@ -92,4 +98,8 @@
+ Disallow: /
+ User-agent: PerplexityBot
++Disallow: /
++User-agent: Scrapy
++Disallow: /
++User-agent: TurnitinBot
+ Disallow: /
+ # Other Bot Rules
+
+==============================================================================
+2024-04-25  →  2024-05-01   (+1 / -0 lines)
+  before: https://web.archive.org/web/20240425174606/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240501050116/https://www.nytimes.com/robots.txt
+@@ -23,4 +23,5 @@
+ Allow: /svc/vertex
+ Allow: /svc/wordle
++Disallow: /athletic/
+ Disallow: /video/embedded/*
+ Disallow: /search
+
+==============================================================================
+2024-05-08  →  2024-05-14   (+62 / -1 lines)
+  before: https://web.archive.org/web/20240508041104/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240514180354/https://www.nytimes.com/robots.txt
+@@ -13,6 +13,52 @@
+ # Contact https://nytlicensing.com/contact/ for assistance.
+ User-agent: *
++User-agent: Googlebot
+ Disallow: /ads/
+ Disallow: /adx/bin/
++Disallow: /athletic/wp/wp-admin/
++Allow: /athletic/wp/wp-admin/admin-ajax.php
++Disallow: /athletic/athletic/async-*
++Disallow: /athletic/search/*
++Allow: /athletic/search/$
++Disallow: /athletic/checkout/
++Disallow: /athletic/checkout?plan_id*
++Allow: /athletic/checkout/$
++Disallow: /athletic/checkout2*
++Disallow: /athletic/login/
++Disallow: /athletic/login?login_source*
++Disallow: /athletic/login?ref_page*
++Allow: /athletic/login/$
++Disallow: /athletic/login2/
++Disallow: /athletic/login2?login_source*
++Disallow: /athletic/login2?ref_page*
++Allow: /athletic/login2/$
++Disallow: /athletic/report/
++Disallow: /athletic/*/discuss/*
++Disallow: /athletic/register/
++Disallow: /athletic/register?welcome_redirect*
++Disallow: /athletic/register2/
++Disallow: /athletic/register2?welcome_redirect*
++Disallow: /athletic/betmgm-redirect*
++Disallow: /athletic/cdn-cgi/
++Disallow: /athletic/verizon/*
++Disallow: /athletic/forgot-password/*
++Allow: /athletic/forgot-password/$
++Disallow: /athletic/forgot-password2/*
++Allow: /athletic/forgot-password2/$
++Disallow: /athletic/amp-social-login*
++Disallow: /athletic/track-analytics/
++Disallow: /athletic/amp-auth/
++Disallow: /athletic/rss-feed/
++Disallow: /athletic/global-color-test.php
++Disallow: /athletic/global-font-test.php
++Disallow: /athletic/graphql*
++Disallow: /athletic/api*
++Disallow: /athletic/ip*
++Disallow: /athletic/call-set-cookie-with-context/*
++Disallow: /athletic/get-current-user/
++Disallow: /athletic/pv.json
++Disallow: /athletic/following-feed-test/*
++Disallow: /athletic*/boxscore/*
++Disallow: /athletic/feed-test/
+ Disallow: /puzzles/leaderboards/invite/*
+ Disallow: /svc
+@@ -23,5 +69,4 @@
+ Allow: /svc/vertex
+ Allow: /svc/wordle
+-Disallow: /athletic/
+ Disallow: /video/embedded/*
+ Disallow: /search
+@@ -55,4 +100,13 @@
+ Allow: /ads/public/
+ Allow: /svc/news/v3/all/pshb.rss
++# Googlebot Specific Rules
++User-agent: Googlebot
++Disallow: /athletic*adgroupid*
++Disallow: /athletic*campaignid*
++Disallow: /athletic*ad_id*
++Disallow: /athletic*access_token*
++Disallow: /athletic*amp_reader_id*
++Disallow: /athletic*/?source=*
++Disallow: /athletic/live-blogs/*embed=1*
+ # Disallow Rules
+ User-agent: Amazonbot
+@@ -109,4 +163,5 @@
+ User-agent: Twitterbot
+ Allow: /*?*smid=
++# Sitemaps
+ Sitemap: https://www.nytimes.com/sitemaps/new/news.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/sitemap.xml.gz
+@@ -120,2 +175,8 @@
+ Sitemap: https://www.nytimes.com/elections/2018/sitemap
+ Sitemap: https://www.nytimes.com/wirecutter/sitemapindex.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap-live-blogs.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap-authors.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap-verticals.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap-teams.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap-cities.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap.xml
+
+==============================================================================
+2024-05-20  →  2024-05-25   (+1 / -1 lines)
+  before: https://web.archive.org/web/20240520111246/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240525023205/https://www.nytimes.com/robots.txt
+@@ -18,5 +18,5 @@
+ Disallow: /athletic/wp/wp-admin/
+ Allow: /athletic/wp/wp-admin/admin-ajax.php
+-Disallow: /athletic/athletic/async-*
++Disallow: /athletic/async-*
+ Disallow: /athletic/search/*
+ Allow: /athletic/search/$
+
+==============================================================================
+2024-06-07  →  2024-06-12   (+1 / -0 lines)
+  before: https://web.archive.org/web/20240607010511/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240612085233/https://www.nytimes.com/robots.txt
+@@ -61,4 +61,5 @@
+ Disallow: /athletic*/boxscore/*
+ Disallow: /athletic/feed-test/
++Disallow: /card/panel/
+ Disallow: /puzzles/leaderboards/invite/*
+ Disallow: /svc
+
+==============================================================================
+[AI] 2024-06-18  →  2024-06-23   (+2 / -0 lines)
+  before: https://web.archive.org/web/20240618022443/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240623060456/https://www.nytimes.com/robots.txt
+  AI changes: Applebot-Extended: allowed→blocked
+@@ -115,4 +115,6 @@
+ User-agent: anthropic-ai
+ Disallow: /
++User-agent: Applebot-Extended
++Disallow: /
+ User-agent: AwarioRssBot
+ User-agent: AwarioSmartBot
+
+==============================================================================
+2024-07-13  →  2024-07-18   (+6 / -0 lines)
+  before: https://web.archive.org/web/20240713142640/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240718150254/https://www.nytimes.com/robots.txt
+@@ -84,4 +84,10 @@
+ Disallow: /*?*ProfileID=
+ Disallow: /*?*ListingID=
++Disallow: /*?*campaign_id=
++Disallow: /*?*hybrid=
++Disallow: /*?*entry=
++Disallow: /*?*embed=
++Disallow: /*?ls=
++Disallow: /*?*&ls=
+ Disallow: /wirecutter/wp-admin/
+ Disallow: /wirecutter/*.zip$
+
+==============================================================================
+[AI] 2024-07-18  →  2024-07-26   (+2 / -0 lines)
+  before: https://web.archive.org/web/20240718150254/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240726105038/https://www.nytimes.com/robots.txt
+  AI changes: OAI-SearchBot: allowed→blocked
+@@ -154,4 +154,6 @@
+ User-agent: news-please
+ Disallow: /
++User-agent: OAI-SearchBot
++Disallow: /
+ User-agent: omgili
+ Disallow: /
+
+==============================================================================
+[AI] 2024-07-29  →  2024-08-03   (+3 / -0 lines)
+  before: https://web.archive.org/web/20240729132941/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240803024907/https://www.nytimes.com/robots.txt
+  AI changes: meta-externalagent: allowed→blocked
+@@ -150,4 +150,7 @@
+ User-agent: magpie-crawler
+ Disallow: /
++User-agent: Meta-ExternalAgent
++User-agent: meta-externalagent
++Disallow: /
+ User-agent: NewsNow
+ Disallow: /
+
+==============================================================================
+2024-08-03  →  2024-08-07   (+6 / -0 lines)
+  before: https://web.archive.org/web/20240803024907/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240807125633/https://www.nytimes.com/robots.txt
+@@ -144,7 +144,11 @@
+ User-agent: FacebookBot
+ Disallow: /
++User-agent: FriendlyCrawler
++Disallow: /
+ User-agent: Google-Extended
+ Disallow: /
+ User-agent: GPTBot
++Disallow: /
++User-agent: ImagesiftBot
+ Disallow: /
+ User-agent: magpie-crawler
+@@ -167,4 +171,6 @@
+ Disallow: /
+ User-agent: PerplexityBot
++Disallow: /
++User-agent: Quora-Bot
+ Disallow: /
+ User-agent: Scrapy
+
+==============================================================================
+2024-08-19  →  2024-08-25   (+1 / -0 lines)
+  before: https://web.archive.org/web/20240819111007/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240825020934/https://www.nytimes.com/robots.txt
+@@ -62,4 +62,5 @@
+ Disallow: /athletic/feed-test/
+ Disallow: /card/panel/
++Disallow: /panel/
+ Disallow: /puzzles/leaderboards/invite/*
+ Disallow: /svc
+
+==============================================================================
+2024-08-25  →  2024-08-29   (+3 / -0 lines)
+  before: https://web.archive.org/web/20240825020934/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240829103434/https://www.nytimes.com/robots.txt
+@@ -102,4 +102,6 @@
+ Disallow: /wirecutter/*?l=
+ Disallow: /search
++Disallow: /subscription/*?*source=
++Disallow: /subscription/*?*onboarded=
+ Disallow: /*?*smid=
+ Disallow: /*?*partner=
+@@ -202,2 +204,3 @@
+ Sitemap: https://www.nytimes.com/athletic/sitemap-cities.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap.xml
++Sitemap: https://www.nytimes.com/games-assets/v2/assets/sitemap/games.xml
+
+==============================================================================
+2024-09-04  →  2024-09-10   (+1 / -2 lines)
+  before: https://web.archive.org/web/20240904042110/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240910222420/https://www.nytimes.com/robots.txt
+@@ -195,6 +195,5 @@
+ Sitemap: https://www.nytimes.com/sitemaps/new/regions.xml
+ Sitemap: https://www.nytimes.com/sitemaps/new/best-sellers.xml
+-Sitemap: https://www.nytimes.com/sitemaps/www.nytimes.com/2016_election_sitemap.xml.gz
+-Sitemap: https://www.nytimes.com/elections/2018/sitemap
++Sitemap: https://www.nytimes.com/sitemaps/new/weather.xml.gz
+ Sitemap: https://www.nytimes.com/wirecutter/sitemapindex.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-live-blogs.xml
+
+==============================================================================
+2024-09-10  →  2024-09-15   (+2 / -0 lines)
+  before: https://web.archive.org/web/20240910222420/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20240915094901/https://www.nytimes.com/robots.txt
+@@ -149,4 +149,6 @@
+ User-agent: FriendlyCrawler
+ Disallow: /
++User-agent: Google-CloudVertexBot
++Disallow: /
+ User-agent: Google-Extended
+ Disallow: /
+
+==============================================================================
+2024-09-27  →  2024-10-08   (+1 / -0 lines)
+  before: https://web.archive.org/web/20240927094138/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20241008091135/https://www.nytimes.com/robots.txt
+@@ -198,4 +198,5 @@
+ Sitemap: https://www.nytimes.com/sitemaps/new/best-sellers.xml
+ Sitemap: https://www.nytimes.com/sitemaps/new/weather.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/new/espanol.xml.gz
+ Sitemap: https://www.nytimes.com/wirecutter/sitemapindex.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-live-blogs.xml
+
+==============================================================================
+2024-10-08  →  2024-11-10   (+1 / -0 lines)
+  before: https://web.archive.org/web/20241008091135/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20241110030947/https://www.nytimes.com/robots.txt
+@@ -151,4 +151,5 @@
+ User-agent: Google-CloudVertexBot
+ Disallow: /
++Allow: /wirecutter/
+ User-agent: Google-Extended
+ Disallow: /
+
+==============================================================================
+2024-11-10  →  2024-12-03   (+2 / -1 lines)
+  before: https://web.archive.org/web/20241110030947/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20241203020425/https://www.nytimes.com/robots.txt
+@@ -101,4 +101,5 @@
+ Disallow: /wirecutter/*?q=
+ Disallow: /wirecutter/*?l=
++Disallow: /wirecutter/*?merchant=
+ Disallow: /search
+ Disallow: /subscription/*?*source=
+@@ -118,5 +119,5 @@
+ Disallow: /athletic*amp_reader_id*
+ Disallow: /athletic*/?source=*
+-Disallow: /athletic/live-blogs/*embed=1*
++Disallow: /athletic/*?*embed=1
+ # Disallow Rules
+ User-agent: Amazonbot
+
+==============================================================================
+2024-12-08  →  2024-12-17   (+1 / -0 lines)
+  before: https://web.archive.org/web/20241208124455/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20241217031924/https://www.nytimes.com/robots.txt
+@@ -201,4 +201,5 @@
+ Sitemap: https://www.nytimes.com/sitemaps/new/weather.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/espanol.xml.gz
++Sitemap: https://www.nytimes.com/sitemaps/new/espanol-collects.xml.gz
+ Sitemap: https://www.nytimes.com/wirecutter/sitemapindex.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-live-blogs.xml
+
+==============================================================================
+2025-01-11  →  2025-01-31   (+1 / -0 lines)
+  before: https://web.archive.org/web/20250111142057/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20250131185809/https://www.nytimes.com/robots.txt
+@@ -50,4 +50,5 @@
+ Disallow: /athletic/amp-auth/
+ Disallow: /athletic/rss-feed/
++Disallow: /athletic/*?*rss=1
+ Disallow: /athletic/global-color-test.php
+ Disallow: /athletic/global-font-test.php
+
+==============================================================================
+2025-01-31  →  2025-03-03   (+1 / -0 lines)
+  before: https://web.archive.org/web/20250131185809/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20250303181753/https://www.nytimes.com/robots.txt
+@@ -62,4 +62,5 @@
+ Disallow: /athletic*/boxscore/*
+ Disallow: /athletic/feed-test/
++Disallow: /athletic*/signed-mp3-redirect-url/*
+ Disallow: /card/panel/
+ Disallow: /panel/
+
+==============================================================================
+[AI] 2025-03-03  →  2025-07-11   (+36 / -1 lines)
+  before: https://web.archive.org/web/20250303181753/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20250711111650/https://www.nytimes.com/robots.txt
+  AI changes: meta-externalfetcher: allowed→blocked
+@@ -63,4 +63,6 @@
+ Disallow: /athletic/feed-test/
+ Disallow: /athletic*/signed-mp3-redirect-url/*
++Disallow: /athletic/embedded-interactive/*
++Disallow: /athletic/interactive/*
+ Disallow: /card/panel/
+ Disallow: /panel/
+@@ -123,4 +125,6 @@
+ Disallow: /athletic/*?*embed=1
+ # Disallow Rules
++User-agent: AliyunSecBot
++Disallow: /
+ User-agent: Amazonbot
+ Disallow: /
+@@ -128,8 +132,12 @@
+ Disallow: /
+ User-agent: Applebot-Extended
++Disallow: /
++User-agent: AudigentAdBot
+ Disallow: /
+ User-agent: AwarioRssBot
+ User-agent: AwarioSmartBot
+ Disallow: /
++User-agent: BLEXBot
++Disallow: /
+ User-agent: Bytespider
+ Disallow: /
+@@ -147,4 +155,8 @@
+ Disallow: /
+ User-agent: Diffbot
++Disallow: /
++User-agent: DuckAssistBot
++Disallow: /
++User-agent: EchoboxBot
+ Disallow: /
+ User-agent: FacebookBot
+@@ -161,4 +173,6 @@
+ User-agent: ImagesiftBot
+ Disallow: /
++User-agent: Jetslide
++Disallow: /
+ User-agent: magpie-crawler
+ Disallow: /
+@@ -166,4 +180,9 @@
+ User-agent: meta-externalagent
+ Disallow: /
++User-agent: Meta-ExternalFetcher
++User-agent: meta-externalfetcher
++Disallow: /
++User-agent: MyCentralAIScraperBot
++Disallow: /
+ User-agent: NewsNow
+ Disallow: /
+@@ -181,9 +200,25 @@
+ User-agent: PerplexityBot
+ Disallow: /
++User-agent: Poseidon Research Crawler
++Disallow: /
++User-agent: quillbot.com
++Disallow: /
+ User-agent: Quora-Bot
+ Disallow: /
+ User-agent: Scrapy
+ Disallow: /
++User-agent: SeekrBot
++Disallow: /
++User-agent: SeznamHomepageCrawler
++Disallow: /
++User-agent: TaraGroup Intelligent Bot
++Disallow: /
++User-agent: Timpibot
++Disallow: /
+ User-agent: TurnitinBot
++Disallow: /
++User-agent: ViennaTinyBot
++Disallow: /
++User-agent: YouBot
+ Disallow: /
+ # Other Bot Rules
+@@ -205,9 +240,9 @@
+ Sitemap: https://www.nytimes.com/sitemaps/new/espanol-collects.xml.gz
+ Sitemap: https://www.nytimes.com/wirecutter/sitemapindex.xml
+-Sitemap: https://www.nytimes.com/athletic/sitemap-live-blogs.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-authors.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-verticals.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-teams.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-cities.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap-tags.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap.xml
+ Sitemap: https://www.nytimes.com/games-assets/v2/assets/sitemap/games.xml
+
+==============================================================================
+[AI] 2025-07-11  →  2026-10-16   (+50 / -7 lines)
+  before: https://web.archive.org/web/20250711111650/https://www.nytimes.com/robots.txt
+  after:  https://web.archive.org/web/20261016092516/https://www.nytimes.com/robots.txt
+  AI changes: Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Perplexity-User: allowed→blocked; meta-webindexer: allowed→blocked; Amazonbot: blocked→allowed
+@@ -35,4 +35,6 @@
+ Disallow: /athletic/report/
+ Disallow: /athletic/*/discuss/*
++Allow: /athletic/live-blogs/discuss/
++Allow: /athletic/nfl/game/discuss/
+ Disallow: /athletic/register/
+ Disallow: /athletic/register?welcome_redirect*
+@@ -43,7 +45,5 @@
+ Disallow: /athletic/verizon/*
+ Disallow: /athletic/forgot-password/*
+-Allow: /athletic/forgot-password/$
+ Disallow: /athletic/forgot-password2/*
+-Allow: /athletic/forgot-password2/$
+ Disallow: /athletic/amp-social-login*
+ Disallow: /athletic/track-analytics/
+@@ -64,5 +64,4 @@
+ Disallow: /athletic*/signed-mp3-redirect-url/*
+ Disallow: /athletic/embedded-interactive/*
+-Disallow: /athletic/interactive/*
+ Disallow: /card/panel/
+ Disallow: /panel/
+@@ -73,6 +72,9 @@
+ Allow: /svc/letter-boxed
+ Allow: /svc/spelling-bee
+-Allow: /svc/vertex
+ Allow: /svc/wordle
++Allow: /svc/connections
++Allow: /svc/sudoku
++Allow: /svc/strands
++Allow: /svc/pips
+ Disallow: /video/embedded/*
+ Disallow: /search
+@@ -83,5 +85,4 @@
+ Disallow: /*.pdf$
+ Disallow: /*?*login=
+-Disallow: /*?*searchResultPosition=
+ Disallow: /*?*campaignId=
+ Disallow: /*?*mcubz=
+@@ -95,4 +96,6 @@
+ Disallow: /*?ls=
+ Disallow: /*?*&ls=
++Disallow: /v1/initialize*
++Disallow: /v1/rgstr*
+ Disallow: /wirecutter/wp-admin/
+ Disallow: /wirecutter/*.zip$
+@@ -106,4 +109,5 @@
+ Disallow: /wirecutter/*?l=
+ Disallow: /wirecutter/*?merchant=
++Disallow: /wirecutter/out/
+ Disallow: /search
+ Disallow: /subscription/*?*source=
+@@ -115,4 +119,8 @@
+ Allow: /ads/public/
+ Allow: /svc/news/v3/all/pshb.rss
++Allow: /wirecutter/reviews/*?*utm_source=
++Allow: /wirecutter/blog/*?*utm_source=
++Allow: /wirecutter/lists/*?*utm_source=
++Allow: /wirecutter/gifts/*?*utm_source=
+ # Googlebot Specific Rules
+ User-agent: Googlebot
+@@ -128,8 +136,10 @@
+ Disallow: /
+ User-agent: Amazonbot
+-Disallow: /
++Disallow: /wirecutter/
+ User-agent: anthropic-ai
+ Disallow: /
+ User-agent: Applebot-Extended
++Disallow: /
++User-agent: archive.org_bot
+ Disallow: /
+ User-agent: AudigentAdBot
+@@ -140,4 +150,6 @@
+ User-agent: BLEXBot
+ Disallow: /
++User-agent: Brightbot
++Disallow: /
+ User-agent: Bytespider
+ Disallow: /
+@@ -148,4 +160,8 @@
+ User-agent: ClaudeBot
+ Disallow: /
++User-agent: Claude-SearchBot
++Disallow: /
++User-agent: Claude-User
++Disallow: /
+ User-agent: Claude-Web
+ Disallow: /
+@@ -156,10 +172,18 @@
+ User-agent: Diffbot
+ Disallow: /
++User-agent: Diffbot-User
++Disallow: /
+ User-agent: DuckAssistBot
+ Disallow: /
+ User-agent: EchoboxBot
+ Disallow: /
++User-agent: ExaBot
++Disallow: /
++User-agent: ExaSearchBot
++Disallow: /
+ User-agent: FacebookBot
+ Disallow: /
++User-agent: FirecrawlAgent
++Disallow: /
+ User-agent: FriendlyCrawler
+ Disallow: /
+@@ -167,4 +191,5 @@
+ Disallow: /
+ Allow: /wirecutter/
++Allow: /athletic/
+ User-agent: Google-Extended
+ Disallow: /
+@@ -183,4 +208,7 @@
+ User-agent: meta-externalfetcher
+ Disallow: /
++User-agent: Meta-WebIndexer
++User-agent: meta-webindexer/1.1
++Disallow: /
+ User-agent: MyCentralAIScraperBot
+ Disallow: /
+@@ -200,4 +228,6 @@
+ User-agent: PerplexityBot
+ Disallow: /
++User-agent: Perplexity-User
++Disallow: /
+ User-agent: Poseidon Research Crawler
+ Disallow: /
+@@ -212,4 +242,6 @@
+ User-agent: SeznamHomepageCrawler
+ Disallow: /
++User-agent: ShapBot
++Disallow: /
+ User-agent: TaraGroup Intelligent Bot
+ Disallow: /
+@@ -222,8 +254,13 @@
+ User-agent: YouBot
+ Disallow: /
+-# Other Bot Rules
++# Ad Bot Rules
++User-agent: AmazonAdBot
++Allow: /
++# Social Bot Rules
+ User-agent: facebookexternalhit
+ Allow: /*?*smid=
+ User-agent: Twitterbot
++Allow: /*?*smid=
++User-agent: RedditBot
+ Allow: /*?*smid=
+ # Sitemaps
+@@ -236,13 +273,19 @@
+ Sitemap: https://www.nytimes.com/sitemaps/new/regions.xml
+ Sitemap: https://www.nytimes.com/sitemaps/new/best-sellers.xml
++Sitemap: https://www.nytimes.com/sitemaps/new/subscription-landing-pages.xml
+ Sitemap: https://www.nytimes.com/sitemaps/new/weather.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/espanol.xml.gz
+ Sitemap: https://www.nytimes.com/sitemaps/new/espanol-collects.xml.gz
+ Sitemap: https://www.nytimes.com/wirecutter/sitemapindex.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap-videos-index.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-authors.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-verticals.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-teams.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-cities.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap-players.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap-tags.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap-stats.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap-schedule.xml
++Sitemap: https://www.nytimes.com/athletic/sitemap-roster.xml
+ Sitemap: https://www.nytimes.com/athletic/sitemap.xml
+ Sitemap: https://www.nytimes.com/games-assets/v2/assets/sitemap/games.xml

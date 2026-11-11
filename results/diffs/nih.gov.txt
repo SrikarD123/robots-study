@@ -1,0 +1,203 @@
+robots.txt history for nih.gov (government)
+156 versions, 2015-12-24 to 2025-07-31
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-12-24  →  2016-10-31   (+33 / -0 lines)
+  before: https://web.archive.org/web/20151224042036/http://www.nih.gov/robots.txt
+  after:  https://web.archive.org/web/20161031024110/https://www.nih.gov/robots.txt
+@@ -15,4 +15,37 @@
+ User-agent: *
+ Crawl-delay: 10
++# CSS, JS, Images
++Allow: /misc/*.css$
++Allow: /misc/*.css?
++Allow: /misc/*.js$
++Allow: /misc/*.js?
++Allow: /misc/*.gif
++Allow: /misc/*.jpg
++Allow: /misc/*.jpeg
++Allow: /misc/*.png
++Allow: /modules/*.css$
++Allow: /modules/*.css?
++Allow: /modules/*.js$
++Allow: /modules/*.js?
++Allow: /modules/*.gif
++Allow: /modules/*.jpg
++Allow: /modules/*.jpeg
++Allow: /modules/*.png
++Allow: /profiles/*.css$
++Allow: /profiles/*.css?
++Allow: /profiles/*.js$
++Allow: /profiles/*.js?
++Allow: /profiles/*.gif
++Allow: /profiles/*.jpg
++Allow: /profiles/*.jpeg
++Allow: /profiles/*.png
++Allow: /themes/*.css$
++Allow: /themes/*.css?
++Allow: /themes/*.js$
++Allow: /themes/*.js?
++Allow: /themes/*.gif
++Allow: /themes/*.jpg
++Allow: /themes/*.jpeg
++Allow: /themes/*.png
+ # Directories
+ Disallow: /includes/
+
+==============================================================================
+2016-10-31  →  2017-09-06   (+1 / -0 lines)
+  before: https://web.archive.org/web/20161031024110/https://www.nih.gov/robots.txt
+  after:  https://web.archive.org/web/20170906224830/https://www.nih.gov/robots.txt
+@@ -88,2 +88,3 @@
+ Disallow: /?q=user/login/
+ Disallow: /?q=user/logout/
++Sitemap: http://newsinhealth.nih.gov/sitemap.xml
+
+==============================================================================
+2017-09-06  →  2018-04-06   (+3 / -2 lines)
+  before: https://web.archive.org/web/20170906224830/https://www.nih.gov/robots.txt
+  after:  https://web.archive.org/web/20180406183236/https://www.nih.gov/robots.txt
+@@ -14,5 +14,5 @@
+ # http://www.robotstxt.org/robotstxt.html
+ User-agent: *
+-Crawl-delay: 10
++Crawl-delay: 2
+ # CSS, JS, Images
+ Allow: /misc/*.css$
+@@ -88,3 +88,4 @@
+ Disallow: /?q=user/login/
+ Disallow: /?q=user/logout/
+-Sitemap: http://newsinhealth.nih.gov/sitemap.xml
++Sitemap: https://www.nih.gov/sitemap.xml
++Sitemap: https://newsinhealth.nih.gov/sitemap.xml
+
+==============================================================================
+2018-04-06  →  2019-05-29   (+1 / -0 lines)
+  before: https://web.archive.org/web/20180406183236/https://www.nih.gov/robots.txt
+  after:  https://web.archive.org/web/20190529230943/https://www.nih.gov/robots.txt
+@@ -90,2 +90,3 @@
+ Sitemap: https://www.nih.gov/sitemap.xml
+ Sitemap: https://newsinhealth.nih.gov/sitemap.xml
++Sitemap: https://nihrecord.nih.gov/sitemap.xml
+
+==============================================================================
+2025-04-05  →  2025-07-31   (+39 / -59 lines)
+  before: https://web.archive.org/web/20250405062816/https://www.nih.gov/robots.txt
+  after:  https://web.archive.org/web/20250731185010/https://www.nih.gov/robots.txt
+@@ -14,22 +14,14 @@
+ # http://www.robotstxt.org/robotstxt.html
+ User-agent: *
+-Crawl-delay: 2
+ # CSS, JS, Images
+-Allow: /misc/*.css$
+-Allow: /misc/*.css?
+-Allow: /misc/*.js$
+-Allow: /misc/*.js?
+-Allow: /misc/*.gif
+-Allow: /misc/*.jpg
+-Allow: /misc/*.jpeg
+-Allow: /misc/*.png
+-Allow: /modules/*.css$
+-Allow: /modules/*.css?
+-Allow: /modules/*.js$
+-Allow: /modules/*.js?
+-Allow: /modules/*.gif
+-Allow: /modules/*.jpg
+-Allow: /modules/*.jpeg
+-Allow: /modules/*.png
++Allow: /core/*.css$
++Allow: /core/*.css?
++Allow: /core/*.js$
++Allow: /core/*.js?
++Allow: /core/*.gif
++Allow: /core/*.jpg
++Allow: /core/*.jpeg
++Allow: /core/*.png
++Allow: /core/*.svg
+ Allow: /profiles/*.css$
+ Allow: /profiles/*.css?
+@@ -40,53 +32,41 @@
+ Allow: /profiles/*.jpeg
+ Allow: /profiles/*.png
+-Allow: /themes/*.css$
+-Allow: /themes/*.css?
+-Allow: /themes/*.js$
+-Allow: /themes/*.js?
+-Allow: /themes/*.gif
+-Allow: /themes/*.jpg
+-Allow: /themes/*.jpeg
+-Allow: /themes/*.png
++Allow: /profiles/*.svg
+ # Directories
+-Disallow: /includes/
+-Disallow: /misc/
+-Disallow: /modules/
++Disallow: /core/
+ Disallow: /profiles/
+-Disallow: /scripts/
+-Disallow: /themes/
+ # Files
+-Disallow: /CHANGELOG.txt
+-Disallow: /cron.php
+-Disallow: /INSTALL.mysql.txt
+-Disallow: /INSTALL.pgsql.txt
+-Disallow: /INSTALL.sqlite.txt
+-Disallow: /install.php
+-Disallow: /INSTALL.txt
+-Disallow: /LICENSE.txt
+-Disallow: /MAINTAINERS.txt
+-Disallow: /update.php
+-Disallow: /UPGRADE.txt
+-Disallow: /xmlrpc.php
++Disallow: /README.md
++Disallow: /composer/Metapackage/README.txt
++Disallow: /composer/Plugin/ProjectMessage/README.md
++Disallow: /composer/Plugin/Scaffold/README.md
++Disallow: /composer/Plugin/VendorHardening/README.txt
++Disallow: /composer/Template/README.txt
++Disallow: /modules/README.txt
++Disallow: /sites/README.txt
++Disallow: /themes/README.txt
++Disallow: /web.config
+ # Paths (clean URLs)
+ Disallow: /admin/
+ Disallow: /comment/reply/
+-Disallow: /filter/tips/
++Disallow: /filter/tips
+ Disallow: /node/add/
+ Disallow: /search/
+-Disallow: /user/register/
+-Disallow: /user/password/
+-Disallow: /user/login/
+-Disallow: /user/logout/
++Disallow: /user/register
++Disallow: /user/password
++Disallow: /user/login
++Disallow: /user/logout
++Disallow: /media/oembed
++Disallow: /*/media/oembed
+ # Paths (no clean URLs)
+-Disallow: /?q=admin/
+-Disallow: /?q=comment/reply/
+-Disallow: /?q=filter/tips/
+-Disallow: /?q=node/add/
+-Disallow: /?q=search/
+-Disallow: /?q=user/password/
+-Disallow: /?q=user/register/
+-Disallow: /?q=user/login/
+-Disallow: /?q=user/logout/
+-Sitemap: https://www.nih.gov/sitemap.xml
+-Sitemap: https://newsinhealth.nih.gov/sitemap.xml
+-Sitemap: https://nihrecord.nih.gov/sitemap.xml
++Disallow: /index.php/admin/
++Disallow: /index.php/comment/reply/
++Disallow: /index.php/filter/tips
++Disallow: /index.php/node/add/
++Disallow: /index.php/search/
++Disallow: /index.php/user/password
++Disallow: /index.php/user/register
++Disallow: /index.php/user/login
++Disallow: /index.php/user/logout
++Disallow: /index.php/media/oembed
++Disallow: /index.php/*/media/oembed

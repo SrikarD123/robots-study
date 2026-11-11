@@ -1,0 +1,338 @@
+robots.txt history for nature.com (academic)
+158 versions, 2015-09-15 to 2026-09-24
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-09-15  →  2016-12-28   (+1 / -0 lines)
+  before: https://web.archive.org/web/20150915133218/http://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20161228231105/http://www.nature.com/robots.txt
+@@ -1,4 +1,5 @@
+ User-agent: *
+ Sitemap: http://www.nature.com/maestro_sitemaps/sitemap.xml
++Sitemap: http://www.nature.com/subjects/sitemap.xml
+ Disallow: /laban/
+ Disallow: /laban
+
+==============================================================================
+2016-12-28  →  2017-11-27   (+3 / -4 lines)
+  before: https://web.archive.org/web/20161228231105/http://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20171127122320/http://www.nature.com/robots.txt
+@@ -1,7 +1,5 @@
+ User-agent: *
+-Sitemap: http://www.nature.com/maestro_sitemaps/sitemap.xml
+-Sitemap: http://www.nature.com/subjects/sitemap.xml
+-Disallow: /laban/
+-Disallow: /laban
++Sitemap: https://www.nature.com/sitemap.xml
++Sitemap: https://www.nature.com/subjects/sitemap.xml
+ Disallow: /*.pdf$
+ Disallow: /*.PDF$
+@@ -10,2 +8,3 @@
+ Disallow: /*/*/*/*/otmi/
+ Disallow: /*/*/*/*/fp/
++Disallow: /protocolexchange/labgroups/
+
+==============================================================================
+2017-11-27  →  2018-12-23   (+2 / -0 lines)
+  before: https://web.archive.org/web/20171127122320/http://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20181223175833/https://www.nature.com/robots.txt
+@@ -2,4 +2,5 @@
+ Sitemap: https://www.nature.com/sitemap.xml
+ Sitemap: https://www.nature.com/subjects/sitemap.xml
++Sitemap: https://www.nature.com/naturecareers/sitemap.xml
+ Disallow: /*.pdf$
+ Disallow: /*.PDF$
+@@ -9,2 +10,3 @@
+ Disallow: /*/*/*/*/fp/
+ Disallow: /protocolexchange/labgroups/
++Disallow: /naturecareers/jobs/search
+
+==============================================================================
+2018-12-23  →  2019-12-31   (+1 / -0 lines)
+  before: https://web.archive.org/web/20181223175833/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20191231074412/https://www.nature.com/robots.txt
+@@ -11,2 +11,3 @@
+ Disallow: /protocolexchange/labgroups/
+ Disallow: /naturecareers/jobs/search
++Disallow: /*draft=journal*
+
+==============================================================================
+2019-12-31  →  2020-11-23   (+2 / -1 lines)
+  before: https://web.archive.org/web/20191231074412/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20201123182413/https://www.nature.com/robots.txt
+@@ -11,3 +11,4 @@
+ Disallow: /protocolexchange/labgroups/
+ Disallow: /naturecareers/jobs/search
+-Disallow: /*draft=journal*
++Disallow: /*draft=*
++Disallow: /*proof=true*
+
+==============================================================================
+2020-11-23  →  2021-12-29   (+2 / -0 lines)
+  before: https://web.archive.org/web/20201123182413/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20211229131036/https://www.nature.com/robots.txt
+@@ -3,4 +3,5 @@
+ Sitemap: https://www.nature.com/subjects/sitemap.xml
+ Sitemap: https://www.nature.com/naturecareers/sitemap.xml
++Disallow: /search
+ Disallow: /*.pdf$
+ Disallow: /*.PDF$
+@@ -12,3 +13,4 @@
+ Disallow: /naturecareers/jobs/search
+ Disallow: /*draft=*
++Disallow: /my-account
+ Disallow: /*proof=true*
+
+==============================================================================
+2021-12-29  →  2022-06-30   (+5 / -0 lines)
+  before: https://web.archive.org/web/20211229131036/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20220630200811/https://www.nature.com/robots.txt
+@@ -15,2 +15,7 @@
+ Disallow: /my-account
+ Disallow: /*proof=true*
++Disallow: /*/figures
++Disallow: /*/tables
++Disallow: /*/schemes
++Disallow: /*/structures
++Disallow: /*/metrics
+
+==============================================================================
+2022-08-16  →  2022-08-25   (+5 / -1 lines)
+  before: https://web.archive.org/web/20220816054727/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20220825195342/https://www.nature.com/robots.txt
+@@ -13,6 +13,9 @@
+ Disallow: /naturecareers/jobs/search
+ Disallow: /*draft=*
++Disallow: /*foxtrotcallback=*
++Disallow: /*utm_source=*
++Disallow: /*origin=*
+ Disallow: /my-account
+-Disallow: /*proof=true*
++Disallow: /*proof=*
+ Disallow: /*/figures
+ Disallow: /*/tables
+@@ -20,2 +23,3 @@
+ Disallow: /*/structures
+ Disallow: /*/metrics
++Disallow: /platform/contextual
+
+==============================================================================
+2022-08-25  →  2022-08-29   (+1 / -0 lines)
+  before: https://web.archive.org/web/20220825195342/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20220829055102/https://www.nature.com/robots.txt
+@@ -12,4 +12,5 @@
+ Disallow: /protocolexchange/labgroups/
+ Disallow: /naturecareers/jobs/search
++Disallow: /webcasts/*
+ Disallow: /*draft=*
+ Disallow: /*foxtrotcallback=*
+
+==============================================================================
+2022-08-29  →  2022-09-01   (+0 / -1 lines)
+  before: https://web.archive.org/web/20220829055102/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20220901160158/https://www.nature.com/robots.txt
+@@ -15,5 +15,4 @@
+ Disallow: /*draft=*
+ Disallow: /*foxtrotcallback=*
+-Disallow: /*utm_source=*
+ Disallow: /*origin=*
+ Disallow: /my-account
+
+==============================================================================
+2022-09-09  →  2022-09-12   (+1 / -0 lines)
+  before: https://web.archive.org/web/20220909083913/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20220912060500/https://www.nature.com/robots.txt
+@@ -24,2 +24,3 @@
+ Disallow: /*/metrics
+ Disallow: /platform/contextual
++Disallow: /articles/*.ris
+
+==============================================================================
+2022-10-02  →  2022-10-06   (+1 / -0 lines)
+  before: https://web.archive.org/web/20221002080242/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20221006035902/https://www.nature.com/robots.txt
+@@ -17,4 +17,5 @@
+ Disallow: /*origin=*
+ Disallow: /my-account
++Disallow: /*proof=t%2Btarget%3D\*
+ Disallow: /*proof=*
+ Disallow: /*/figures
+
+==============================================================================
+2022-11-15  →  2022-11-20   (+0 / -2 lines)
+  before: https://web.archive.org/web/20221115092758/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20221120183740/https://www.nature.com/robots.txt
+@@ -4,6 +4,4 @@
+ Sitemap: https://www.nature.com/naturecareers/sitemap.xml
+ Disallow: /search
+-Disallow: /*.pdf$
+-Disallow: /*.PDF$
+ Disallow: /*/*/*/pf/
+ Disallow: /*.otmi$
+
+==============================================================================
+2022-11-20  →  2022-11-25   (+20 / -0 lines)
+  before: https://web.archive.org/web/20221120183740/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20221125184952/https://www.nature.com/robots.txt
+@@ -24,2 +24,22 @@
+ Disallow: /platform/contextual
+ Disallow: /articles/*.ris
++Disallow: /nature-index/
++Disallow: /nature-index/article-api/
++Disallow: /nature-index/articles/saudi-arabia
++Disallow: /nature-index/articles/saudi-arabia-altmetric
++Disallow: /nature-index/city-maps/
++Disallow: /nature-index/country-outputs-api/
++Disallow: /nature-index/country-suggestion
++Disallow: /nature-index/country-suggestion/news-archive
++Disallow: /nature-index/global-city-map/data
++Disallow: /nature-index/institution-outputs-api/
++Disallow: /nature-index/institution-suggestion
++Disallow: /nature-index/institution-suggestion/news-archive
++Disallow: /nature-index/annual-tables/export/
++Disallow: /nature-index/country-outputs/export/
++Disallow: /nature-index/country-territory-research-output/export
++Disallow: /nature-index/institution-outputs/export/
++Disallow: /nature-index/institution-research-output/export
++Disallow: /nature-index/news/archive/search/by-country
++Disallow: /nature-index/news/archive/search/by-institution
++Disallow: /nature-index/annual-tables/2021/academic-normalized
+
+==============================================================================
+2023-04-14  →  2023-04-20   (+0 / -1 lines)
+  before: https://web.archive.org/web/20230414032359/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20230420232952/https://www.nature.com/robots.txt
+@@ -24,5 +24,4 @@
+ Disallow: /platform/contextual
+ Disallow: /articles/*.ris
+-Disallow: /nature-index/
+ Disallow: /nature-index/article-api/
+ Disallow: /nature-index/articles/saudi-arabia
+
+==============================================================================
+2023-06-27  →  2023-07-15   (+2 / -0 lines)
+  before: https://web.archive.org/web/20230627000344/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20230715073459/https://www.nature.com/robots.txt
+@@ -35,4 +35,6 @@
+ Disallow: /nature-index/institution-suggestion
+ Disallow: /nature-index/institution-suggestion/news-archive
++Disallow: /naturecareers/session-img/
++Disallow: /naturecareers/jobsrss/
+ Disallow: /nature-index/annual-tables/export/
+ Disallow: /nature-index/country-outputs/export/
+
+==============================================================================
+2023-11-02  →  2023-11-06   (+2 / -0 lines)
+  before: https://web.archive.org/web/20231102225807/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20231106231453/https://www.nature.com/robots.txt
+@@ -45,2 +45,4 @@
+ Disallow: /nature-index/news/archive/search/by-institution
+ Disallow: /nature-index/annual-tables/2021/academic-normalized
++Disallow: */platform/disqus*
++Disallow: */cas-redirect/*
+
+==============================================================================
+2023-11-30  →  2023-12-07   (+1 / -1 lines)
+  before: https://web.archive.org/web/20231130103805/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20231207201751/https://www.nature.com/robots.txt
+@@ -2,5 +2,5 @@
+ Sitemap: https://www.nature.com/sitemap.xml
+ Sitemap: https://www.nature.com/subjects/sitemap.xml
+-Sitemap: https://www.nature.com/naturecareers/sitemap.xml
++Sitemap: https://www.nature.com/naturecareers/sitemapindex.xml
+ Disallow: /search
+ Disallow: /*/*/*/pf/
+
+==============================================================================
+2024-01-19  →  2024-01-23   (+1 / -0 lines)
+  before: https://web.archive.org/web/20240119023809/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20240123122513/https://www.nature.com/robots.txt
+@@ -4,4 +4,5 @@
+ Sitemap: https://www.nature.com/naturecareers/sitemapindex.xml
+ Disallow: /search
++Disallow: */1000$
+ Disallow: /*/*/*/pf/
+ Disallow: /*.otmi$
+
+==============================================================================
+2024-03-20  →  2024-03-25   (+1 / -0 lines)
+  before: https://web.archive.org/web/20240320023203/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20240325204850/https://www.nature.com/robots.txt
+@@ -3,4 +3,5 @@
+ Sitemap: https://www.nature.com/subjects/sitemap.xml
+ Sitemap: https://www.nature.com/naturecareers/sitemapindex.xml
++Sitemap: https://www.nature.com/latest-news/sitemap.xml
+ Disallow: /search
+ Disallow: */1000$
+
+==============================================================================
+[AI] 2024-10-08  →  2024-11-12   (+44 / -0 lines)
+  before: https://web.archive.org/web/20241008201540/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20241112211600/https://www.nature.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; Google-Extended: allowed→blocked; Applebot-Extended: allowed→blocked; PerplexityBot: allowed→blocked; CCBot: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; cohere-ai: allowed→blocked; Amazonbot: allowed→blocked
+@@ -49,2 +49,46 @@
+ Disallow: */platform/disqus*
+ Disallow: */cas-redirect/*
++User-Agent: Amazonbot
++Disallow: /
++User-Agent: anthropic-ai
++Disallow: /
++User-Agent: Applebot-Extended
++Disallow: /
++User-Agent: Bytespider
++Disallow: /
++User-Agent: CCBot
++Disallow: /
++User-Agent: ClaudeBot
++Disallow: /
++User-Agent: FacebookBot
++Disallow: /
++User-Agent: GPTBot
++Disallow: /
++User-Agent: Google-Extended
++Disallow: /
++User-Agent: GoogleOther
++Disallow: /
++User-Agent: PerplexityBot
++Disallow: /
++User-Agent: YouBot
++Disallow: /
++User-Agent: meta-externalagent
++Disallow: /
++User-Agent: ImagesiftBot
++Disallow: /
++User-Agent: cohere-ai
++Disallow: /
++User-Agent: Diffbot
++Disallow: /
++User-Agent: FriendlyCrawler
++Disallow: /
++User-Agent: img2dataset
++Disallow: /
++User-Agent: omgili
++Disallow: /
++User-Agent: omgilibot
++Disallow: /
++User-Agent: Claude-Web
++Disallow: /
++User-Agent: ChatGPT-User
++Disallow: /
+
+==============================================================================
+2025-02-27  →  2026-09-24   (+4 / -0 lines)
+  before: https://web.archive.org/web/20250227094014/https://www.nature.com/robots.txt
+  after:  https://web.archive.org/web/20260924174527/https://www.nature.com/robots.txt
+@@ -4,4 +4,5 @@
+ Sitemap: https://www.nature.com/naturecareers/sitemapindex.xml
+ Sitemap: https://www.nature.com/latest-news/sitemap.xml
++Sitemap: https://www.nature.com/sitemap-subjects-index.xml
+ Disallow: /search
+ Disallow: */1000$
+@@ -24,4 +25,7 @@
+ Disallow: /*/structures
+ Disallow: /*/metrics
++Disallow: /*/save-research
++Disallow: /*/saved-research
++Disallow: /saved-research
+ Disallow: /platform/contextual
+ Disallow: /articles/*.ris

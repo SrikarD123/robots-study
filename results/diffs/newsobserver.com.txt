@@ -1,0 +1,1348 @@
+robots.txt history for newsobserver.com (news)
+43 versions, 2015-12-16 to 2026-05-01
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-12-16  →  2016-12-29   (+0 / -2 lines)
+  before: https://web.archive.org/web/20151216095515/http://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20161229054831/http://www.newsobserver.com/robots.txt
+@@ -29,6 +29,4 @@
+ User-Agent: A6-Indexer
+ Disallow: /
+-User-Agent: proximic
+-Disallow: /
+ User-Agent: magpie-crawler
+ Disallow: /
+
+==============================================================================
+2016-12-29  →  2017-12-28   (+5 / -0 lines)
+  before: https://web.archive.org/web/20161229054831/http://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20171228205000/http://www.newsobserver.com/robots.txt
+@@ -39,2 +39,7 @@
+ # This is not currently functioning but will be fixed by escenic in the future
+ # Sitemap: http://www.newsobserver.com/sitemap/googlenews/wirestory.xml
++Sitemap: http://www.newsobserver.com/sitemap/archive/blogpost.xml
++Sitemap: http://www.newsobserver.com/sitemap/update/blogpost.xml
++Sitemap: http://www.newsobserver.com/sitemap/archive/sections.xml
++Sitemap: http://www.newsobserver.com/sitemap/archive/story.xml
++Sitemap: http://www.newsobserver.com/sitemap/googlenews/blogpost.xml
+
+==============================================================================
+2018-12-14  →  2019-12-26   (+16 / -10 lines)
+  before: https://web.archive.org/web/20181214175837/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20191226184543/https://www.newsobserver.com/robots.txt
+@@ -2,4 +2,7 @@
+ # not indexing purposes.
+ User-agent: Mediapartners-Google
++Disallow:
++# Global allow for the Klangoo bot
++User-agent: Magnetbot
+ Disallow:
+ # Temporary throttles to decrease load during launch
+@@ -34,12 +37,15 @@
+ User-Agent: *
+ Disallow: /search
+-Sitemap: http://www.newsobserver.com/sitemap/update/sections.xml
+-Sitemap: http://www.newsobserver.com/sitemap/update/story.xml
+-Sitemap: http://www.newsobserver.com/sitemap/googlenews/story.xml
+-# This is not currently functioning but will be fixed by escenic in the future
+-# Sitemap: http://www.newsobserver.com/sitemap/googlenews/wirestory.xml
+-Sitemap: http://www.newsobserver.com/sitemap/archive/blogpost.xml
+-Sitemap: http://www.newsobserver.com/sitemap/update/blogpost.xml
+-Sitemap: http://www.newsobserver.com/sitemap/archive/sections.xml
+-Sitemap: http://www.newsobserver.com/sitemap/archive/story.xml
+-Sitemap: http://www.newsobserver.com/sitemap/googlenews/blogpost.xml
++Disallow: /web
++Disallow: /mrcontent
++Disallow: /webapi-public
++Sitemap: https://www.newsobserver.com/sitemap/story/update.xml
++Sitemap: https://www.newsobserver.com/sitemap/story/archive.xml
++Sitemap: https://www.newsobserver.com/sitemap/story/googlenews.xml
++Sitemap: https://www.newsobserver.com/sitemap/blogpost/update.xml
++Sitemap: https://www.newsobserver.com/sitemap/blogpost/archive.xml
++Sitemap: https://www.newsobserver.com/sitemap/blogpost/googlenews.xml
++Sitemap: https://www.newsobserver.com/sitemap/video/update.xml
++Sitemap: https://www.newsobserver.com/sitemap/video/archive.xml
++Sitemap: https://www.newsobserver.com/sitemap/update/sections.xml
++Sitemap: https://www.newsobserver.com/sitemap/archive/sections.xml
+
+==============================================================================
+2019-12-26  →  2020-11-07   (+141 / -0 lines)
+  before: https://web.archive.org/web/20191226184543/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20201107005525/https://www.newsobserver.com/robots.txt
+@@ -40,4 +40,145 @@
+ Disallow: /mrcontent
+ Disallow: /webapi-public
++Disallow: /404
++Disallow: /410
++Disallow: /newsletter-signup
++Disallow: /plus
++Disallow: /rss
++Disallow: /books
++Disallow: /celebrities
++Disallow: /ent-columns-blogs
++Disallow: /comics
++Disallow: /games-puzzles
++Disallow: /horoscopes
++Disallow: /movies-news-reviews
++Disallow: /music-news-reviews
++Disallow: /tv
++Disallow: /family
++Disallow: /fashion
++Disallow: /food-drink
++Disallow: /living/food-drink/mouthful-blog
++Disallow: /health-fitness
++Disallow: /home-garden
++Disallow: /liv-columns-blogs
++Disallow: /past-times
++Disallow: /pets
++Disallow: /travel
++Disallow: /m-best-week
++Disallow: /m-business
++Disallow: /m-life-arts
++Disallow: /m-local
++Disallow: /m-sports
++Disallow: /m-top-stories
++Disallow: /watchup
++Disallow: /biz-columns-blogs
++Disallow: /health-care
++Disallow: /personal-finance
++Disallow: /small-business
++Disallow: /storefront
++Disallow: /coal-ash-issue
++Disallow: /community
++Disallow: /thumbs-up
++Disallow: /unc-scandal
++Disallow: /wake-ed-blog
++Disallow: /news-columns-blogs
++Disallow: /politics-columns-blogs
++Disallow: /rob-christensen
++Disallow: /road-worrier-blog
++Disallow: /clear-weather-blog
++Disallow: /weird
++Disallow: /dwane-powell
++Disallow: /opinion-influencers
++Disallow: /seeing-the-invisible
++Disallow: /opn-columns-blogs
++Disallow: /j-peder-zane
++Disallow: /jim-jenkins
++Disallow: /opinion-shop
++Disallow: /homes
++Disallow: /mlb
++Disallow: /nba
++Disallow: /charlotte-hornets
++Disallow: /aac
++Disallow: /clemson-university
++Disallow: /spt-columns-blogs
++Disallow: /joe-giglio
++Disallow: /nccu
++Disallow: /tim-stevens
++Disallow: /tom-sorensen
++Disallow: /golf
++Disallow: /preps-now-blog
++Disallow: /nhl
++Disallow: /canes-now
++Disallow: /nascar-auto-racing
++Disallow: /olympics
++Disallow: /outdoors
++Disallow: /mls
++Disallow: /sports-on-the-air
++Disallow: /tennis
++Disallow: /newsletters
++Disallow: /business-nl
++Disallow: /carolina-breaking-news-alerts
++Disallow: /cary-news-nl
++Disallow: /clayton-news-star-nl
++Disallow: /college-sports
++Disallow: /crime-nl
++Disallow: /duke-nl
++Disallow: /durham-news-nl
++Disallow: /east-carolina-nl
++Disallow: /eastern-wake-nl
++Disallow: /site-services/newsletters/editorials
++Disallow: /site-services/newsletters/education
++Disallow: /family-community
++Disallow: /food-nl
++Disallow: /garner-cleveland-record-nl
++Disallow: /go-columbia-nl
++Disallow: /health-nl
++Disallow: /preps-nl
++Disallow: /home-garden-nl
++Disallow: /carolina-hurricanes-nl
++Disallow: /lifestyles
++Disallow: /local-state
++Disallow: /midtown-raleigh-nl
++Disallow: /morning-newsletter
++Disallow: /nc-state-nl
++Disallow: /north-raleigh-nl
++Disallow: /plan-your-weekend-nl
++Disallow: /politics-government-nl
++Disallow: /smithfield-herald-nl
++Disallow: /southwest-wake-nl
++Disallow: /sports-newsletter
++Disallow: /technology-nl
++Disallow: /moms-nl
++Disallow: /university-north-carolina-nl
++Disallow: /wake-forest-nl
++Disallow: /advertise/advertorial
++Disallow: /advertise/circulars
++Disallow: /welcome
++Disallow: /announcements-celebrations
++Disallow: /contact
++Disallow: /contests-promotions
++Disallow: /marketing
++Disallow: /feed-the-need
++Disallow: /special-offers
++Disallow: /offer-a
++Disallow: /offer-b
++Disallow: /offer-c
++Disallow: /dbm
++Disallow: /unlimited
++Disallow: /others
++Disallow: /zone-subscriber-rewards
++Disallow: /text-alerts
++Disallow: /where-to-buy-paper
++Disallow: /testing
++Disallow: /welcome-page
++Allow: /place_announcement
++Allow: /customer-service/subscription/special-offers/digital
++Allow: /warm-tv-blog
++Allow: /ac-snow
++Allow: /best-kept-secrets
++Allow: /under-the-dome
++Allow: /ned-barnett
++Allow: /east-carolina-university
++Allow: /luke-decock
++Allow: /scott-fowler
+ Sitemap: https://www.newsobserver.com/sitemap/story/update.xml
+ Sitemap: https://www.newsobserver.com/sitemap/story/archive.xml
+
+==============================================================================
+2020-11-07  →  2021-12-25   (+202 / -136 lines)
+  before: https://web.archive.org/web/20201107005525/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20211225150714/https://www.newsobserver.com/robots.txt
+@@ -40,145 +40,211 @@
+ Disallow: /mrcontent
+ Disallow: /webapi-public
+-Disallow: /404
+-Disallow: /410
+-Disallow: /newsletter-signup
+-Disallow: /plus
+-Disallow: /rss
+-Disallow: /books
+-Disallow: /celebrities
+-Disallow: /ent-columns-blogs
+-Disallow: /comics
+-Disallow: /games-puzzles
+-Disallow: /horoscopes
+-Disallow: /movies-news-reviews
+-Disallow: /music-news-reviews
+-Disallow: /tv
+-Disallow: /family
+-Disallow: /fashion
+-Disallow: /food-drink
++Disallow: /entertainment/books
++Disallow: /entertainment/celebrities
++Disallow: /entertainment/comics
++Disallow: /entertainment/ent-columns-blogs
++Disallow: /entertainment/ent-columns-blogs/video-now-blog
++Disallow: /entertainment/games-puzzles
++Disallow: /entertainment/horoscopes
++Disallow: /entertainment/movies-news-reviews
++Disallow: /entertainment/music-news-reviews
++Disallow: /entertainment/music-news-reviews/bluegrass-raleigh
++Disallow: /entertainment/music-news-reviews/on-the-beat-blog
++Disallow: /entertainment/music-news-reviews/world-of-bluegrass-blog
++Disallow: /entertainment/tv
++Disallow: /homes
++Disallow: /homes/featured-homes
++Disallow: /living/family
++Disallow: /living/family/moms
++Disallow: /living/fashion
++Disallow: /living/food-drink/flights-blog
+ Disallow: /living/food-drink/mouthful-blog
+-Disallow: /health-fitness
+-Disallow: /home-garden
+-Disallow: /liv-columns-blogs
+-Disallow: /past-times
+-Disallow: /pets
+-Disallow: /travel
+-Disallow: /m-best-week
+-Disallow: /m-business
+-Disallow: /m-life-arts
+-Disallow: /m-local
+-Disallow: /m-sports
+-Disallow: /m-top-stories
+-Disallow: /watchup
+-Disallow: /biz-columns-blogs
+-Disallow: /health-care
+-Disallow: /personal-finance
+-Disallow: /small-business
+-Disallow: /storefront
+-Disallow: /coal-ash-issue
+-Disallow: /community
+-Disallow: /thumbs-up
+-Disallow: /unc-scandal
+-Disallow: /wake-ed-blog
+-Disallow: /news-columns-blogs
+-Disallow: /politics-columns-blogs
+-Disallow: /rob-christensen
+-Disallow: /road-worrier-blog
+-Disallow: /clear-weather-blog
+-Disallow: /weird
+-Disallow: /dwane-powell
+-Disallow: /opinion-influencers
+-Disallow: /seeing-the-invisible
+-Disallow: /opn-columns-blogs
+-Disallow: /j-peder-zane
+-Disallow: /jim-jenkins
+-Disallow: /opinion-shop
+-Disallow: /homes
+-Disallow: /mlb
+-Disallow: /nba
+-Disallow: /charlotte-hornets
+-Disallow: /aac
+-Disallow: /clemson-university
+-Disallow: /spt-columns-blogs
+-Disallow: /joe-giglio
+-Disallow: /nccu
+-Disallow: /tim-stevens
+-Disallow: /tom-sorensen
+-Disallow: /golf
+-Disallow: /preps-now-blog
+-Disallow: /nhl
+-Disallow: /canes-now
+-Disallow: /nascar-auto-racing
+-Disallow: /olympics
+-Disallow: /outdoors
+-Disallow: /mls
+-Disallow: /sports-on-the-air
+-Disallow: /tennis
+-Disallow: /newsletters
+-Disallow: /business-nl
+-Disallow: /carolina-breaking-news-alerts
+-Disallow: /cary-news-nl
+-Disallow: /clayton-news-star-nl
+-Disallow: /college-sports
+-Disallow: /crime-nl
+-Disallow: /duke-nl
+-Disallow: /durham-news-nl
+-Disallow: /east-carolina-nl
+-Disallow: /eastern-wake-nl
+-Disallow: /site-services/newsletters/editorials
+-Disallow: /site-services/newsletters/education
+-Disallow: /family-community
+-Disallow: /food-nl
+-Disallow: /garner-cleveland-record-nl
+-Disallow: /go-columbia-nl
+-Disallow: /health-nl
+-Disallow: /preps-nl
+-Disallow: /home-garden-nl
+-Disallow: /carolina-hurricanes-nl
+-Disallow: /lifestyles
+-Disallow: /local-state
+-Disallow: /midtown-raleigh-nl
+-Disallow: /morning-newsletter
+-Disallow: /nc-state-nl
+-Disallow: /north-raleigh-nl
+-Disallow: /plan-your-weekend-nl
+-Disallow: /politics-government-nl
+-Disallow: /smithfield-herald-nl
+-Disallow: /southwest-wake-nl
+-Disallow: /sports-newsletter
+-Disallow: /technology-nl
+-Disallow: /moms-nl
+-Disallow: /university-north-carolina-nl
+-Disallow: /wake-forest-nl
++Disallow: /living/health-fitness
++Disallow: /living/home-garden
++Disallow: /living/liv-columns-blogs
++Disallow: /living/liv-columns-blogs/past-times
++Disallow: /living/pets
++Disallow: /living/travel
++Disallow: /news/business/biz-columns-blogs
++Disallow: /news/business/biz-columns-blogs/centsible-saver
++Disallow: /news/business/health-care
++Disallow: /news/business/personal-finance
++Disallow: /news/business/small-business
++Disallow: /news/business/small-business/shop-talk-blog
++Disallow: /news/business/storefront
++Disallow: /news/local/coal-ash-issue
++Disallow: /news/local/community
++Disallow: /news/local/community/cary-news
++Disallow: /news/local/community/cary-news/cn-announcements-celebrations
++Disallow: /news/local/community/cary-news/cn-community
++Disallow: /news/local/community/cary-news/cn-obituaries
++Disallow: /news/local/community/cary-news/cn-opinion
++Disallow: /news/local/community/cary-news/cn-sports
++Disallow: /news/local/community/chapel-hill-news
++Disallow: /news/local/community/chapel-hill-news/chn-announcements-celebrations
++Disallow: /news/local/community/chapel-hill-news/chn-community
++Disallow: /news/local/community/chapel-hill-news/chn-obituaries
++Disallow: /news/local/community/chapel-hill-news/chn-opinion
++Disallow: /news/local/community/chapel-hill-news/chn-sports
++Disallow: /news/local/community/clayton-news-star
++Disallow: /news/local/community/clayton-news-star/cns-announcements-celebrations
++Disallow: /news/local/community/clayton-news-star/cns-community
++Disallow: /news/local/community/clayton-news-star/cns-obituaries
++Disallow: /news/local/community/clayton-news-star/cns-opinion
++Disallow: /news/local/community/clayton-news-star/cns-sports
++Disallow: /news/local/community/durham-news
++Disallow: /news/local/community/durham-news/dn-announcements-celebrations
++Disallow: /news/local/community/durham-news/dn-community
++Disallow: /news/local/community/durham-news/dn-obituaries
++Disallow: /news/local/community/durham-news/dn-opinion
++Disallow: /news/local/community/durham-news/dn-sports
++Disallow: /news/local/community/eastern-wake-news
++Disallow: /news/local/community/eastern-wake-news/ewn-announcements-celebrations
++Disallow: /news/local/community/eastern-wake-news/ewn-community
++Disallow: /news/local/community/eastern-wake-news/ewn-obituaries
++Disallow: /news/local/community/eastern-wake-news/ewn-opinion
++Disallow: /news/local/community/eastern-wake-news/ewn-sports
++Disallow: /news/local/community/garner-cleveland-record
++Disallow: /news/local/community/garner-cleveland-record/gcr-announcements-celebrations
++Disallow: /news/local/community/garner-cleveland-record/gcr-community
++Disallow: /news/local/community/garner-cleveland-record/gcr-obituaries
++Disallow: /news/local/community/garner-cleveland-record/gcr-opinion
++Disallow: /news/local/community/garner-cleveland-record/gcr-sports
++Disallow: /news/local/community/midtown-raleigh-news
++Disallow: /news/local/community/midtown-raleigh-news/mrn-announcements-celebrations
++Disallow: /news/local/community/midtown-raleigh-news/mrn-community
++Disallow: /news/local/community/midtown-raleigh-news/mrn-obituaries
++Disallow: /news/local/community/midtown-raleigh-news/mrn-sports
++Disallow: /news/local/community/north-raleigh-news
++Disallow: /news/local/community/north-raleigh-news/nrn-announcements-celebrations
++Disallow: /news/local/community/north-raleigh-news/nrn-community
++Disallow: /news/local/community/north-raleigh-news/nrn-obituaries
++Disallow: /news/local/community/north-raleigh-news/nrn-sports
++Disallow: /news/local/community/smithfield-herald
++Disallow: /news/local/community/smithfield-herald/sh-announcements-celebrations
++Disallow: /news/local/community/smithfield-herald/sh-community
++Disallow: /news/local/community/smithfield-herald/sh-obituaries
++Disallow: /news/local/community/smithfield-herald/sh-opinion
++Disallow: /news/local/community/smithfield-herald/sh-sports
++Disallow: /news/local/community/southwest-wake-news
++Disallow: /news/local/community/southwest-wake-news/swn-announcements-celebrations
++Disallow: /news/local/community/southwest-wake-news/swn-community
++Disallow: /news/local/community/southwest-wake-news/swn-obituaries
++Disallow: /news/local/community/southwest-wake-news/swn-opinion
++Disallow: /news/local/community/southwest-wake-news/swn-sports
++Disallow: /news/local/education/thumbs-up
++Disallow: /news/local/education/unc-scandal
++Disallow: /news/local/education/wake-ed-blog
++Disallow: /news/local/news-columns-blogs
++Disallow: /news/local/news-columns-blogs/barry-saunders
++Disallow: /news/local/news-columns-blogs/editors-blog
++Disallow: /news/local/news-columns-blogs/investigations-blog
++Disallow: /news/local/news-columns-blogs/john-drescher
++Disallow: /news/local/news-columns-blogs/josh-shaffer
++Disallow: /news/politics-government/politics-columns-blogs
++Disallow: /news/politics-government/politics-columns-blogs/rob-christensen
++Disallow: /news/traffic/road-worrier-blog
++Disallow: /news/weather/clear-weather-blog
++Disallow: /news/weird
++Disallow: /opinion/editorial-cartoons/dwane-powell
++Disallow: /opinion/op-ed/seeing-the-invisible
++Disallow: /opinion/opinion-influencers
++Disallow: /opinion/opn-columns-blogs
++Disallow: /opinion/opn-columns-blogs/j-peder-zane
++Disallow: /opinion/opn-columns-blogs/jim-jenkins
++Disallow: /opinion/opn-columns-blogs/opinion-shop
++Disallow: /sports/college/aac
++Disallow: /sports/college/acc/clemson-university
++Disallow: /sports/high-school/preps-now-blog
++Disallow: /sports/mlb
++Disallow: /sports/nascar-auto-racing
++Disallow: /sports/nba
++Disallow: /sports/nba/charlotte-hornets
++Disallow: /sports/nhl
++Disallow: /sports/nhl/carolina-hurricanes/canes-now
++Disallow: /sports/olympics
++Disallow: /sports/outdoors
++Disallow: /sports/soccer/mls
++Disallow: /sports/sports-on-the-air
++Disallow: /sports/spt-columns-blogs
++Disallow: /sports/spt-columns-blogs/joe-giglio
++Disallow: /sports/spt-columns-blogs/nccu
++Disallow: /sports/spt-columns-blogs/tim-stevens
++Disallow: /sports/spt-columns-blogs/tom-sorensen
++Disallow: /sports/tennis
++Disallow: /customer-service/404
++Disallow: /customer-service/410
++Disallow: /customer-service/newsletter-signup
++Disallow: /customer-service/plus
++Disallow: /customer-service/rss
++Disallow: /mobile/m-best-week
++Disallow: /mobile/m-business
++Disallow: /mobile/m-life-arts
++Disallow: /mobile/m-local
++Disallow: /mobile/m-sports
++Disallow: /mobile/m-top-stories
++Disallow: /mobile/watchup
++Disallow: /site-services/newsletters
++Disallow: /site-services/testing/codetest
++Disallow: /site-services/testing/contest-test
++Disallow: /site-services/testing/newsgate-testing
++Disallow: /site-services/testing/rss_test
++Disallow: /site-services/testing/test-test
+ Disallow: /advertise/advertorial
++Disallow: /advertise/advertorial/plaid-Friday
++Disallow: /advertise/advertorial/shop-dine-play
++Disallow: /advertise/advertorial/sponsored-travel-gallery
+ Disallow: /advertise/circulars
+-Disallow: /welcome
+-Disallow: /announcements-celebrations
+-Disallow: /contact
+-Disallow: /contests-promotions
+-Disallow: /marketing
+-Disallow: /feed-the-need
+-Disallow: /special-offers
+-Disallow: /offer-a
+-Disallow: /offer-b
+-Disallow: /offer-c
+-Disallow: /dbm
+-Disallow: /unlimited
+-Disallow: /others
+-Disallow: /zone-subscriber-rewards
+-Disallow: /text-alerts
+-Disallow: /where-to-buy-paper
+-Disallow: /testing
++Disallow: /advertise/welcome
++Disallow: /advertise/welcome/welcome-page-xs
++Disallow: /advertise/welcome/welcome-page-lg
++Disallow: /advertise/welcome/welcome-page-md
++Disallow: /advertise/welcome/welcome-page-sm
++Disallow: /customer-service/announcements-celebrations
++Disallow: /customer-service/announcements-celebrations/anniversaries
++Disallow: /customer-service/announcements-celebrations/birthdays
++Disallow: /customer-service/announcements-celebrations/births
++Disallow: /customer-service/announcements-celebrations/engagements
++Disallow: /customer-service/announcements-celebrations/weddings
++Disallow: /customer-service/contact
++Disallow: /customer-service/contests-promotions
++Disallow: /customer-service/e-edition
++Disallow: /customer-service/marketing
++Disallow: /customer-service/marketing/feed-the-need
++Disallow: /customer-service/subscription/special-offers/offer-b
++Disallow: /customer-service/subscription/special-offers/offer-c
++Disallow: /customer-service/subscription/special-offers/dbm
++Disallow: /customer-service/subscription/special-offers/unlimited
++Disallow: /customer-service/subscription/special-offers/others
++Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-attractions-entertainment
++Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-special-events
++Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-movies
++Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-music-theater
++Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-special-offers
++Disallow: /customer-service/text-alerts
++Disallow: /customer-service/where-to-buy-paper
++Disallow: /site-services/testing
++Disallow: /site-services/testing/ad-ops-testing
+ Disallow: /welcome-page
+-Allow: /place_announcement
++Allow: /entertainment/tv/warm-tv-blog
++Allow: /living/liv-columns-blogs/ac-snow
++Allow: /living/travel/best-kept-secrets
++Allow: /news/politics-government/politics-columns-blogs/under-the-dome
++Allow: /opinion/opn-columns-blogs/ned-barnett
++Allow: /sports/college/aac/east-carolina-university
++Allow: /sports/nhl/carolina-hurricanes
++Allow: /sports/spt-columns-blogs/luke-decock
++Allow: /sports/spt-columns-blogs/scott-fowler
++Allow: /customer-service/announcements-celebrations/place_announcement
+ Allow: /customer-service/subscription/special-offers/digital
+-Allow: /warm-tv-blog
+-Allow: /ac-snow
+-Allow: /best-kept-secrets
+-Allow: /under-the-dome
+-Allow: /ned-barnett
+-Allow: /east-carolina-university
+-Allow: /luke-decock
+-Allow: /scott-fowler
++# Disallow Durham subpub - REMOVE THIS SECTION IN NOVEMBER 2021
++Disallow: /herald-sun
++Disallow: /herald-sun/durham-news
++Disallow: /herald-sun/durham-news/local-news
++Disallow: /herald-sun/durham-news/education-news
++Disallow: /herald-sun/durham-news/crime-news
++Disallow: /herald-sun/sports-hs
++Disallow: /herald-sun/sports-hs/high-school-sports
++# N&O Sitemaps
+ Sitemap: https://www.newsobserver.com/sitemap/story/update.xml
+ Sitemap: https://www.newsobserver.com/sitemap/story/archive.xml
+
+==============================================================================
+2022-03-16  →  2022-07-21   (+1 / -0 lines)
+  before: https://web.archive.org/web/20220316011452/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20220721183606/https://www.newsobserver.com/robots.txt
+@@ -40,4 +40,5 @@
+ Disallow: /mrcontent
+ Disallow: /webapi-public
++Disallow: /adperfect
+ Disallow: /entertainment/books
+ Disallow: /entertainment/celebrities
+
+==============================================================================
+2022-07-21  →  2022-08-01   (+2 / -2 lines)
+  before: https://web.archive.org/web/20220721183606/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20220801223543/https://www.newsobserver.com/robots.txt
+@@ -256,4 +256,4 @@
+ Sitemap: https://www.newsobserver.com/sitemap/video/update.xml
+ Sitemap: https://www.newsobserver.com/sitemap/video/archive.xml
+-Sitemap: https://www.newsobserver.com/sitemap/update/sections.xml
+-Sitemap: https://www.newsobserver.com/sitemap/archive/sections.xml
++Sitemap: https://www.newsobserver.com/sitemap/section/update.xml
++Sitemap: https://www.newsobserver.com/sitemap/section/archive.xml
+
+==============================================================================
+2022-08-01  →  2022-10-21   (+2 / -4 lines)
+  before: https://web.archive.org/web/20220801223543/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20221021183656/https://www.newsobserver.com/robots.txt
+@@ -65,10 +65,7 @@
+ Disallow: /living/liv-columns-blogs
+ Disallow: /living/liv-columns-blogs/past-times
+-Disallow: /living/pets
+-Disallow: /living/travel
+ Disallow: /news/business/biz-columns-blogs
+ Disallow: /news/business/biz-columns-blogs/centsible-saver
+ Disallow: /news/business/health-care
+-Disallow: /news/business/personal-finance
+ Disallow: /news/business/small-business
+ Disallow: /news/business/small-business/shop-talk-blog
+@@ -147,5 +144,4 @@
+ Disallow: /news/traffic/road-worrier-blog
+ Disallow: /news/weather/clear-weather-blog
+-Disallow: /news/weird
+ Disallow: /opinion/editorial-cartoons/dwane-powell
+ Disallow: /opinion/op-ed/seeing-the-invisible
+@@ -258,2 +254,4 @@
+ Sitemap: https://www.newsobserver.com/sitemap/section/update.xml
+ Sitemap: https://www.newsobserver.com/sitemap/section/archive.xml
++Sitemap: https://www.newsobserver.com/sitemap/topic/archive.xml
++Sitemap: https://www.newsobserver.com/sitemap/topic/update.xml
+
+==============================================================================
+2022-10-21  →  2022-12-03   (+0 / -2 lines)
+  before: https://web.archive.org/web/20221021183656/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20221203095522/https://www.newsobserver.com/robots.txt
+@@ -53,5 +53,4 @@
+ Disallow: /entertainment/music-news-reviews/on-the-beat-blog
+ Disallow: /entertainment/music-news-reviews/world-of-bluegrass-blog
+-Disallow: /entertainment/tv
+ Disallow: /homes
+ Disallow: /homes/featured-homes
+@@ -224,5 +223,4 @@
+ Disallow: /site-services/testing/ad-ops-testing
+ Disallow: /welcome-page
+-Allow: /entertainment/tv/warm-tv-blog
+ Allow: /living/liv-columns-blogs/ac-snow
+ Allow: /living/travel/best-kept-secrets
+
+==============================================================================
+2022-12-03  →  2023-01-01   (+0 / -9 lines)
+  before: https://web.archive.org/web/20221203095522/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20230101005344/https://www.newsobserver.com/robots.txt
+@@ -42,9 +42,7 @@
+ Disallow: /adperfect
+ Disallow: /entertainment/books
+-Disallow: /entertainment/celebrities
+ Disallow: /entertainment/comics
+ Disallow: /entertainment/ent-columns-blogs
+ Disallow: /entertainment/ent-columns-blogs/video-now-blog
+-Disallow: /entertainment/games-puzzles
+ Disallow: /entertainment/horoscopes
+ Disallow: /entertainment/movies-news-reviews
+@@ -53,5 +51,4 @@
+ Disallow: /entertainment/music-news-reviews/on-the-beat-blog
+ Disallow: /entertainment/music-news-reviews/world-of-bluegrass-blog
+-Disallow: /homes
+ Disallow: /homes/featured-homes
+ Disallow: /living/family
+@@ -61,5 +58,4 @@
+ Disallow: /living/food-drink/mouthful-blog
+ Disallow: /living/health-fitness
+-Disallow: /living/home-garden
+ Disallow: /living/liv-columns-blogs
+ Disallow: /living/liv-columns-blogs/past-times
+@@ -153,13 +149,9 @@
+ Disallow: /sports/college/acc/clemson-university
+ Disallow: /sports/high-school/preps-now-blog
+-Disallow: /sports/mlb
+ Disallow: /sports/nascar-auto-racing
+-Disallow: /sports/nba
+ Disallow: /sports/nba/charlotte-hornets
+-Disallow: /sports/nhl
+ Disallow: /sports/nhl/carolina-hurricanes/canes-now
+ Disallow: /sports/olympics
+ Disallow: /sports/outdoors
+-Disallow: /sports/soccer/mls
+ Disallow: /sports/sports-on-the-air
+ Disallow: /sports/spt-columns-blogs
+@@ -168,5 +160,4 @@
+ Disallow: /sports/spt-columns-blogs/tim-stevens
+ Disallow: /sports/spt-columns-blogs/tom-sorensen
+-Disallow: /sports/tennis
+ Disallow: /customer-service/404
+ Disallow: /customer-service/410
+
+==============================================================================
+2023-01-21  →  2023-02-04   (+0 / -2 lines)
+  before: https://web.archive.org/web/20230121183600/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20230204214258/https://www.newsobserver.com/robots.txt
+@@ -239,6 +239,4 @@
+ Sitemap: https://www.newsobserver.com/sitemap/blogpost/archive.xml
+ Sitemap: https://www.newsobserver.com/sitemap/blogpost/googlenews.xml
+-Sitemap: https://www.newsobserver.com/sitemap/video/update.xml
+-Sitemap: https://www.newsobserver.com/sitemap/video/archive.xml
+ Sitemap: https://www.newsobserver.com/sitemap/section/update.xml
+ Sitemap: https://www.newsobserver.com/sitemap/section/archive.xml
+
+==============================================================================
+2023-04-21  →  2023-05-01   (+0 / -1 lines)
+  before: https://web.archive.org/web/20230421183519/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20230501094342/https://www.newsobserver.com/robots.txt
+@@ -149,5 +149,4 @@
+ Disallow: /sports/college/acc/clemson-university
+ Disallow: /sports/high-school/preps-now-blog
+-Disallow: /sports/nascar-auto-racing
+ Disallow: /sports/nba/charlotte-hornets
+ Disallow: /sports/nhl/carolina-hurricanes/canes-now
+
+==============================================================================
+2023-05-01  →  2023-06-01   (+1 / -0 lines)
+  before: https://web.archive.org/web/20230501094342/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20230601001127/https://www.newsobserver.com/robots.txt
+@@ -213,4 +213,5 @@
+ Disallow: /site-services/testing/ad-ops-testing
+ Disallow: /welcome-page
++Disallow: /*amp.html?*
+ Allow: /living/liv-columns-blogs/ac-snow
+ Allow: /living/travel/best-kept-secrets
+
+==============================================================================
+2023-06-01  →  2023-07-01   (+1 / -0 lines)
+  before: https://web.archive.org/web/20230601001127/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20230701023944/https://www.newsobserver.com/robots.txt
+@@ -213,4 +213,5 @@
+ Disallow: /site-services/testing/ad-ops-testing
+ Disallow: /welcome-page
++Disallow: /deals-offers
+ Disallow: /*amp.html?*
+ Allow: /living/liv-columns-blogs/ac-snow
+
+==============================================================================
+[AI] 2023-08-05  →  2023-10-21   (+2 / -0 lines)
+  before: https://web.archive.org/web/20230805073731/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20231021183525/https://www.newsobserver.com/robots.txt
+  AI changes: GPTBot: allowed→blocked
+@@ -33,4 +33,6 @@
+ Disallow: /
+ User-Agent: magpie-crawler
++Disallow: /
++User-agent: GPTBot
+ Disallow: /
+ # Block indexing of search results page
+
+==============================================================================
+2023-11-01  →  2023-12-01   (+49 / -44 lines)
+  before: https://web.archive.org/web/20231101185056/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20231201104732/https://www.newsobserver.com/robots.txt
+@@ -6,5 +6,5 @@
+ User-agent: Magnetbot
+ Disallow:
+-# Temporary throttles to decrease load during launch
++# Throttles to decrease load
+ User-agent: Yandex
+ Crawl-delay: 3
+@@ -36,5 +36,5 @@
+ User-agent: GPTBot
+ Disallow: /
+-# Block indexing of search results page
++# Prevent bots from wasting crawl budget on template/non-content pages
+ User-Agent: *
+ Disallow: /search
+@@ -43,4 +43,48 @@
+ Disallow: /webapi-public
+ Disallow: /adperfect
++Disallow: /deals-offers
++Disallow: /*amp.html?*
++Disallow: *.ece*
++Allow: *.ece*.pdf
++# Block indexing of specific sections/content at the market's request
++User-Agent: *
++Disallow: /advertise/advertorial
++Disallow: /advertise/advertorial/plaid-Friday
++Disallow: /advertise/advertorial/shop-dine-play
++Disallow: /advertise/advertorial/sponsored-travel-gallery
++Disallow: /advertise/circulars
++Disallow: /advertise/welcome
++Disallow: /advertise/welcome/welcome-page-xs
++Disallow: /advertise/welcome/welcome-page-lg
++Disallow: /advertise/welcome/welcome-page-md
++Disallow: /advertise/welcome/welcome-page-sm
++Disallow: /customer-service/announcements-celebrations
++Disallow: /customer-service/announcements-celebrations/anniversaries
++Disallow: /customer-service/announcements-celebrations/birthdays
++Disallow: /customer-service/announcements-celebrations/births
++Disallow: /customer-service/announcements-celebrations/engagements
++Disallow: /customer-service/announcements-celebrations/weddings
++Disallow: /customer-service/404
++Disallow: /customer-service/410
++Disallow: /customer-service/rss
++Disallow: /customer-service/newsletter-signup
++Disallow: /customer-service/plus
++Disallow: /customer-service/contact
++Disallow: /customer-service/contests-promotions
++Disallow: /customer-service/e-edition
++Disallow: /customer-service/marketing
++Disallow: /customer-service/marketing/feed-the-need
++Disallow: /customer-service/subscription/special-offers/offer-b
++Disallow: /customer-service/subscription/special-offers/offer-c
++Disallow: /customer-service/subscription/special-offers/dbm
++Disallow: /customer-service/subscription/special-offers/unlimited
++Disallow: /customer-service/subscription/special-offers/others
++Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-attractions-entertainment
++Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-special-events
++Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-movies
++Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-music-theater
++Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-special-offers
++Disallow: /customer-service/text-alerts
++Disallow: /customer-service/where-to-buy-paper
+ Disallow: /entertainment/books
+ Disallow: /entertainment/comics
+@@ -161,9 +205,4 @@
+ Disallow: /sports/spt-columns-blogs/tim-stevens
+ Disallow: /sports/spt-columns-blogs/tom-sorensen
+-Disallow: /customer-service/404
+-Disallow: /customer-service/410
+-Disallow: /customer-service/newsletter-signup
+-Disallow: /customer-service/plus
+-Disallow: /customer-service/rss
+ Disallow: /mobile/m-best-week
+ Disallow: /mobile/m-business
+@@ -179,42 +218,7 @@
+ Disallow: /site-services/testing/rss_test
+ Disallow: /site-services/testing/test-test
+-Disallow: /advertise/advertorial
+-Disallow: /advertise/advertorial/plaid-Friday
+-Disallow: /advertise/advertorial/shop-dine-play
+-Disallow: /advertise/advertorial/sponsored-travel-gallery
+-Disallow: /advertise/circulars
+-Disallow: /advertise/welcome
+-Disallow: /advertise/welcome/welcome-page-xs
+-Disallow: /advertise/welcome/welcome-page-lg
+-Disallow: /advertise/welcome/welcome-page-md
+-Disallow: /advertise/welcome/welcome-page-sm
+-Disallow: /customer-service/announcements-celebrations
+-Disallow: /customer-service/announcements-celebrations/anniversaries
+-Disallow: /customer-service/announcements-celebrations/birthdays
+-Disallow: /customer-service/announcements-celebrations/births
+-Disallow: /customer-service/announcements-celebrations/engagements
+-Disallow: /customer-service/announcements-celebrations/weddings
+-Disallow: /customer-service/contact
+-Disallow: /customer-service/contests-promotions
+-Disallow: /customer-service/e-edition
+-Disallow: /customer-service/marketing
+-Disallow: /customer-service/marketing/feed-the-need
+-Disallow: /customer-service/subscription/special-offers/offer-b
+-Disallow: /customer-service/subscription/special-offers/offer-c
+-Disallow: /customer-service/subscription/special-offers/dbm
+-Disallow: /customer-service/subscription/special-offers/unlimited
+-Disallow: /customer-service/subscription/special-offers/others
+-Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-attractions-entertainment
+-Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-special-events
+-Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-movies
+-Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-music-theater
+-Disallow: /customer-service/subscription/zone-subscriber-rewards/zone-special-offers
+-Disallow: /customer-service/text-alerts
+-Disallow: /customer-service/where-to-buy-paper
+ Disallow: /site-services/testing
+ Disallow: /site-services/testing/ad-ops-testing
+ Disallow: /welcome-page
+-Disallow: /deals-offers
+-Disallow: /*amp.html?*
+ Allow: /living/liv-columns-blogs/ac-snow
+ Allow: /living/travel/best-kept-secrets
+@@ -227,5 +231,6 @@
+ Allow: /customer-service/announcements-celebrations/place_announcement
+ Allow: /customer-service/subscription/special-offers/digital
+-# Disallow Durham subpub - REMOVE THIS SECTION IN NOVEMBER 2021
++# Disallow Durham subpub
++User-Agent: *
+ Disallow: /herald-sun
+ Disallow: /herald-sun/durham-news
+@@ -235,5 +240,5 @@
+ Disallow: /herald-sun/sports-hs
+ Disallow: /herald-sun/sports-hs/high-school-sports
+-# N&O Sitemaps
++# Sitemap files
+ Sitemap: https://www.newsobserver.com/sitemap/story/update.xml
+ Sitemap: https://www.newsobserver.com/sitemap/story/archive.xml
+
+==============================================================================
+[AI] 2024-05-01  →  2024-07-16   (+2 / -0 lines)
+  before: https://web.archive.org/web/20240501150702/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20240716060234/https://www.newsobserver.com/robots.txt
+  AI changes: PerplexityBot: allowed→blocked
+@@ -35,4 +35,6 @@
+ Disallow: /
+ User-agent: GPTBot
++Disallow: /
++User-agent: PerplexityBot
+ Disallow: /
+ # Prevent bots from wasting crawl budget on template/non-content pages
+
+==============================================================================
+2024-07-16  →  2024-07-21   (+0 / -1 lines)
+  before: https://web.archive.org/web/20240716060234/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20240721183541/https://www.newsobserver.com/robots.txt
+@@ -199,5 +199,4 @@
+ Disallow: /sports/nba/charlotte-hornets
+ Disallow: /sports/nhl/carolina-hurricanes/canes-now
+-Disallow: /sports/olympics
+ Disallow: /sports/outdoors
+ Disallow: /sports/sports-on-the-air
+
+==============================================================================
+[AI] 2024-08-07  →  2024-10-21   (+14 / -1 lines)
+  before: https://web.archive.org/web/20240807192405/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20241021185505/https://www.newsobserver.com/robots.txt
+  AI changes: ChatGPT-User: allowed→blocked; ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; CCBot: allowed→blocked
+@@ -15,4 +15,6 @@
+ User-agent: Slurp
+ Crawl-delay: 2
++User-agent: FacebookBot
++Crawl-delay: 3
+ # Temporary blocks of uninteresting bots
+ User-Agent: Genieo
+@@ -36,5 +38,17 @@
+ User-agent: GPTBot
+ Disallow: /
++User-agent: anthropic-ai
++Disallow: /
++User-agent: ClaudeBot
++Disallow: /
++User-agent: Claude-Web
++Disallow: /
+ User-agent: PerplexityBot
++Disallow: /
++User-agent: CCBot
++Disallow: /
++User-agent: ChatGPT-User
++Disallow: /
++User-agent: omgili
+ Disallow: /
+ # Prevent bots from wasting crawl budget on template/non-content pages
+@@ -45,5 +59,4 @@
+ Disallow: /webapi-public
+ Disallow: /adperfect
+-Disallow: /deals-offers
+ Disallow: /*amp.html?*
+ Disallow: *.ece*
+
+==============================================================================
+2025-02-15  →  2025-08-03   (+2 / -0 lines)
+  before: https://web.archive.org/web/20250215053448/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20250803214142/https://www.newsobserver.com/robots.txt
+@@ -265,2 +265,4 @@
+ Sitemap: https://www.newsobserver.com/sitemap/topic/archive.xml
+ Sitemap: https://www.newsobserver.com/sitemap/topic/update.xml
++Sitemap: https://www.newsobserver.com/sitemap/video/archive.xml
++Sitemap: https://www.newsobserver.com/sitemap/video/update.xml
+
+==============================================================================
+[AI] 2025-08-03  →  2025-10-01   (+177 / -27 lines)
+  before: https://web.archive.org/web/20250803214142/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20251001220016/https://www.newsobserver.com/robots.txt
+  AI changes: Claude-SearchBot: allowed→blocked; Claude-User: allowed→blocked; Perplexity-User: allowed→blocked; Bytespider: allowed→blocked; cohere-ai: allowed→blocked
+@@ -18,37 +18,187 @@
+ Crawl-delay: 3
+ # Temporary blocks of uninteresting bots
+-User-Agent: Genieo
+-Disallow: /
+-User-Agent: ecoResearch
+-Disallow: /
+-User-Agent: Spinn3r
+-Disallow: /
+-User-Agent: BLP_bbot
+-Disallow: /
+-User-Agent: R6_CommentReader
+-Disallow: /
+-User-Agent: omgilibot
+-Disallow: /
+-User-Agent: EasouSpider
+-Disallow: /
+-User-Agent: A6-Indexer
+-Disallow: /
+-User-Agent: magpie-crawler
++User-agent: A6-Indexer
++Disallow: /
++User-agent: AddSearchBot
++Disallow: /
++User-agent: aiHitBot
++Disallow: /
++User-agent: Andibot
++Disallow: /
++User-agent: anthropic-ai
++Disallow: /
++User-agent: anthropic-aiBytespider
++Disallow: /
++User-agent: AspiegelBot
++Disallow: /
++User-agent: Barkrowler
++Disallow: /
++User-agent: bigsur.ai
++Disallow: /
++User-agent: BLP_bbot
++Disallow: /
++User-agent: Brightbot 1.0
++Disallow: /
++User-agent: Buck
++Disallow: /
++User-agent: Bytespider
++Disallow: /
++User-agent: CCBot
++Disallow: /
++User-agent: ChatGLM-Spider
++Disallow: /
++User-agent: ChatGPT-User
++Disallow: /
++User-agent: Claude-SearchBot
++Disallow: /
++User-agent: Claude-User
++Disallow: /
++User-agent: Claude-Web
++Disallow: /
++User-agent: ClaudeBot
++Disallow: /
++User-agent: Claudebot
++Disallow: /
++User-agent: coccocbot-web
++Disallow: /
++User-agent: cohere-ai
++Disallow: /
++User-agent: cohere-training-data-crawler
++Disallow: /
++User-agent: Cotoyogi
++Disallow: /
++User-agent: crawler4j
++Disallow: /
++User-agent: Crawlspace
++Disallow: /
++User-agent: Datenbank Crawler
++Disallow: /
++User-agent: Diffbot
++Disallow: /
++User-agent: EasouSpider
++Disallow: /
++User-agent: Echobot Bot
++Disallow: /
++User-agent: EchoboxBot
++Disallow: /
++User-agent: ecoResearch
++Disallow: /
++User-agent: FirecrawlAgent
++Disallow: /
++User-agent: Genieo
+ Disallow: /
+ User-agent: GPTBot
+ Disallow: /
+-User-agent: anthropic-ai
+-Disallow: /
+-User-agent: ClaudeBot
+-Disallow: /
+-User-agent: Claude-Web
++User-agent: https://hada.news
++Disallow: /
++User-agent: iaskspider/2.0
++Disallow: /
++User-agent: ICC-Crawler
++Disallow: /
++User-agent: img2dataset
++Disallow: /
++User-agent: JenkersBot
++Disallow: /
++User-agent: Jetslide
++Disallow: /
++User-agent: Kangaroo Bot
++Disallow: /
++User-agent: KunatoCrawler
++Disallow: /
++User-agent: LivelapBot
++Disallow: /
++User-agent: magpie-crawler
++Disallow: /
++User-agent: MauiBot
++Disallow: /
++User-agent: MAZBot
++Disallow: /
++User-agent: MistralAI-User
++Disallow: /
++User-agent: MistralAI-User/1.0
++Disallow: /
++User-agent: Mojeek
++Disallow: /
++User-agent: MojeekBot
++Disallow: /
++User-agent: MyCentralAIScraperBot
++Disallow: /
++User-agent: news-please
++Disallow: /
++User-agent: NewsNow
++Disallow: /
++User-agent: NovaAct
++Disallow: /
++User-agent: Omgilibot
++Disallow: /
++User-agent: omgili
++Disallow: /
++User-agent: omgilibot
++Disallow: /
++User-agent: Perplexity-ai
++Disallow: /
++User-agent: Perplexity-User
+ Disallow: /
+ User-agent: PerplexityBot
+ Disallow: /
+-User-agent: CCBot
+-Disallow: /
+-User-agent: ChatGPT-User
+-Disallow: /
+-User-agent: omgili
++User-agent: PetalBot
++Disallow: /
++User-agent: PanguBot
++Disallow: /
++User-agent: Poseidon Research Crawler
++Disallow: /
++User-agent: Primalbot
++Disallow: /
++User-agent: QuillBot
++Disallow: /
++User-agent: quillbot.com
++Disallow: /
++User-agent: R6_CommentReader
++Disallow: /
++User-agent: SBIntuitionsBot
++Disallow: /
++User-agent: Scrapy
++Disallow: /
++User-agent: SeekportBot
++Disallow: /
++User-agent: Seekr
++Disallow: /
++User-agent: SeekrBot
++Disallow: /
++User-agent: SeznamBot
++Disallow: /
++User-agent: SeznamHomepageCrawler
++Disallow: /
++User-agent: Sidetrade indexer bot
++Disallow: /
++User-agent: Spinn3r
++Disallow: /
++User-agent: TaraGroup Intelligent Bot
++Disallow: /
++User-agent: Thinkbot
++Disallow: /
++User-agent: Timpibot
++Disallow: /
++User-agent: VelenPublicWebCrawler
++Disallow: /
++User-agent: Verity
++Disallow: /
++User-agent: Verity/1.1
++Disallow: /
++User-agent: ViennaTinyBot
++Disallow: /
++User-agent: WebVac
++Disallow: /
++User-agent: Webzio-Extended
++Disallow: /
++User-agent: WebZip
++Disallow: /
++User-agent: WRTNBot
++Disallow: /
++User-agent: yacy
++Disallow: /
++User-agent: yacybot
++Disallow: /
++User-agent: YouBot
+ Disallow: /
+ # Prevent bots from wasting crawl budget on template/non-content pages
+
+==============================================================================
+[AI] 2025-10-01  →  2026-03-01   (+43 / -27 lines)
+  before: https://web.archive.org/web/20251001220016/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20260301003602/https://www.newsobserver.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: now named (allowed); ChatGPT-User: blocked→allowed; ClaudeBot: blocked→allowed; anthropic-ai: blocked→allowed; Claude-SearchBot: blocked→allowed; Claude-User: blocked→allowed; Google-Extended: now named (allowed); PerplexityBot: blocked→allowed; Perplexity-User: blocked→allowed
+@@ -1,2 +1,13 @@
++# The News & Observer content is made available for your personal, non-commercial
++# use subject to our Terms of Service here:
++# https://www.newsobserver.com/customer-service/terms-of-service
++# Use of any device, tool, or process designed to data mine or scrape the content
++# using automated means is prohibited without prior written permission from
++# The News & Observer. Prohibited uses include but are not limited to:
++# (1) text and data mining activities
++# (2) the development of any software, machine learning, artificial intelligence (AI),
++# and/or large language models (LLMs);
++# (3) creating or providing archived or cached data sets containing our content to others; and/or
++# (4) any commercial purposes.
+ # Global allow for Mediapartners - this is used by Google to place ads in content,
+ # not indexing purposes.
+@@ -17,5 +28,36 @@
+ User-agent: FacebookBot
+ Crawl-delay: 3
+-# Temporary blocks of uninteresting bots
++# Story blocks for selected bots
++User-agent: anthropic-ai
++Disallow: /*.html
++User-agent: archive.org_bot
++Disallow: /*.html
++User-agent: ChatGPT-User
++Disallow: /*.html
++User-agent: Claude-SearchBot
++Disallow: /*.html
++User-agent: Claude-User
++Disallow: /*.html
++User-agent: Claude-Web
++Disallow: /*.html
++User-agent: ClaudeBot
++Disallow: /*.html
++User-agent: Google-Extended
++Disallow: /*.html
++User-agent: GPTBot
++Disallow: /*.html
++User-agent: ia_archiver
++Disallow: /*.html
++User-agent: ia_archiver-web.archive.org
++Disallow: /*.html
++User-agent: OAI-SearchBot
++Disallow: /*.html
++User-agent: Perplexity-ai
++Disallow: /*.html
++User-agent: Perplexity-User
++Disallow: /*.html
++User-agent: PerplexityBot
++Disallow: /*.html
++# Complete blocks of uninteresting bots
+ User-agent: A6-Indexer
+ Disallow: /
+@@ -26,8 +68,4 @@
+ User-agent: Andibot
+ Disallow: /
+-User-agent: anthropic-ai
+-Disallow: /
+-User-agent: anthropic-aiBytespider
+-Disallow: /
+ User-agent: AspiegelBot
+ Disallow: /
+@@ -48,16 +86,4 @@
+ User-agent: ChatGLM-Spider
+ Disallow: /
+-User-agent: ChatGPT-User
+-Disallow: /
+-User-agent: Claude-SearchBot
+-Disallow: /
+-User-agent: Claude-User
+-Disallow: /
+-User-agent: Claude-Web
+-Disallow: /
+-User-agent: ClaudeBot
+-Disallow: /
+-User-agent: Claudebot
+-Disallow: /
+ User-agent: coccocbot-web
+ Disallow: /
+@@ -88,6 +114,4 @@
+ User-agent: Genieo
+ Disallow: /
+-User-agent: GPTBot
+-Disallow: /
+ User-agent: https://hada.news
+ Disallow: /
+@@ -133,12 +157,4 @@
+ Disallow: /
+ User-agent: omgili
+-Disallow: /
+-User-agent: omgilibot
+-Disallow: /
+-User-agent: Perplexity-ai
+-Disallow: /
+-User-agent: Perplexity-User
+-Disallow: /
+-User-agent: PerplexityBot
+ Disallow: /
+ User-agent: PetalBot
+
+==============================================================================
+[AI] 2026-03-01  →  2026-03-29   (+12 / -2 lines)
+  before: https://web.archive.org/web/20260301003602/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20260329223352/https://www.newsobserver.com/robots.txt
+  AI changes: Claude-User: no longer named (allowed)
+@@ -37,6 +37,4 @@
+ User-agent: Claude-SearchBot
+ Disallow: /*.html
+-User-agent: Claude-User
+-Disallow: /*.html
+ User-agent: Claude-Web
+ Disallow: /*.html
+@@ -112,4 +110,12 @@
+ User-agent: FirecrawlAgent
+ Disallow: /
++User-agent: Grok
++Disallow: /
++User-agent: GrokBot
++Disallow: /
++User-agent: GrokBot/1.0
++Disallow: /
++User-agent: Grok-DeepSearch/1.0
++Disallow: /
+ User-agent: Genieo
+ Disallow: /
+@@ -211,4 +217,8 @@
+ Disallow: /
+ User-agent: WRTNBot
++Disallow: /
++User-agent: xAI
++Disallow: /
++User-agent: xAI-Grok/1.0
+ Disallow: /
+ User-agent: yacy
+
+==============================================================================
+[AI] 2026-03-29  →  2026-05-01   (+0 / -22 lines)
+  before: https://web.archive.org/web/20260329223352/https://www.newsobserver.com/robots.txt
+  after:  https://web.archive.org/web/20260501015657/https://www.newsobserver.com/robots.txt
+  AI changes: GPTBot: no longer named (allowed); OAI-SearchBot: no longer named (allowed); ChatGPT-User: no longer named (allowed); ClaudeBot: no longer named (allowed); anthropic-ai: no longer named (allowed); Claude-SearchBot: no longer named (allowed); Google-Extended: no longer named (allowed); PerplexityBot: no longer named (allowed); Perplexity-User: no longer named (allowed)
+@@ -29,31 +29,9 @@
+ Crawl-delay: 3
+ # Story blocks for selected bots
+-User-agent: anthropic-ai
+-Disallow: /*.html
+ User-agent: archive.org_bot
+-Disallow: /*.html
+-User-agent: ChatGPT-User
+-Disallow: /*.html
+-User-agent: Claude-SearchBot
+-Disallow: /*.html
+-User-agent: Claude-Web
+-Disallow: /*.html
+-User-agent: ClaudeBot
+-Disallow: /*.html
+-User-agent: Google-Extended
+-Disallow: /*.html
+-User-agent: GPTBot
+ Disallow: /*.html
+ User-agent: ia_archiver
+ Disallow: /*.html
+ User-agent: ia_archiver-web.archive.org
+-Disallow: /*.html
+-User-agent: OAI-SearchBot
+-Disallow: /*.html
+-User-agent: Perplexity-ai
+-Disallow: /*.html
+-User-agent: Perplexity-User
+-Disallow: /*.html
+-User-agent: PerplexityBot
+ Disallow: /*.html
+ # Complete blocks of uninteresting bots

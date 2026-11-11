@@ -1,0 +1,979 @@
+robots.txt history for washingtonpost.com (news)
+157 versions, 2015-12-30 to 2026-08-11
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-12-30  →  2016-12-31   (+7 / -4 lines)
+  before: https://web.archive.org/web/20151230160739/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20161231214719/https://www.washingtonpost.com/robots.txt
+@@ -50,4 +50,10 @@
+ Disallow: /news/tablet/
+ Disallow: /sf/test/
++Disallow: /news/test-liveblog/
++Disallow: /pb/homepage-video-test
++Disallow: /pb/testpage-forhomepage
++Disallow: /homepage-video-test
++Disallow: /testpage-forhomepage
++Disallow: /knowmore
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+@@ -57,11 +63,8 @@
+ Disallow: /posttv/c/trendex/
+ Disallow: /posttv/posttv/trendex
+-User-agent: ia_archiver
+-Disallow: /
+ Sitemap: http://www.washingtonpost.com/web-sitemap-index.xml
+ Sitemap: http://www.washingtonpost.com/news-sitemap-index.xml
+ Sitemap: http://www.washingtonpost.com/video-sitemap.xml
+ Sitemap: http://www.washingtonpost.com/real-estate/sitemap.xml
+-Sitemap: http://www.washingtonpost.com/wp-adv/jobs4/feed/jobssitemap/sitemap_index.xml
+-Sitemap: http://www.washingtonpost.com/gog/sitemap.xml
++Sitemap: https://jobs.washingtonpost.com/sitemapindex.xml
+ Sitemap: http://www.washingtonpost.com/wp-stat/sitemaps/index.xml
+
+==============================================================================
+2016-12-31  →  2017-12-31   (+27 / -9 lines)
+  before: https://web.archive.org/web/20161231214719/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20171231233308/https://www.washingtonpost.com/robots.txt
+@@ -1,4 +1,3 @@
+ User-agent: *
+-Crawl-delay: 1
+ Disallow: /*_print.html
+ Disallow: /*_email.html
+@@ -33,5 +32,5 @@
+ Disallow: /local/blogsandcolumns/slow-ride-stream-tanked
+ Disallow: /local/blogsandcolumns/slow-ride-front
+-Disallow: /utils
++Disallow: /utils/
+ Disallow: /jobs/JS_JobSearchResult
+ Disallow: /jobs/UpdateJobEmployerCounterServlet
+@@ -48,12 +47,16 @@
+ Disallow: /wp-stat/vrroom/
+ Disallow: /classic-apps/
++Disallow: /news/test/
+ Disallow: /news/tablet/
+ Disallow: /sf/test/
+ Disallow: /news/test-liveblog/
+-Disallow: /pb/homepage-video-test
+-Disallow: /pb/testpage-forhomepage
++Disallow: /pb/
+ Disallow: /homepage-video-test
+ Disallow: /testpage-forhomepage
+ Disallow: /knowmore
++Disallow: /test/
++Disallow: /brand-studio/
++Disallow: /sslsingle
++Disallow: /sf/brand-connect/$
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+@@ -63,8 +66,23 @@
+ Disallow: /posttv/c/trendex/
+ Disallow: /posttv/posttv/trendex
+-Sitemap: http://www.washingtonpost.com/web-sitemap-index.xml
+-Sitemap: http://www.washingtonpost.com/news-sitemap-index.xml
+-Sitemap: http://www.washingtonpost.com/video-sitemap.xml
+-Sitemap: http://www.washingtonpost.com/real-estate/sitemap.xml
++Disallow: /conversations/the-washington-post/2017/05/18/242f4306-3be4-11e7-a058-ddbb23c75d82_story.html
++Disallow: /blogs/test/
++Disallow: /news/test/
++Disallow: /news/tablet/
++Disallow: /classic-apps/
++Disallow: /utils/
++Disallow: /test/
++User-agent: Googlebot
++Disallow: /conversations/the-washington-post/2017/05/18/242f4306-3be4-11e7-a058-ddbb23c75d82_story.html
++Disallow: /blogs/test/
++Disallow: /news/test/
++Disallow: /news/tablet/
++Disallow: /classic-apps/
++Disallow: /utils/
++Disallow: /test/
++Sitemap: https://www.washingtonpost.com/web-sitemap-index.xml
++Sitemap: https://www.washingtonpost.com/news-sitemap-index.xml
++Sitemap: https://www.washingtonpost.com/video-sitemap.xml
++Sitemap: https://www.washingtonpost.com/real-estate/sitemap.xml
+ Sitemap: https://jobs.washingtonpost.com/sitemapindex.xml
+-Sitemap: http://www.washingtonpost.com/wp-stat/sitemaps/index.xml
++Sitemap: https://www.washingtonpost.com/wp-stat/sitemaps/index.xml
+
+==============================================================================
+2017-12-31  →  2018-12-31   (+25 / -6 lines)
+  before: https://web.archive.org/web/20171231233308/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20181231232701/https://www.washingtonpost.com/robots.txt
+@@ -1,2 +1,8 @@
++User-agent: Baiduspider
++Disallow: /
++User-agent: Baiduspider-video
++Disallow: /
++User-agent: Baiduspider-image
++Disallow: /
+ User-agent: *
+ Disallow: /*_print.html
+@@ -48,4 +54,5 @@
+ Disallow: /classic-apps/
+ Disallow: /news/test/
++Disallow: /tablet/
+ Disallow: /news/tablet/
+ Disallow: /sf/test/
+@@ -59,4 +66,8 @@
+ Disallow: /sslsingle
+ Disallow: /sf/brand-connect/$
++Disallow: /amphtml/news/test/
++Disallow: /amphtml/blogs/test/
++Disallow: /amphtml/classic-apps/
++Disallow: /amphtml/utils/
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+@@ -69,20 +80,28 @@
+ Disallow: /blogs/test/
+ Disallow: /news/test/
++Disallow: /tablet/
+ Disallow: /news/tablet/
+ Disallow: /classic-apps/
+ Disallow: /utils/
+ Disallow: /test/
++Disallow: /amphtml/news/test/
++Disallow: /amphtml/blogs/test/
++Disallow: /amphtml/classic-apps/
++Disallow: /amphtml/utils/
++Disallow: /brand-studio/wp/2018/06/22/barrow-island/
+ User-agent: Googlebot
+ Disallow: /conversations/the-washington-post/2017/05/18/242f4306-3be4-11e7-a058-ddbb23c75d82_story.html
+ Disallow: /blogs/test/
+ Disallow: /news/test/
++Disallow: /tablet/
+ Disallow: /news/tablet/
+ Disallow: /classic-apps/
+ Disallow: /utils/
+ Disallow: /test/
+-Sitemap: https://www.washingtonpost.com/web-sitemap-index.xml
+-Sitemap: https://www.washingtonpost.com/news-sitemap-index.xml
+-Sitemap: https://www.washingtonpost.com/video-sitemap.xml
+-Sitemap: https://www.washingtonpost.com/real-estate/sitemap.xml
+-Sitemap: https://jobs.washingtonpost.com/sitemapindex.xml
+-Sitemap: https://www.washingtonpost.com/wp-stat/sitemaps/index.xml
++Disallow: /amphtml/news/test/
++Disallow: /amphtml/blogs/test/
++Disallow: /amphtml/classic-apps/
++Disallow: /amphtml/utils/
++Disallow: /brand-studio/wp/2018/06/22/barrow-island/
++Sitemap: https://www.washingtonpost.com/sitemaps/index.xml
++Sitemap: https://www.washingtonpost.com/news-sitemaps/index.xml
+
+==============================================================================
+2018-12-31  →  2019-12-31   (+14 / -38 lines)
+  before: https://web.archive.org/web/20181231232701/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20191231234521/https://www.washingtonpost.com/robots.txt
+@@ -1,8 +1,2 @@
+-User-agent: Baiduspider
+-Disallow: /
+-User-agent: Baiduspider-video
+-Disallow: /
+-User-agent: Baiduspider-image
+-Disallow: /
+ User-agent: *
+ Disallow: /*_print.html
+@@ -50,4 +44,5 @@
+ Disallow: /posttv/c/video_search/
+ Disallow: /posttv/posttv/trendex
++Disallow: /posttv/c/embed/
+ Disallow: /rweb/
+ Disallow: /wp-stat/vrroom/
+@@ -59,4 +54,7 @@
+ Disallow: /news/test-liveblog/
+ Disallow: /pb/
++Allow: /pb/resources/
++Allow: /pb/gr/
++Allow: /pb/resource/
+ Disallow: /homepage-video-test
+ Disallow: /testpage-forhomepage
+@@ -70,38 +68,16 @@
+ Disallow: /amphtml/classic-apps/
+ Disallow: /amphtml/utils/
++Disallow: /newsletter/
++Disallow: /sf/brand-connect/wp/
++Disallow: /wp-dyn/
++Disallow: /bandito/
++Disallow: /Fragment/SysConfig/
++Disallow: /my-post/
++Disallow: /recipes/search/
++Disallow: /talk/
++Disallow: /wp-stat/ad/
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+-User-agent: Googlebot-News
+-Disallow: /sf/brand-connect/wp/
+-Disallow: /posttv/sponsored-video/
+-Disallow: /posttv/c/trendex/
+-Disallow: /posttv/posttv/trendex
+-Disallow: /conversations/the-washington-post/2017/05/18/242f4306-3be4-11e7-a058-ddbb23c75d82_story.html
+-Disallow: /blogs/test/
+-Disallow: /news/test/
+-Disallow: /tablet/
+-Disallow: /news/tablet/
+-Disallow: /classic-apps/
+-Disallow: /utils/
+-Disallow: /test/
+-Disallow: /amphtml/news/test/
+-Disallow: /amphtml/blogs/test/
+-Disallow: /amphtml/classic-apps/
+-Disallow: /amphtml/utils/
+-Disallow: /brand-studio/wp/2018/06/22/barrow-island/
+-User-agent: Googlebot
+-Disallow: /conversations/the-washington-post/2017/05/18/242f4306-3be4-11e7-a058-ddbb23c75d82_story.html
+-Disallow: /blogs/test/
+-Disallow: /news/test/
+-Disallow: /tablet/
+-Disallow: /news/tablet/
+-Disallow: /classic-apps/
+-Disallow: /utils/
+-Disallow: /test/
+-Disallow: /amphtml/news/test/
+-Disallow: /amphtml/blogs/test/
+-Disallow: /amphtml/classic-apps/
+-Disallow: /amphtml/utils/
+-Disallow: /brand-studio/wp/2018/06/22/barrow-island/
++Disallow: /amphtml/*
+ Sitemap: https://www.washingtonpost.com/sitemaps/index.xml
+ Sitemap: https://www.washingtonpost.com/news-sitemaps/index.xml
+
+==============================================================================
+2019-12-31  →  2020-12-29   (+13 / -5 lines)
+  before: https://web.archive.org/web/20191231234521/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20201229221048/https://www.washingtonpost.com/robots.txt
+@@ -61,7 +61,5 @@
+ Disallow: /knowmore
+ Disallow: /test/
+-Disallow: /brand-studio/
+ Disallow: /sslsingle
+-Disallow: /sf/brand-connect/$
+ Disallow: /amphtml/news/test/
+ Disallow: /amphtml/blogs/test/
+@@ -69,5 +67,4 @@
+ Disallow: /amphtml/utils/
+ Disallow: /newsletter/
+-Disallow: /sf/brand-connect/wp/
+ Disallow: /wp-dyn/
+ Disallow: /bandito/
+@@ -77,7 +74,18 @@
+ Disallow: /talk/
+ Disallow: /wp-stat/ad/
++Disallow: /*?*outputType=comment
++Disallow: /pwapi-proxy/pwproxy/*
++Disallow: /pwapiv2/
++Disallow: /*?*outputType=accessibility
++Disallow: /wp-adv/
++Disallow: /subscribe/
++Disallow: /newssearch/
++Disallow: /wp-admin/
++Disallow: /gdpr-consent/
++Disallow: /*?*outputType=tracking
++Disallow: /tetro/
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+ Disallow: /amphtml/*
+-Sitemap: https://www.washingtonpost.com/sitemaps/index.xml
+-Sitemap: https://www.washingtonpost.com/news-sitemaps/index.xml
++Sitemap: https://www.washingtonpost.com/arcio/sitemap/master/index/
++Sitemap: https://www.washingtonpost.com/arcio/news-sitemap/
+
+==============================================================================
+2020-12-29  →  2021-12-28   (+6 / -2 lines)
+  before: https://web.archive.org/web/20201229221048/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20211228184311/https://www.washingtonpost.com/robots.txt
+@@ -70,5 +70,4 @@
+ Disallow: /bandito/
+ Disallow: /Fragment/SysConfig/
+-Disallow: /my-post/
+ Disallow: /recipes/search/
+ Disallow: /talk/
+@@ -79,5 +78,4 @@
+ Disallow: /*?*outputType=accessibility
+ Disallow: /wp-adv/
+-Disallow: /subscribe/
+ Disallow: /newssearch/
+ Disallow: /wp-admin/
+@@ -85,7 +83,13 @@
+ Disallow: /*?*outputType=tracking
+ Disallow: /tetro/
++Disallow: /comments/
++Disallow: /comments
++Disallow: /search
++Disallow: /s/*
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+ Disallow: /amphtml/*
++User-agent: AhrefsBot
++Disallow: /
+ Sitemap: https://www.washingtonpost.com/arcio/sitemap/master/index/
+ Sitemap: https://www.washingtonpost.com/arcio/news-sitemap/
+
+==============================================================================
+2021-12-28  →  2022-06-29   (+1 / -0 lines)
+  before: https://web.archive.org/web/20211228184311/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20220629131750/https://www.washingtonpost.com/robots.txt
+@@ -87,4 +87,5 @@
+ Disallow: /search
+ Disallow: /s/*
++Disallow: /embed/
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+
+==============================================================================
+2022-10-09  →  2022-10-18   (+1 / -0 lines)
+  before: https://web.archive.org/web/20221009133619/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20221018212441/https://www.washingtonpost.com/robots.txt
+@@ -88,4 +88,5 @@
+ Disallow: /s/*
+ Disallow: /embed/
++Disallow: /native/
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+
+==============================================================================
+2022-11-16  →  2022-11-18   (+3 / -0 lines)
+  before: https://web.archive.org/web/20221116190001/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20221118165144/https://www.washingtonpost.com/robots.txt
+@@ -94,4 +94,7 @@
+ User-agent: AhrefsBot
+ Disallow: /
++User-agent: SemrushBot
++Disallow: /licensing-syndication
++Disallow: /licensing-syndication/*
+ Sitemap: https://www.washingtonpost.com/arcio/sitemap/master/index/
+ Sitemap: https://www.washingtonpost.com/arcio/news-sitemap/
+
+==============================================================================
+2023-01-24  →  2023-02-16   (+11 / -0 lines)
+  before: https://web.archive.org/web/20230124162356/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20230216095425/https://www.washingtonpost.com/robots.txt
+@@ -89,4 +89,15 @@
+ Disallow: /embed/
+ Disallow: /native/
++Disallow: /subscribe/braintree/
++Disallow: /subscribe/enterpriseportal/
++Disallow: /subscribe/foryouapi/
++Disallow: /subscribe/lagoon/
++Disallow: /subscribe/offers/service/
++Disallow: /subscribe/onsiteapi/
++Disallow: /subscribe/paywall/
++Disallow: /subscribe/person/
++Disallow: /subscribe/preferenceapi/
++Disallow: /subscribe/subscriptionapi/
++Disallow: /subscribe/user/
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+
+==============================================================================
+2023-03-25  →  2023-03-31   (+1 / -0 lines)
+  before: https://web.archive.org/web/20230325155521/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20230331190425/https://www.washingtonpost.com/robots.txt
+@@ -100,4 +100,5 @@
+ Disallow: /subscribe/subscriptionapi/
+ Disallow: /subscribe/user/
++Disallow: /wpost/proxy
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+
+==============================================================================
+2023-05-30  →  2023-06-05   (+1 / -0 lines)
+  before: https://web.archive.org/web/20230530072813/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20230605180049/https://www.washingtonpost.com/robots.txt
+@@ -27,4 +27,5 @@
+ Disallow: /rw/WashingtonPost/Content/Epaper/
+ Disallow: /ac2/
++Disallow: /archive/lifestyle/wellness/1999/01/19/an-illness-no-one-understands-tourettes-syndrome/852df0cc-2164-4c83-be8d-0c770d028547/
+ Disallow: /blogs/slow-ride/
+ Disallow: /local/blogsandcolumns/slow-ride-story-tanked
+
+==============================================================================
+[AI] 2023-07-17  →  2023-08-28   (+4 / -0 lines)
+  before: https://web.archive.org/web/20230717201107/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20230828183026/https://www.washingtonpost.com/robots.txt
+  AI changes: GPTBot: allowed→blocked; ChatGPT-User: allowed→blocked
+@@ -110,4 +110,8 @@
+ Disallow: /licensing-syndication
+ Disallow: /licensing-syndication/*
++User-agent: GPTBot
++Disallow: /
++User-agent: ChatGPT-User
++Disallow: /
+ Sitemap: https://www.washingtonpost.com/arcio/sitemap/master/index/
+ Sitemap: https://www.washingtonpost.com/arcio/news-sitemap/
+
+==============================================================================
+[AI] 2023-09-25  →  2023-10-23   (+2 / -0 lines)
+  before: https://web.archive.org/web/20230925234403/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20231023160534/https://www.washingtonpost.com/robots.txt
+  AI changes: Google-Extended: allowed→blocked
+@@ -114,4 +114,6 @@
+ User-agent: ChatGPT-User
+ Disallow: /
++User-agent: Google-Extended
++Disallow: /
+ Sitemap: https://www.washingtonpost.com/arcio/sitemap/master/index/
+ Sitemap: https://www.washingtonpost.com/arcio/news-sitemap/
+
+==============================================================================
+[AI] 2023-11-26  →  2023-12-01   (+4 / -0 lines)
+  before: https://web.archive.org/web/20231126052114/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20231201043917/https://www.washingtonpost.com/robots.txt
+  AI changes: CCBot: allowed→blocked
+@@ -102,4 +102,6 @@
+ Disallow: /subscribe/user/
+ Disallow: /wpost/proxy
++Disallow: /ehf/
++Disallow: /ehf/*
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+@@ -116,4 +118,6 @@
+ User-agent: Google-Extended
+ Disallow: /
++User-agent: CCBot
++Disallow: /
+ Sitemap: https://www.washingtonpost.com/arcio/sitemap/master/index/
+ Sitemap: https://www.washingtonpost.com/arcio/news-sitemap/
+
+==============================================================================
+2024-02-01  →  2024-02-09   (+1 / -0 lines)
+  before: https://web.archive.org/web/20240201011720/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20240209201659/https://www.washingtonpost.com/robots.txt
+@@ -122,2 +122,3 @@
+ Sitemap: https://www.washingtonpost.com/arcio/sitemap/master/index/
+ Sitemap: https://www.washingtonpost.com/arcio/news-sitemap/
++Sitemap: https://www.washingtonpost.com/arcio/news-sitemap-elections/
+
+==============================================================================
+[AI] 2024-02-09  →  2024-02-28   (+28 / -0 lines)
+  before: https://web.archive.org/web/20240209201659/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20240228192506/https://www.washingtonpost.com/robots.txt
+  AI changes: ClaudeBot: allowed→blocked; anthropic-ai: allowed→blocked; PerplexityBot: allowed→blocked; Bytespider: allowed→blocked; Amazonbot: allowed→blocked
+@@ -120,4 +120,32 @@
+ User-agent: CCBot
+ Disallow: /
++User-agent: Amazonbot
++Disallow: /
++User-agent: anthropic-ai
++Disallow: /
++User-agent: AwarioRssBot
++User-agent: AwarioSmartBot
++Disallow: /
++User-agent: Bytespider
++Disallow: /
++User-agent: ClaudeBot
++Disallow: /
++User-agent: Claude-Web
++Disallow: /
++User-agent: DataForSeoBot
++Disallow: /
++User-agent: FacebookBot
++Disallow: /
++User-agent: magpie-crawler
++Disallow: /
++User-agent: omgili
++Disallow: /
++User-agent: omgilibot
++Disallow: /
++User-agent: peer39_crawler
++User-agent: peer39_crawler/1.0
++Disallow: /
++User-agent: PerplexityBot
++Disallow: /
+ Sitemap: https://www.washingtonpost.com/arcio/sitemap/master/index/
+ Sitemap: https://www.washingtonpost.com/arcio/news-sitemap/
+
+==============================================================================
+2024-02-28  →  2024-04-12   (+4 / -2 lines)
+  before: https://web.archive.org/web/20240228192506/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20240412022914/https://www.washingtonpost.com/robots.txt
+@@ -148,5 +148,7 @@
+ User-agent: PerplexityBot
+ Disallow: /
+-Sitemap: https://www.washingtonpost.com/arcio/sitemap/master/index/
++Sitemap: https://www.washingtonpost.com/sitemaps/sitemap.xml.gz
+ Sitemap: https://www.washingtonpost.com/arcio/news-sitemap/
+-Sitemap: https://www.washingtonpost.com/arcio/news-sitemap-elections/
++Sitemap: https://www.washingtonpost.com/elections/results/sitemap.xml
++Sitemap: https://www.washingtonpost.com/arcio/sitemap/section-fronts/list/
++Sitemap: https://www.washingtonpost.com/arcio/sitemap/video/index/
+
+==============================================================================
+2024-04-12  →  2024-04-17   (+1 / -1 lines)
+  before: https://web.archive.org/web/20240412022914/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20240417062357/https://www.washingtonpost.com/robots.txt
+@@ -149,5 +149,5 @@
+ Disallow: /
+ Sitemap: https://www.washingtonpost.com/sitemaps/sitemap.xml.gz
+-Sitemap: https://www.washingtonpost.com/arcio/news-sitemap/
++Sitemap: https://www.washingtonpost.com/sitemaps/news-sitemap.xml.gz
+ Sitemap: https://www.washingtonpost.com/elections/results/sitemap.xml
+ Sitemap: https://www.washingtonpost.com/arcio/sitemap/section-fronts/list/
+
+==============================================================================
+2024-05-29  →  2024-06-16   (+3 / -0 lines)
+  before: https://web.archive.org/web/20240529233122/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20240616041311/https://www.washingtonpost.com/robots.txt
+@@ -104,4 +104,7 @@
+ Disallow: /ehf/
+ Disallow: /ehf/*
++Disallow: /subscribe/logging/*
++Disallow: /blogs/*
++Disallow: /archive/*
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+
+==============================================================================
+2024-06-16  →  2024-06-19   (+2 / -0 lines)
+  before: https://web.archive.org/web/20240616041311/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20240619040941/https://www.washingtonpost.com/robots.txt
+@@ -125,4 +125,6 @@
+ User-agent: Amazonbot
+ Disallow: /
++User-agent: YandexBot
++Disallow: /
+ User-agent: anthropic-ai
+ Disallow: /
+
+==============================================================================
+2024-06-19  →  2024-06-26   (+1 / -0 lines)
+  before: https://web.archive.org/web/20240619040941/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20240626010437/https://www.washingtonpost.com/robots.txt
+@@ -107,4 +107,5 @@
+ Disallow: /blogs/*
+ Disallow: /archive/*
++Disallow: /gog/*
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+
+==============================================================================
+2024-06-26  →  2024-07-09   (+0 / -1 lines)
+  before: https://web.archive.org/web/20240626010437/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20240709080858/https://www.washingtonpost.com/robots.txt
+@@ -27,5 +27,4 @@
+ Disallow: /rw/WashingtonPost/Content/Epaper/
+ Disallow: /ac2/
+-Disallow: /archive/lifestyle/wellness/1999/01/19/an-illness-no-one-understands-tourettes-syndrome/852df0cc-2164-4c83-be8d-0c770d028547/
+ Disallow: /blogs/slow-ride/
+ Disallow: /local/blogsandcolumns/slow-ride-story-tanked
+
+==============================================================================
+2024-07-09  →  2024-08-26   (+1 / -0 lines)
+  before: https://web.archive.org/web/20240709080858/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20240826222120/https://www.washingtonpost.com/robots.txt
+@@ -68,4 +68,5 @@
+ Disallow: /newsletter/
+ Disallow: /wp-dyn/
++Disallow: /wp-srv/
+ Disallow: /bandito/
+ Disallow: /Fragment/SysConfig/
+
+==============================================================================
+[AI] 2024-08-26  →  2024-08-31   (+6 / -1 lines)
+  before: https://web.archive.org/web/20240826222120/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20240831064630/https://www.washingtonpost.com/robots.txt
+  AI changes: Applebot-Extended: allowed→blocked
+@@ -101,4 +101,6 @@
+ Disallow: /subscribe/subscriptionapi/
+ Disallow: /subscribe/user/
++Disallow: /subscribe/signin/
++Disallow: /subscribe/signup/
+ Disallow: /wpost/proxy
+ Disallow: /ehf/
+@@ -106,5 +108,4 @@
+ Disallow: /subscribe/logging/*
+ Disallow: /blogs/*
+-Disallow: /archive/*
+ Disallow: /gog/*
+ User-agent: Twitterbot
+@@ -154,6 +155,10 @@
+ User-agent: PerplexityBot
+ Disallow: /
++User-agent: Applebot-Extended
++Disallow: /
+ Sitemap: https://www.washingtonpost.com/sitemaps/sitemap.xml.gz
+ Sitemap: https://www.washingtonpost.com/sitemaps/news-sitemap.xml.gz
++Sitemap: https://www.washingtonpost.com/sitemaps/author-sitemap.xml.gz
++Sitemap: https://www.washingtonpost.com/sitemaps/section-sitemap.xml.gz
+ Sitemap: https://www.washingtonpost.com/elections/results/sitemap.xml
+ Sitemap: https://www.washingtonpost.com/arcio/sitemap/section-fronts/list/
+
+==============================================================================
+2024-08-31  →  2024-10-19   (+1 / -1 lines)
+  before: https://web.archive.org/web/20240831064630/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20241019130438/https://www.washingtonpost.com/robots.txt
+@@ -109,4 +109,5 @@
+ Disallow: /blogs/*
+ Disallow: /gog/*
++Disallow: /arcio/fact-checker/
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+@@ -162,4 +163,3 @@
+ Sitemap: https://www.washingtonpost.com/sitemaps/section-sitemap.xml.gz
+ Sitemap: https://www.washingtonpost.com/elections/results/sitemap.xml
+-Sitemap: https://www.washingtonpost.com/arcio/sitemap/section-fronts/list/
+ Sitemap: https://www.washingtonpost.com/arcio/sitemap/video/index/
+
+==============================================================================
+[AI] 2024-10-19  →  2025-01-06   (+5 / -0 lines)
+  before: https://web.archive.org/web/20241019130438/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20250106222839/https://www.washingtonpost.com/robots.txt
+  AI changes: meta-externalagent: allowed→blocked; meta-externalfetcher: allowed→blocked
+@@ -110,4 +110,5 @@
+ Disallow: /gog/*
+ Disallow: /arcio/fact-checker/
++Disallow: /recipes/*?q=
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+@@ -158,4 +159,8 @@
+ User-agent: Applebot-Extended
+ Disallow: /
++User-agent: meta-externalagent
++Disallow: /
++User-agent: meta-externalfetcher
++Disallow: /
+ Sitemap: https://www.washingtonpost.com/sitemaps/sitemap.xml.gz
+ Sitemap: https://www.washingtonpost.com/sitemaps/news-sitemap.xml.gz
+
+==============================================================================
+[AI] 2025-01-06  →  2025-01-07   (+45 / -18 lines)
+  before: https://web.archive.org/web/20250106222839/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20250107085836/https://www.washingtonpost.com/robots.txt
+  AI changes: OAI-SearchBot: allowed→blocked
+@@ -114,37 +114,67 @@
+ Allow: /posttv-beta/
+ Disallow: /amphtml/*
+-User-agent: AhrefsBot
+-Disallow: /
+ User-agent: SemrushBot
+ Disallow: /licensing-syndication
+ Disallow: /licensing-syndication/*
+-User-agent: GPTBot
+-Disallow: /
+-User-agent: ChatGPT-User
+-Disallow: /
+-User-agent: Google-Extended
+-Disallow: /
+-User-agent: CCBot
++# Disallow Rules
++User-agent: AhrefsBot
+ Disallow: /
+ User-agent: Amazonbot
+ Disallow: /
+-User-agent: YandexBot
+-Disallow: /
+ User-agent: anthropic-ai
+ Disallow: /
++User-agent: Applebot-Extended
++Disallow: /
++User-agent: archive.org_bot
++Disallow: /
++User-agent: ArchiveBot
++Disallow: /
++User-agent: Arquivo-web-crawler
++Disallow: /
+ User-agent: AwarioRssBot
++Disallow: /
+ User-agent: AwarioSmartBot
+ Disallow: /
+ User-agent: Bytespider
+ Disallow: /
+-User-agent: ClaudeBot
++User-agent: CCBot
++Disallow: /
++User-agent: ChatGPT-User
+ Disallow: /
+ User-agent: Claude-Web
+ Disallow: /
++User-agent: ClaudeBot
++Disallow: /
+ User-agent: DataForSeoBot
++Disallow: /
++User-agent: Diffbot
++Disallow: /
++User-agent: europarchive.org
+ Disallow: /
+ User-agent: FacebookBot
+ Disallow: /
++User-agent: Google-Extended
++Disallow: /
++User-agent: GPTBot
++Disallow: /
++User-agent: heritrix
++Disallow: /
++User-agent: ia_archiver
++Disallow: /
++User-agent: ia_archiver-web.archive.org
++Disallow: /
++User-agent: ImagesiftBot
++Disallow: /
++User-agent: LinkArchiver
++Disallow: /
+ User-agent: magpie-crawler
++Disallow: /
++User-agent: meta-externalagent
++Disallow: /
++User-agent: meta-externalfetcher
++Disallow: /
++User-agent: Nicecrawler
++Disallow: /
++User-agent: OAI-SearchBot
+ Disallow: /
+ User-agent: omgili
+@@ -152,14 +182,11 @@
+ User-agent: omgilibot
+ Disallow: /
+-User-agent: peer39_crawler
+-User-agent: peer39_crawler/1.0
+-Disallow: /
+ User-agent: PerplexityBot
+ Disallow: /
+-User-agent: Applebot-Extended
++User-agent: Primalbot
+ Disallow: /
+-User-agent: meta-externalagent
++User-agent: web-archive-net.com.bot
+ Disallow: /
+-User-agent: meta-externalfetcher
++User-agent: YandexBot
+ Disallow: /
+ Sitemap: https://www.washingtonpost.com/sitemaps/sitemap.xml.gz
+
+==============================================================================
+2025-01-07  →  2025-03-29   (+3 / -2 lines)
+  before: https://web.archive.org/web/20250107085836/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20250329105846/https://www.washingtonpost.com/robots.txt
+@@ -117,8 +117,9 @@
+ Disallow: /licensing-syndication
+ Disallow: /licensing-syndication/*
++User-agent: Amazonbot
++Disallow: /
++Allow: /wp-apps/imrs.php
+ # Disallow Rules
+ User-agent: AhrefsBot
+-Disallow: /
+-User-agent: Amazonbot
+ Disallow: /
+ User-agent: anthropic-ai
+
+==============================================================================
+[AI] 2025-03-29  →  2025-07-10   (+2 / -8 lines)
+  before: https://web.archive.org/web/20250329105846/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20250710065602/https://www.washingtonpost.com/robots.txt
+  AI changes: GPTBot: blocked→allowed; OAI-SearchBot: blocked→allowed; ChatGPT-User: blocked→allowed
+@@ -141,9 +141,9 @@
+ User-agent: CCBot
+ Disallow: /
+-User-agent: ChatGPT-User
+-Disallow: /
+ User-agent: Claude-Web
+ Disallow: /
+ User-agent: ClaudeBot
++Disallow: /
++User-agent: cohere-training-data-crawler
+ Disallow: /
+ User-agent: DataForSeoBot
+@@ -157,6 +157,4 @@
+ User-agent: Google-Extended
+ Disallow: /
+-User-agent: GPTBot
+-Disallow: /
+ User-agent: heritrix
+ Disallow: /
+@@ -169,6 +167,4 @@
+ User-agent: LinkArchiver
+ Disallow: /
+-User-agent: magpie-crawler
+-Disallow: /
+ User-agent: meta-externalagent
+ Disallow: /
+@@ -176,6 +172,4 @@
+ Disallow: /
+ User-agent: Nicecrawler
+-Disallow: /
+-User-agent: OAI-SearchBot
+ Disallow: /
+ User-agent: omgili
+
+==============================================================================
+[AI] 2025-07-10  →  2025-08-03   (+0 / -2 lines)
+  before: https://web.archive.org/web/20250710065602/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20250803231953/https://www.washingtonpost.com/robots.txt
+  AI changes: Google-Extended: blocked→allowed
+@@ -155,6 +155,4 @@
+ User-agent: FacebookBot
+ Disallow: /
+-User-agent: Google-Extended
+-Disallow: /
+ User-agent: heritrix
+ Disallow: /
+
+==============================================================================
+2025-08-03  →  2025-12-12   (+16 / -0 lines)
+  before: https://web.archive.org/web/20250803231953/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20251212040934/https://www.washingtonpost.com/robots.txt
+@@ -125,6 +125,8 @@
+ User-agent: anthropic-ai
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: Applebot-Extended
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: archive.org_bot
+ Disallow: /
+@@ -139,20 +141,27 @@
+ User-agent: Bytespider
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: CCBot
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: Claude-Web
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: ClaudeBot
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: cohere-training-data-crawler
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: DataForSeoBot
+ Disallow: /
+ User-agent: Diffbot
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: europarchive.org
+ Disallow: /
+ User-agent: FacebookBot
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: heritrix
+ Disallow: /
+@@ -167,14 +176,19 @@
+ User-agent: meta-externalagent
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: meta-externalfetcher
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: Nicecrawler
+ Disallow: /
+ User-agent: omgili
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: omgilibot
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: PerplexityBot
+ Disallow: /
++Allow: /creativegroup/
+ User-agent: Primalbot
+ Disallow: /
+@@ -183,4 +197,5 @@
+ User-agent: YandexBot
+ Disallow: /
++Allow: /creativegroup/
+ Sitemap: https://www.washingtonpost.com/sitemaps/sitemap.xml.gz
+ Sitemap: https://www.washingtonpost.com/sitemaps/news-sitemap.xml.gz
+@@ -189,2 +204,3 @@
+ Sitemap: https://www.washingtonpost.com/elections/results/sitemap.xml
+ Sitemap: https://www.washingtonpost.com/arcio/sitemap/video/index/
++Sitemap: https://www.washingtonpost.com/creativegroup/sitemaps/sitemap.xml
+
+==============================================================================
+2026-01-16  →  2026-05-01   (+19 / -0 lines)
+  before: https://web.archive.org/web/20260116184132/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20260501005305/https://www.washingtonpost.com/robots.txt
+@@ -111,4 +111,8 @@
+ Disallow: /arcio/fact-checker/
+ Disallow: /recipes/*?q=
++Disallow: /cookie-policy/
++Disallow: /discussions/2021/09/13/cookie-policy/
++Disallow: /discussions/2021/09/13/cookie-policy-eea/
++Disallow: /privacy-policy/
+ User-agent: Twitterbot
+ Allow: /posttv-beta/
+@@ -126,7 +130,9 @@
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: Applebot-Extended
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: archive.org_bot
+ Disallow: /
+@@ -142,16 +148,21 @@
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: CCBot
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: Claude-Web
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: ClaudeBot
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: cohere-training-data-crawler
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: DataForSeoBot
+ Disallow: /
+@@ -159,4 +170,5 @@
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: europarchive.org
+ Disallow: /
+@@ -164,4 +176,5 @@
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: heritrix
+ Disallow: /
+@@ -177,7 +190,9 @@
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: meta-externalfetcher
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: Nicecrawler
+ Disallow: /
+@@ -185,10 +200,13 @@
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: omgilibot
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: PerplexityBot
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ User-agent: Primalbot
+ Disallow: /
+@@ -198,4 +216,5 @@
+ Disallow: /
+ Allow: /creativegroup/
++Allow: /advertising/
+ Sitemap: https://www.washingtonpost.com/sitemaps/sitemap.xml.gz
+ Sitemap: https://www.washingtonpost.com/sitemaps/news-sitemap.xml.gz
+
+==============================================================================
+2026-07-25  →  2026-08-11   (+1 / -0 lines)
+  before: https://web.archive.org/web/20260725092614/https://www.washingtonpost.com/robots.txt
+  after:  https://web.archive.org/web/20260811092439/https://www.washingtonpost.com/robots.txt
+@@ -115,4 +115,5 @@
+ Disallow: /discussions/2021/09/13/cookie-policy-eea/
+ Disallow: /privacy-policy/
++Disallow: /partials/
+ User-agent: Twitterbot
+ Allow: /posttv-beta/

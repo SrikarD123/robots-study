@@ -1,0 +1,524 @@
+robots.txt history for stackoverflow.com (forum)
+158 versions, 2015-10-13 to 2026-09-10
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-10-13  →  2016-09-28   (+11 / -0 lines)
+  before: https://web.archive.org/web/20151013211420/http://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20160928155652/http://stackoverflow.com/robots.txt
+@@ -31,4 +31,5 @@
+ Disallow: /users/stats/
+ Disallow: /users/*?tab=accounts
++Disallow: /users/*?tab=activity
+ Disallow: /users/rep/show
+ Disallow: /users/rep/show?
+@@ -59,4 +60,14 @@
+ Disallow: /gps/*
+ Disallow: /10m
++Disallow: /jobs/cv/sign-up-and-create
++Disallow: /documentation/*?asOf=
++Disallow: /documentation/flags/*
++Disallow: /documentation/improvement-requests/*
++Disallow: /documentation/proposed/changes/*
++Disallow: /documentation/search/
++Disallow: /documentation/search?
++Disallow: /documentation/tag-commitment/filter-tags
++Disallow: /documentation/contributors/topic/*
++Disallow: /documentation/contributors/example/*
+ Allow: /
+ #
+
+==============================================================================
+2016-09-28  →  2017-12-20   (+15 / -25 lines)
+  before: https://web.archive.org/web/20160928155652/http://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20171220173742/https://stackoverflow.com/robots.txt
+@@ -2,7 +2,5 @@
+ Disallow: /posts/
+ Disallow: /posts?
+-Disallow: /amzn/click/?
+-Disallow: /ask/
+-Disallow: /ask?
++Disallow: /amzn/click/
+ Disallow: /questions/ask/
+ Disallow: /questions/ask?
+@@ -23,5 +21,4 @@
+ Disallow: /users/authenticate?
+ Disallow: /users/oauth/*
+-Disallow: /users/flag-weight/
+ Disallow: /users/flag-summary/
+ Disallow: /users/flair/
+@@ -61,8 +58,15 @@
+ Disallow: /10m
+ Disallow: /jobs/cv/sign-up-and-create
++Disallow: /jobs/n/*
++Disallow: /jobs/a/*
++Disallow: /jobs/apply/*
++Disallow: /jobs/companies/n/*
++Disallow: /jobs/companies/a/*
++Disallow: /jobs/*/more-jobs-count
+ Disallow: /documentation/*?asOf=
+ Disallow: /documentation/flags/*
+ Disallow: /documentation/improvement-requests/*
+ Disallow: /documentation/proposed/changes/*
++Disallow: /documentation/review/changes/*
+ Disallow: /documentation/search/
+ Disallow: /documentation/search?
+@@ -70,35 +74,21 @@
+ Disallow: /documentation/contributors/topic/*
+ Disallow: /documentation/contributors/example/*
++Disallow: /emails/*
++Disallow: /_/*
+ Allow: /
+-#
+-# beware, the sections below WILL NOT INHERIT from the above!
+-# http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=40360
+-#
+-#
+-# disallow adsense bot, as we no longer do adsense.
+-#
+ User-agent: Mediapartners-Google
+ Disallow: /
+-#
+-# Yahoo Pipes is for feeds not web pages.
+-#
+ User-agent: Yahoo Pipes 1.0
+ Disallow: /
+-#
+-# 80legs
+-#
+ User-agent: 008
+ Disallow: /
+ User-agent: voltron
+ Disallow: /
+-#
+-# This isn't really an image
+-#
+ User-agent: Googlebot-Image
+ Disallow: /*/ivc/*
+ Disallow: /users/flair/
+-#
+-# this technically isn't valid, since for some godforsaken reason
+-# sitemap paths must be ABSOLUTE and not relative.
+-#
+-Sitemap: /sitemap.xml
++Disallow: /jobs/n/*
++Disallow: /jobs/a/*
++Disallow: /jobs/companies/n/*
++Disallow: /jobs/companies/a/*
++Sitemap: https://stackoverflow.com/sitemap.xml
+
+==============================================================================
+2017-12-20  →  2018-06-09   (+0 / -10 lines)
+  before: https://web.archive.org/web/20171220173742/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20180609210901/https://stackoverflow.com/robots.txt
+@@ -64,14 +64,4 @@
+ Disallow: /jobs/companies/a/*
+ Disallow: /jobs/*/more-jobs-count
+-Disallow: /documentation/*?asOf=
+-Disallow: /documentation/flags/*
+-Disallow: /documentation/improvement-requests/*
+-Disallow: /documentation/proposed/changes/*
+-Disallow: /documentation/review/changes/*
+-Disallow: /documentation/search/
+-Disallow: /documentation/search?
+-Disallow: /documentation/tag-commitment/filter-tags
+-Disallow: /documentation/contributors/topic/*
+-Disallow: /documentation/contributors/example/*
+ Disallow: /emails/*
+ Disallow: /_/*
+
+==============================================================================
+2018-06-09  →  2019-08-28   (+0 / -2 lines)
+  before: https://web.archive.org/web/20180609210901/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20190828161808/https://stackoverflow.com/robots.txt
+@@ -67,6 +67,4 @@
+ Disallow: /_/*
+ Allow: /
+-User-agent: Mediapartners-Google
+-Disallow: /
+ User-agent: Yahoo Pipes 1.0
+ Disallow: /
+
+==============================================================================
+[AI] 2019-08-28  →  2020-12-01   (+2 / -0 lines)
+  before: https://web.archive.org/web/20190828161808/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20201201175551/https://stackoverflow.com/robots.txt
+  AI changes: Bytespider: allowed→blocked
+@@ -73,4 +73,6 @@
+ User-agent: voltron
+ Disallow: /
++User-agent: Bytespider
++Disallow: /
+ User-agent: Googlebot-Image
+ Disallow: /*/ivc/*
+
+==============================================================================
+2020-12-01  →  2021-09-04   (+1 / -0 lines)
+  before: https://web.archive.org/web/20201201175551/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20210904155908/https://stackoverflow.com/robots.txt
+@@ -64,4 +64,5 @@
+ Disallow: /jobs/companies/a/*
+ Disallow: /jobs/*/more-jobs-count
++Disallow: /jobs/email-job
+ Disallow: /emails/*
+ Disallow: /_/*
+
+==============================================================================
+[AI] 2023-08-01  →  2023-08-07   (+2 / -0 lines)
+  before: https://web.archive.org/web/20230801024628/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20230807212959/https://stackoverflow.com/robots.txt
+  AI changes: GPTBot: allowed→blocked
+@@ -76,4 +76,6 @@
+ User-agent: Bytespider
+ Disallow: /
++User-agent: GPTBot
++Disallow: /
+ User-agent: Googlebot-Image
+ Disallow: /*/ivc/*
+
+==============================================================================
+[AI] 2023-09-30  →  2023-10-05   (+2 / -0 lines)
+  before: https://web.archive.org/web/20230930005534/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20231005003252/https://stackoverflow.com/robots.txt
+  AI changes: Amazonbot: allowed→blocked
+@@ -78,4 +78,6 @@
+ User-agent: GPTBot
+ Disallow: /
++User-agent: Amazonbot
++Disallow: /
+ User-agent: Googlebot-Image
+ Disallow: /*/ivc/*
+
+==============================================================================
+[AI] 2023-10-05  →  2023-10-09   (+2 / -0 lines)
+  before: https://web.archive.org/web/20231005003252/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20231009071357/https://stackoverflow.com/robots.txt
+  AI changes: Google-Extended: allowed→blocked
+@@ -80,4 +80,6 @@
+ User-agent: Amazonbot
+ Disallow: /
++User-agent: Google-Extended
++Disallow: /
+ User-agent: Googlebot-Image
+ Disallow: /*/ivc/*
+
+==============================================================================
+[AI] 2023-12-29  →  2024-01-02   (+0 / -2 lines)
+  before: https://web.archive.org/web/20231229151919/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20240102214147/https://stackoverflow.com/robots.txt
+  AI changes: Google-Extended: blocked→allowed
+@@ -80,6 +80,4 @@
+ User-agent: Amazonbot
+ Disallow: /
+-User-agent: Google-Extended
+-Disallow: /
+ User-agent: Googlebot-Image
+ Disallow: /*/ivc/*
+
+==============================================================================
+2024-02-25  →  2024-02-29   (+0 / -3 lines)
+  before: https://web.archive.org/web/20240225152415/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20240229123112/https://stackoverflow.com/robots.txt
+@@ -31,7 +31,4 @@
+ Disallow: /users/rep/show
+ Disallow: /users/rep/show?
+-Disallow: /users/prediction-data
+-Disallow: /users/prediction-data/
+-Disallow: /users/prediction-data?
+ Disallow: /unanswered/
+ Disallow: /unanswered?
+
+==============================================================================
+[AI] 2024-02-29  →  2024-03-11   (+2 / -0 lines)
+  before: https://web.archive.org/web/20240229123112/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20240311211956/https://stackoverflow.com/robots.txt
+  AI changes: PerplexityBot: allowed→blocked
+@@ -77,4 +77,6 @@
+ User-agent: Amazonbot
+ Disallow: /
++User-Agent: PerplexityBot
++Disallow: /
+ User-agent: Googlebot-Image
+ Disallow: /*/ivc/*
+
+==============================================================================
+[AI] 2024-03-21  →  2024-03-28   (+0 / -2 lines)
+  before: https://web.archive.org/web/20240321194928/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20240328054303/https://stackoverflow.com/robots.txt
+  AI changes: GPTBot: blocked→allowed
+@@ -73,6 +73,4 @@
+ User-agent: Bytespider
+ Disallow: /
+-User-agent: GPTBot
+-Disallow: /
+ User-agent: Amazonbot
+ Disallow: /
+
+==============================================================================
+[AI] 2024-08-14  →  2024-08-20   (+6 / -0 lines)
+  before: https://web.archive.org/web/20240814014143/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20240820212147/https://stackoverflow.com/robots.txt
+  AI changes: Applebot-Extended: allowed→blocked; meta-externalagent: allowed→blocked
+@@ -77,4 +77,10 @@
+ User-Agent: PerplexityBot
+ Disallow: /
++User-agent: meta-externalagent
++Disallow: /
++User-agent: Applebot
++Disallow: /
++User-agent: Applebot-Extended
++Disallow: /
+ User-agent: Googlebot-Image
+ Disallow: /*/ivc/*
+
+==============================================================================
+[AI] 2024-08-29  →  2024-09-07   (+20 / -0 lines)
+  before: https://web.archive.org/web/20240829013152/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20240907071744/https://stackoverflow.com/robots.txt
+  AI changes: ClaudeBot: allowed→blocked; cohere-ai: allowed→blocked
+@@ -83,4 +83,24 @@
+ User-agent: Applebot-Extended
+ Disallow: /
++User-agent: cohere-ai
++Disallow: /
++User-agent: Omgilibot
++Disallow: /
++User-agent: Omgili
++Disallow: /
++User-agent: magpie-crawler
++Disallow: /
++User-agent: TurnitinBot
++Disallow: /
++User-agent: DataForSeoBot
++Disallow: /
++User-agent: Twitterbot
++Disallow: /
++User-agent: peer39_crawler
++Disallow: /
++User-agent: scrapy
++Disallow: /
++User-agent: ClaudeBot
++Disallow: /
+ User-agent: Googlebot-Image
+ Disallow: /*/ivc/*
+
+==============================================================================
+[AI] 2024-09-25  →  2024-10-04   (+14 / -0 lines)
+  before: https://web.archive.org/web/20240925191441/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20241004011434/https://stackoverflow.com/robots.txt
+  AI changes: CCBot: allowed→blocked
+@@ -103,4 +103,18 @@
+ User-agent: ClaudeBot
+ Disallow: /
++User-agent: Claude-Web
++Disallow: /
++User-agent: CCBot
++Disallow: /
++User-agent: Diffbot
++Disallow: /
++User-agent: FacebookBot
++Disallow: /
++User-agent: YouBot
++Disallow: /
++User-agent: AiZBot
++Disallow: /
++User-agent: AiZBot-Dolma
++Disallow: /
+ User-agent: Googlebot-Image
+ Disallow: /*/ivc/*
+
+==============================================================================
+[AI] 2024-10-07  →  2024-11-10   (+0 / -4 lines)
+  before: https://web.archive.org/web/20241007192558/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20241110183848/https://stackoverflow.com/robots.txt
+  AI changes: Amazonbot: blocked→allowed
+@@ -73,11 +73,7 @@
+ User-agent: Bytespider
+ Disallow: /
+-User-agent: Amazonbot
+-Disallow: /
+ User-Agent: PerplexityBot
+ Disallow: /
+ User-agent: meta-externalagent
+-Disallow: /
+-User-agent: Applebot
+ Disallow: /
+ User-agent: Applebot-Extended
+
+==============================================================================
+[AI] 2025-02-01  →  2026-09-10   (+115 / -48 lines)
+  before: https://web.archive.org/web/20250201010543/https://stackoverflow.com/robots.txt
+  after:  https://web.archive.org/web/20260910002727/https://stackoverflow.com/robots.txt
+  AI changes: GPTBot: now named (allowed); ChatGPT-User: now named (allowed); ClaudeBot: blocked→allowed; Google-Extended: now named (allowed); Applebot-Extended: blocked→allowed; PerplexityBot: blocked→allowed; CCBot: blocked→allowed; Bytespider: blocked→allowed; meta-externalagent: blocked→allowed; cohere-ai: blocked→allowed; Amazonbot: now named (allowed)
+@@ -1,3 +1,118 @@
+ User-Agent: *
++Content-Signal: search=yes
++Disallow: /posts/
++Disallow: /posts?
++Disallow: /amzn/click/
++Disallow: /questions/ask/
++Disallow: /questions/ask?
++Disallow: /search/
++Disallow: /search?
++Disallow: /feeds/
++Disallow: /feeds?
++Disallow: /users/login/
++Disallow: /users/login?
++Disallow: /users/logout/
++Disallow: /users/logout?
++Disallow: /users/filter/
++Disallow: /users/filter?
++Disallow: /users/signup
++Disallow: /users/signup/
++Disallow: /users/signup?
++Disallow: /users/authenticate/
++Disallow: /users/authenticate?
++Disallow: /users/oauth/*
++Disallow: /users/flag-summary/
++Disallow: /users/flair/
++Disallow: /users/flair?
++Disallow: /users/activity/
++Disallow: /users/activity/?
++Disallow: /users/activity/show?*
++Disallow: /users/stats/
++Disallow: /users/*?tab=accounts
++Disallow: /users/*?tab=activity
++Disallow: /users/rep/show
++Disallow: /users/rep/show?
++Disallow: /unanswered/
++Disallow: /unanswered?
++Disallow: /u/
++Disallow: /messages/
++Disallow: /api/*
++Disallow: /review/*
++Disallow: /*/ivc/*
++Disallow: /*?*lastactivity
++Disallow: /users/login/global/request/
++Disallow: /users/login/global/request?
++Disallow: /questions/*answertab=*
++Disallow: /questions/tagged/*+*
++Disallow: /questions/tagged/*%20*
++Disallow: /questions/*/answer/submit
++Disallow: /questions/*?*rq=*
++Disallow: /tags/*+*
++Disallow: /tags/*%20*
++Disallow: /suggested-edits/
++Disallow: /suggested-edits?
++Disallow: /ajax/
++Disallow: /plugins/
++Disallow: /error
++Disallow: /gps/*
++Disallow: /10m
++Disallow: /jobs/cv/sign-up-and-create
++Disallow: /jobs/n/*
++Disallow: /jobs/a/*
++Disallow: /jobs/apply/*
++Disallow: /jobs/companies/n/*
++Disallow: /jobs/companies/a/*
++Disallow: /jobs/*/more-jobs-count
++Disallow: /jobs/email-job
++Disallow: /emails/*
++Disallow: /_/*
++Disallow: /click?*
++Disallow: /filter/tags?*
++Disallow: /landing/r/digest?*
++Disallow: /admin/*
++Disallow: /impression.gif?*md=*
++Disallow: /markup_single.js?*
++Disallow: /snippet.js?*
++Disallow: /misc/wp-admin
++Disallow: /misc/pii
++Disallow: /misc/usertable
++Disallow: /misc/questionsdump
++Disallow: /misc/answersdump
++Disallow: /?*
++Disallow: /questions?*tagnames=*
++Disallow: /questions?*tagMode=*
++Disallow: /questions?*pagesize=*
++Disallow: /questions?*edited=*
++Disallow: /questions?*days=*
++Disallow: /questions/tagged/*?tagnames=*
++Disallow: /questions/tagged/*?tagMode=*
++Disallow: /questions/tagged/*?pagesize=*
++Disallow: /questions/tagged/*?days=*
++Disallow: /questions/tagged/*?edited=*
++Disallow: /questions/tagged/*?r=*
++Disallow: /tags/*?tagnames=*
++Disallow: /tags/*?tagMode=*
++Disallow: /tags/*?pagesize=*
++Disallow: /tags/*?days=*
++Disallow: /tags/*?edited=*
++Disallow: /tags/*?r=*
++Disallow: /users?*tab=*
++Disallow: /users?*sort=*
++Disallow: /users?*startdate=*
++Disallow: /users?*StartDate=*
++Disallow: /users?*showDeleted=*
++Disallow: /users?*showdeleted=*
++Disallow: /users?*filter=*
++Disallow: /users/rank?*
++Disallow: /users/auth/gcp*
++Disallow: /posts/markdown-help*
++Disallow: /posts/comment-help*
++Disallow: /tags/*/popup?*origin=*
++Allow: /
++User-agent: Googlebot
++User-agent: Google-Extended
++User-agent: amazonbot
++User-agent: GPTBot
++User-agent: ChatGPT-User
+ Disallow: /posts/
+ Disallow: /posts?
+@@ -65,52 +180,4 @@
+ Disallow: /_/*
+ Allow: /
+-User-agent: Yahoo Pipes 1.0
+-Disallow: /
+-User-agent: 008
+-Disallow: /
+-User-agent: voltron
+-Disallow: /
+-User-agent: Bytespider
+-Disallow: /
+-User-Agent: PerplexityBot
+-Disallow: /
+-User-agent: meta-externalagent
+-Disallow: /
+-User-agent: Applebot-Extended
+-Disallow: /
+-User-agent: cohere-ai
+-Disallow: /
+-User-agent: Omgilibot
+-Disallow: /
+-User-agent: Omgili
+-Disallow: /
+-User-agent: magpie-crawler
+-Disallow: /
+-User-agent: TurnitinBot
+-Disallow: /
+-User-agent: DataForSeoBot
+-Disallow: /
+-User-agent: Twitterbot
+-Disallow: /
+-User-agent: peer39_crawler
+-Disallow: /
+-User-agent: scrapy
+-Disallow: /
+-User-agent: ClaudeBot
+-Disallow: /
+-User-agent: Claude-Web
+-Disallow: /
+-User-agent: CCBot
+-Disallow: /
+-User-agent: Diffbot
+-Disallow: /
+-User-agent: FacebookBot
+-Disallow: /
+-User-agent: YouBot
+-Disallow: /
+-User-agent: AiZBot
+-Disallow: /
+-User-agent: AiZBot-Dolma
+-Disallow: /
+ User-agent: Googlebot-Image
+ Disallow: /*/ivc/*

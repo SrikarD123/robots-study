@@ -1,0 +1,149 @@
+robots.txt history for medium.com (forum)
+158 versions, 2015-11-18 to 2026-10-09
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-11-18  →  2016-12-30   (+6 / -1 lines)
+  before: https://web.archive.org/web/20151118231904/https://medium.com/robots.txt
+  after:  https://web.archive.org/web/20161230194655/https://medium.com/robots.txt
+@@ -1,4 +1,3 @@
+ User-Agent: *
+-Disallow: /_/
+ Disallow: /m/
+ Disallow: /me/
+@@ -6,3 +5,9 @@
+ Disallow: /@me/
+ Disallow: /*/*/edit
++Allow: /_/
++Allow: /_/api/users/*/meta
++Allow: /_/api/users/*/profile/stream
++Allow: /_/api/posts/*/responses
++Allow: /_/api/posts/*/responsesStream
++Allow: /_/api/posts/*/related
+ Sitemap: https://medium.com/sitemap/sitemap.xml
+
+==============================================================================
+2017-12-28  →  2018-12-31   (+2 / -1 lines)
+  before: https://web.archive.org/web/20171228214949/https://medium.com/robots.txt
+  after:  https://web.archive.org/web/20181231211729/https://medium.com/robots.txt
+@@ -4,5 +4,6 @@
+ Disallow: /@me$
+ Disallow: /@me/
+-Disallow: /*/*/edit
++Disallow: /*/edit$
++Disallow: /*/*/edit$
+ Allow: /_/
+ Allow: /_/api/users/*/meta
+
+==============================================================================
+2018-12-31  →  2019-12-31   (+6 / -0 lines)
+  before: https://web.archive.org/web/20181231211729/https://medium.com/robots.txt
+  after:  https://web.archive.org/web/20191231202549/https://medium.com/robots.txt
+@@ -6,4 +6,10 @@
+ Disallow: /*/edit$
+ Disallow: /*/*/edit$
++Disallow: /r/
++Disallow: /t/
++Disallow: /*/followers$
++Disallow: /*/following$
++Disallow: /search?q$
++Disallow: /search?q=
+ Allow: /_/
+ Allow: /_/api/users/*/meta
+
+==============================================================================
+2019-12-31  →  2020-12-19   (+3 / -2 lines)
+  before: https://web.archive.org/web/20191231202549/https://medium.com/robots.txt
+  after:  https://web.archive.org/web/20201219004613/https://medium.com/robots.txt
+@@ -6,8 +6,9 @@
+ Disallow: /*/edit$
+ Disallow: /*/*/edit$
++Disallow: /media/
++Disallow: /p/*/share
+ Disallow: /r/
+ Disallow: /t/
+-Disallow: /*/followers$
+-Disallow: /*/following$
++Disallow: /trending
+ Disallow: /search?q$
+ Disallow: /search?q=
+
+==============================================================================
+2020-12-19  →  2021-12-15   (+0 / -1 lines)
+  before: https://web.archive.org/web/20201219004613/https://medium.com/robots.txt
+  after:  https://web.archive.org/web/20211215182039/https://medium.com/robots.txt
+@@ -9,5 +9,4 @@
+ Disallow: /p/*/share
+ Disallow: /r/
+-Disallow: /t/
+ Disallow: /trending
+ Disallow: /search?q$
+
+==============================================================================
+2023-07-10  →  2023-07-14   (+1 / -0 lines)
+  before: https://web.archive.org/web/20230710045139/https://medium.com/robots.txt
+  after:  https://web.archive.org/web/20230714091243/https://medium.com/robots.txt
+@@ -12,4 +12,5 @@
+ Disallow: /search?q$
+ Disallow: /search?q=
++Disallow: /*/*source=
+ Allow: /_/
+ Allow: /_/api/users/*/meta
+
+==============================================================================
+[AI] 2023-08-29  →  2023-08-31   (+2 / -0 lines)
+  before: https://web.archive.org/web/20230829030016/https://medium.com/robots.txt
+  after:  https://web.archive.org/web/20230831030253/https://medium.com/robots.txt
+  AI changes: GPTBot: allowed→blocked
+@@ -20,2 +20,4 @@
+ Allow: /_/api/posts/*/related
+ Sitemap: https://medium.com/sitemap/sitemap.xml
++User-Agent: GPTBot
++Disallow: /
+
+==============================================================================
+2023-10-29  →  2023-11-03   (+2 / -0 lines)
+  before: https://web.archive.org/web/20231029221558/https://medium.com/robots.txt
+  after:  https://web.archive.org/web/20231103043926/https://medium.com/robots.txt
+@@ -12,4 +12,6 @@
+ Disallow: /search?q$
+ Disallow: /search?q=
++Disallow: /*/search?q=
++Disallow: /*/search/*?q=
+ Disallow: /*/*source=
+ Allow: /_/
+
+==============================================================================
+[AI] 2025-04-08  →  2026-10-09   (+17 / -3 lines)
+  before: https://web.archive.org/web/20250408144246/https://medium.com/robots.txt
+  after:  https://web.archive.org/web/20261009042955/https://medium.com/robots.txt
+  AI changes: ClaudeBot: allowed→blocked; Applebot-Extended: allowed→blocked; Bytespider: allowed→blocked; meta-externalagent: allowed→blocked; Amazonbot: allowed→blocked
+@@ -15,5 +15,4 @@
+ Disallow: /*/search/*?q=
+ Disallow: /*/*source=
+-Allow: /_/
+ Allow: /_/api/users/*/meta
+ Allow: /_/api/users/*/profile/stream
+@@ -21,5 +20,20 @@
+ Allow: /_/api/posts/*/responsesStream
+ Allow: /_/api/posts/*/related
++User-Agent: Amazonbot
++User-Agent: Applebot-Extended
++User-Agent: Bytespider
++User-Agent: ClaudeBot
++User-Agent: FacebookBot
++User-Agent: GoogleOther
++User-Agent: GPTBot
++User-Agent: meta-externalagent
++Disallow: /
++Allow: /about
++Allow: /business
++Allow: /earn
++Allow: /gift
++Allow: /membership
++Allow: /partner-program
++Allow: /verified-authors
+ Sitemap: https://medium.com/sitemap/sitemap.xml
+-User-Agent: GPTBot
+-Disallow: /
++License: https://medium.com/license.xml

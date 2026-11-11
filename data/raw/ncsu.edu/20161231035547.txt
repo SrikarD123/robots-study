@@ -1,0 +1,25 @@
+# robots.txt for www4.ncsu.edu
+
+# slow down Yahoo! Slurp
+User-agent: Slurp
+Crawl-delay: 30
+Disallow: /*.AVI$
+Disallow: /*.avi$
+Disallow: /*.mov$
+Disallow: /*.m4a$
+Disallow: /*.m4b$
+Disallow: /*.mp3$
+Disallow: /*.ppt$
+Disallow: /*.wmv$
+
+# don't index certain media at all, anywhere
+User-agent: *
+Disallow: /*.AVI$
+Disallow: /*.avi$
+Disallow: /*.m4a$
+Disallow: /*.m4b$
+Disallow: /*.mov$
+Disallow: /*.mp3$
+Disallow: /*.ppt$
+Disallow: /*.wmv$
+

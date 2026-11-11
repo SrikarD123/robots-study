@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://marginalrevolution.com/sitemap_index.xml

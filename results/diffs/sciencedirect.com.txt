@@ -1,0 +1,3055 @@
+robots.txt history for sciencedirect.com (academic)
+157 versions, 2015-07-14 to 2026-10-15
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+2015-07-14  →  2017-10-30   (+123 / -1 lines)
+  before: https://web.archive.org/web/20150714132848/http://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20171030221655/http://www.sciencedirect.com/robots.txt
+@@ -77,4 +77,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: CiteSeerBot
+ Disallow: /cache/MiamiImageURL/
+@@ -151,4 +159,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: FAST
+ Disallow: /cache/MiamiImageURL/
+@@ -225,4 +241,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: Googlebot
+ Disallow: /cache/MiamiImageURL/
+@@ -297,4 +321,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: Googlebot-IA
+ Disallow: /cache/MiamiImageURL/
+@@ -370,4 +402,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: gulliver
+ Disallow: /cache/MiamiImageURL/
+@@ -444,4 +484,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: ia_archiver
+ Disallow: /cache/MiamiImageURL/
+@@ -518,4 +566,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: Marvin
+ Disallow: /cache/MiamiImageURL/
+@@ -592,4 +648,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: bingbot
+ Disallow: /cache/MiamiImageURL/
+@@ -665,4 +729,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: NimbleCrawler
+ Disallow: /cache/MiamiImageURL/
+@@ -739,4 +811,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: Slurp
+ Disallow: /cache/MiamiImageURL/
+@@ -813,4 +893,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: Teoma
+ Disallow: /cache/MiamiImageURL/
+@@ -887,4 +975,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: zibber-v0.1(www.zibb.com/crawler/)
+ Disallow: /cache/MiamiImageURL/
+@@ -961,4 +1057,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: Mediapartners-Google*
+ Disallow: /cache/MiamiImageURL/
+@@ -1034,4 +1138,12 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
+ User-agent: Baiduspider
+ Disallow: /science?_ob=PublicationURL*
+@@ -1108,3 +1220,13 @@
+ Disallow: /refmodsrp/suggestedTopics/*
+ Disallow: /related-books/*
+-Sitemap: http://www.sciencedirect.com/science/page/sitemap/index.html
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
++Sitemap: https://www.sciencedirect.com/sitemap.xml
++Sitemap: https://www.sciencedirect.com/topics/sitemap-topics.xml
++Sitemap: https://www.sciencedirect.com/journal/sitemap.xml
+
+==============================================================================
+2017-10-30  →  2018-12-27   (+36 / -0 lines)
+  before: https://web.archive.org/web/20171030221655/http://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20181227181406/https://www.sciencedirect.com/robots.txt
+@@ -85,4 +85,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: CiteSeerBot
+ Disallow: /cache/MiamiImageURL/
+@@ -167,4 +169,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: FAST
+ Disallow: /cache/MiamiImageURL/
+@@ -249,4 +253,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: Googlebot
+ Disallow: /cache/MiamiImageURL/
+@@ -329,4 +335,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: Googlebot-IA
+ Disallow: /cache/MiamiImageURL/
+@@ -410,4 +418,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: gulliver
+ Disallow: /cache/MiamiImageURL/
+@@ -492,4 +502,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: ia_archiver
+ Disallow: /cache/MiamiImageURL/
+@@ -574,4 +586,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: Marvin
+ Disallow: /cache/MiamiImageURL/
+@@ -656,4 +670,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: bingbot
+ Disallow: /cache/MiamiImageURL/
+@@ -737,4 +753,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: NimbleCrawler
+ Disallow: /cache/MiamiImageURL/
+@@ -819,4 +837,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: Slurp
+ Disallow: /cache/MiamiImageURL/
+@@ -901,4 +921,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: Teoma
+ Disallow: /cache/MiamiImageURL/
+@@ -983,4 +1005,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: zibber-v0.1(www.zibb.com/crawler/)
+ Disallow: /cache/MiamiImageURL/
+@@ -1065,4 +1089,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: Mediapartners-Google*
+ Disallow: /cache/MiamiImageURL/
+@@ -1146,4 +1172,6 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+ User-agent: Baiduspider
+ Disallow: /science?_ob=PublicationURL*
+@@ -1228,5 +1256,13 @@
+ Disallow: /sdfe/pdf/download/read/noindex/pii/*
+ Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
++User-agent: YandexBot
++Allow: /topics
++Disallow: /
+ Sitemap: https://www.sciencedirect.com/sitemap.xml
+ Sitemap: https://www.sciencedirect.com/topics/sitemap-topics.xml
+ Sitemap: https://www.sciencedirect.com/journal/sitemap.xml
++Sitemap: https://www.sciencedirect.com/handbook/sitemap.xml
++Sitemap: https://www.sciencedirect.com/bookseries/sitemap.xml
++Sitemap: https://www.sciencedirect.com/browse/sitemap.xml
+
+==============================================================================
+2018-12-27  →  2019-12-28   (+447 / -1156 lines)
+  before: https://web.archive.org/web/20181227181406/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20191228150459/https://www.sciencedirect.com/robots.txt
+@@ -2,149 +2,280 @@
+ User-agent: *
+ Disallow: /
+-# As of 1/8/2014, there are 15 crawlers welcomed by SD
+-User-agent: bcdindexer
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
++# As of 13/6/2019, there are 10 crawlers welcomed by SD
++User-agent: Googlebot
++Disallow: /cache/MiamiImageURL/
++Disallow: /science?_ob=MiamiCaptionURL*
++Disallow: /science/science?_ob=GatewayURL*
++Disallow: /science/science?_ob=MiamiImageURL*
++Disallow: /science?_ob=ShoppingCartURL*
++Disallow: /science?_ob=EmailFriendURL*
++Disallow: /science?_ob=MiamiImageURL*
++Disallow: /science?_ob=GatewayURL*
++Disallow: /science/advertisement/
++Disallow: /science/relLink/ajaxReq?*
++Disallow: /science/gadgets/render/
++Disallow: /science/spliss/rslts/
++Disallow: /science/preview/
++Disallow: /science/mlkt/rslts/
++Disallow: /science/referenceResolution/ajaxRefResol?*
++Disallow: /science/outlineJson/
++Disallow: /science/toc/
++Disallow: /science/bktoc/
++Disallow: /science?_ob=PdfExcerptURL*
++Disallow: /science?_ob=MathURL*
++Disallow: /science/page/flash/VideoPlayer*
++Disallow: /science?_ob=RefWorkIndexURL*
++Disallow: /science?_ob=RSSURL*
++Disallow: /science/MiamiMultiMediaURL/
++Disallow: /science?_ob=MiamiMultiMediaURL*
++Disallow: /science?_ob=ReminderURL*
++Disallow: /science?_ob=QuickSearchURL*
++Disallow: /science?_ob=TitleSrchURL*
++Disallow: /science?_ob=QuickSearchListURL*
++Disallow: /science?_ob=TopicAlertURL*
++Disallow: /science?_ob=RefWorkSubjClassURL*
++Disallow: /science?_ob=RefWorkTocURL*
++Disallow: /science?_ob=SuggestedArtURL*
++Disallow: /science/downloadActions/
++Disallow: */pdfft/*
++Disallow: */article/eid/*
++Disallow: */science/ereader/
++Disallow: */science/fabrication/
++Disallow: /science/ppv-pdf/
++Disallow: /science/ppv-supp/
++Disallow: /science/gs/
++Disallow: /science/dc/
++Disallow: /science/frag/
++Disallow: *?np=y
++Disallow: /refmodsrp/suggestedTopics/*
++Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
++Disallow: /sdfe/reader/pii/*
++Disallow: /user/
++User-agent: Googlebot-IA
++Disallow: /cache/MiamiImageURL/
++Disallow: /science?_ob=MiamiCaptionURL*
++Disallow: /science/science?_ob=GatewayURL*
++Disallow: /science/science?_ob=MiamiImageURL*
++Disallow: /science?_ob=ShoppingCartURL*
++Disallow: /science?_ob=EmailFriendURL*
++Disallow: /science?_ob=MiamiImageURL*
++Disallow: /science?_ob=GatewayURL*
++Disallow: /science/advertisement/
++Disallow: /science/relLink/ajaxReq?*
++Disallow: /science/gadgets/render/
++Disallow: /science/spliss/rslts/
++Disallow: /science/preview/
++Disallow: /science/mlkt/rslts/
++Disallow: /science/referenceResolution/ajaxRefResol?*
++Disallow: /science/outlineJson/
++Disallow: /science/toc/
++Disallow: /science/bktoc/
++Disallow: /science?_ob=PdfExcerptURL*
++Disallow: /science?_ob=MathURL*
++Disallow: /science/page/flash/VideoPlayer*
++Disallow: /science?_ob=RefWorkIndexURL*
++Disallow: /science?_ob=RSSURL*
++Disallow: /science/MiamiMultiMediaURL/
++Disallow: /science?_ob=MiamiMultiMediaURL*
++Disallow: /science?_ob=ReminderURL*
++Disallow: /science?_ob=QuickSearchURL*
++Disallow: /science?_ob=TitleSrchURL*
++Disallow: /science?_ob=QuickSearchListURL*
++Disallow: /science?_ob=TopicAlertURL*
++Disallow: /science?_ob=RefWorkSubjClassURL*
++Disallow: /science?_ob=RefWorkTocURL*
++Disallow: /science?_ob=SuggestedArtURL*
++Disallow: /science/downloadActions/
++Disallow: */pdfft/*
++Disallow: */article/eid/*
++Disallow: */science/ereader/
++Disallow: */science/fabrication/
++Disallow: */pdf/*
++Disallow: /science/ppv-pdf/
++Disallow: /science/ppv-supp/
++Disallow: /science/gs/
++Disallow: /science/dc/
++Disallow: /science/frag/
++Disallow: *?np=y
++Disallow: /refmodsrp/suggestedTopics/*
++Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
++Disallow: /sdfe/reader/pii/*
++Disallow: /user/
++User-agent: ia_archiver
++Disallow: /cache/MiamiImageURL/
++Disallow: /science?_ob=MiamiCaptionURL*
++Disallow: /science/science?_ob=GatewayURL*
++Disallow: /science/science?_ob=MiamiImageURL*
++Disallow: /science?_ob=ShoppingCartURL*
++Disallow: /science?_ob=EmailFriendURL*
++Disallow: /science?_ob=MiamiImageURL*
++Disallow: /science?_ob=GatewayURL*
++Disallow: /science/advertisement/
++Disallow: /science/relLink/ajaxReq?*
++Disallow: /science/gadgets/render/
++Disallow: /science/spliss/rslts/
++Disallow: /science/preview/
++Disallow: /science/mlkt/rslts/
++Disallow: /science/referenceResolution/ajaxRefResol?*
++Disallow: /science/outlineJson/
++Disallow: /science/toc/
++Disallow: /science/bktoc/
++Disallow: /science?_ob=PdfExcerptURL*
++Disallow: /science?_ob=MathURL*
++Disallow: /science/page/flash/VideoPlayer*
++Disallow: /science?_ob=RefWorkIndexURL*
++Disallow: /science?_ob=RSSURL*
++Disallow: /science/MiamiMultiMediaURL/
++Disallow: /science?_ob=MiamiMultiMediaURL*
++Disallow: /science?_ob=ReminderURL*
++Disallow: /science?_ob=QuickSearchURL*
++Disallow: /science?_ob=TitleSrchURL*
++Disallow: /science?_ob=QuickSearchListURL*
++Disallow: /science?_ob=TopicAlertURL*
++Disallow: /science?_ob=RefWorkSubjClassURL*
++Disallow: /science?_ob=RefWorkTocURL*
++Disallow: /science?_ob=SuggestedArtURL*
++Disallow: /science/downloadActions/
+ Disallow: */pdfft/*
+ Disallow: /science/article/
+ Disallow: */article/eid/*
+ Disallow: */science/ereader/
+-Disallow: */science/fabrication/*
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: CiteSeerBot
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
++Disallow: */science/fabrication/
++Disallow: */pdf/*
++Disallow: /science/ppv-pdf/
++Disallow: /science/ppv-supp/
++Disallow: /science/gs/
++Disallow: /science/dc/
++Disallow: /science/frag/
++Disallow: *?np=y
++Disallow: /refmodsrp/suggestedTopics/*
++Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
++Disallow: /sdfe/reader/pii/*
++Disallow: /user/
++User-agent: bingbot
++Disallow: /cache/MiamiImageURL/
++Disallow: /science?_ob=MiamiCaptionURL*
++Disallow: /science/science?_ob=GatewayURL*
++Disallow: /science/science?_ob=MiamiImageURL*
++Disallow: /science?_ob=ShoppingCartURL*
++Disallow: /science?_ob=EmailFriendURL*
++Disallow: /science?_ob=MiamiImageURL*
++Disallow: /science?_ob=GatewayURL*
++Disallow: /science/advertisement/
++Disallow: /science/relLink/ajaxReq?*
++Disallow: /science/gadgets/render/
++Disallow: /science/spliss/rslts/
++Disallow: /science/preview/
++Disallow: /science/mlkt/rslts/
++Disallow: /science/referenceResolution/ajaxRefResol?*
++Disallow: /science/outlineJson/
++Disallow: /science/toc/
++Disallow: /science/bktoc/
++Disallow: /science?_ob=PdfExcerptURL*
++Disallow: /science?_ob=MathURL*
++Disallow: /science/page/flash/VideoPlayer*
++Disallow: /science?_ob=RefWorkIndexURL*
++Disallow: /science?_ob=RSSURL*
++Disallow: /science/MiamiMultiMediaURL/
++Disallow: /science?_ob=MiamiMultiMediaURL*
++Disallow: /science?_ob=ReminderURL*
++Disallow: /science?_ob=QuickSearchURL*
++Disallow: /science?_ob=TitleSrchURL*
++Disallow: /science?_ob=QuickSearchListURL*
++Disallow: /science?_ob=TopicAlertURL*
++Disallow: /science?_ob=RefWorkSubjClassURL*
++Disallow: /science?_ob=RefWorkTocURL*
++Disallow: /science?_ob=SuggestedArtURL*
++Disallow: /science/downloadActions/
++Disallow: */pdfft/*
++Disallow: */article/eid/*
++Disallow: */science/ereader/
++Disallow: */science/fabrication/
++Disallow: */pdf/*
++Disallow: /science/ppv-pdf/
++Disallow: /science/ppv-supp/
++Disallow: /science/gs/
++Disallow: /science/dc/
++Disallow: /science/frag/
++Disallow: *?np=y
++Disallow: /refmodsrp/suggestedTopics/*
++Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
++Disallow: /sdfe/reader/pii/*
++Disallow: /user/
++User-agent: Slurp
++Disallow: /cache/MiamiImageURL/
++Disallow: /science?_ob=MiamiCaptionURL*
++Disallow: /science/science?_ob=GatewayURL*
++Disallow: /science/science?_ob=MiamiImageURL*
++Disallow: /science?_ob=ShoppingCartURL*
++Disallow: /science?_ob=EmailFriendURL*
++Disallow: /science?_ob=MiamiImageURL*
++Disallow: /science?_ob=GatewayURL*
++Disallow: /science/advertisement/
++Disallow: /science/relLink/ajaxReq?*
++Disallow: /science/gadgets/render/
++Disallow: /science/spliss/rslts/
++Disallow: /science/preview/
++Disallow: /science/mlkt/rslts/
++Disallow: /science/referenceResolution/ajaxRefResol?*
++Disallow: /science/outlineJson/
++Disallow: /science/toc/
++Disallow: /science/bktoc/
++Disallow: /science?_ob=PdfExcerptURL*
++Disallow: /science?_ob=MathURL*
++Disallow: /science/page/flash/VideoPlayer*
++Disallow: /science?_ob=RefWorkIndexURL*
++Disallow: /science?_ob=RSSURL*
++Disallow: /science/MiamiMultiMediaURL/
++Disallow: /science?_ob=MiamiMultiMediaURL*
++Disallow: /science?_ob=ReminderURL*
++Disallow: /science?_ob=QuickSearchURL*
++Disallow: /science?_ob=TitleSrchURL*
++Disallow: /science?_ob=QuickSearchListURL*
++Disallow: /science?_ob=TopicAlertURL*
++Disallow: /science?_ob=RefWorkSubjClassURL*
++Disallow: /science?_ob=RefWorkTocURL*
++Disallow: /science?_ob=SuggestedArtURL*
++Disallow: /science/downloadActions/
+ Disallow: */pdfft/*
+ Disallow: /science/article/
+@@ -171,64 +302,41 @@
+ Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+ Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: FAST
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
++Disallow: /sdfe/reader/pii/*
++Disallow: /user/
++User-agent: Teoma
++Disallow: /cache/MiamiImageURL/
++Disallow: /science?_ob=MiamiCaptionURL*
++Disallow: /science/science?_ob=GatewayURL*
++Disallow: /science/science?_ob=MiamiImageURL*
++Disallow: /science?_ob=ShoppingCartURL*
++Disallow: /science?_ob=EmailFriendURL*
++Disallow: /science?_ob=MiamiImageURL*
++Disallow: /science?_ob=GatewayURL*
++Disallow: /science/advertisement/
++Disallow: /science/relLink/ajaxReq?*
++Disallow: /science/gadgets/render/
++Disallow: /science/spliss/rslts/
++Disallow: /science/preview/
++Disallow: /science/mlkt/rslts/
++Disallow: /science/referenceResolution/ajaxRefResol?*
++Disallow: /science/outlineJson/
++Disallow: /science/toc/
++Disallow: /science/bktoc/
++Disallow: /science?_ob=PdfExcerptURL*
++Disallow: /science?_ob=MathURL*
++Disallow: /science/page/flash/VideoPlayer*
++Disallow: /science?_ob=RefWorkIndexURL*
++Disallow: /science?_ob=RSSURL*
++Disallow: /science/MiamiMultiMediaURL/
++Disallow: /science?_ob=MiamiMultiMediaURL*
++Disallow: /science?_ob=ReminderURL*
++Disallow: /science?_ob=QuickSearchURL*
++Disallow: /science?_ob=TitleSrchURL*
++Disallow: /science?_ob=QuickSearchListURL*
++Disallow: /science?_ob=TopicAlertURL*
++Disallow: /science?_ob=RefWorkSubjClassURL*
++Disallow: /science?_ob=RefWorkTocURL*
++Disallow: /science?_ob=SuggestedArtURL*
++Disallow: /science/downloadActions/
+ Disallow: */pdfft/*
+ Disallow: /science/article/
+@@ -255,840 +363,6 @@
+ Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+ Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: Googlebot
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: Googlebot-IA
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: gulliver
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: /science/article/
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: ia_archiver
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: /science/article/
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: Marvin
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: /science/article/
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: bingbot
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: NimbleCrawler
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: /science/article/
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: Slurp
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: /science/article/
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: Teoma
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: /science/article/
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-User-agent: zibber-v0.1(www.zibb.com/crawler/)
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: /science/article/
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
++Disallow: /sdfe/reader/pii/*
++Disallow: /user/
+ User-agent: Mediapartners-Google*
+ Disallow: /cache/MiamiImageURL/
+@@ -1116,62 +390,39 @@
+ Disallow: /science?_ob=RSSURL*
+ Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
++Disallow: /science?_ob=MiamiMultiMediaURL*
++Disallow: /science?_ob=ReminderURL*
++Disallow: /science?_ob=QuickSearchURL*
++Disallow: /science?_ob=TitleSrchURL*
++Disallow: /science?_ob=QuickSearchListURL*
++Disallow: /science?_ob=TopicAlertURL*
++Disallow: /science?_ob=RefWorkSubjClassURL*
++Disallow: /science?_ob=RefWorkTocURL*
++Disallow: /science?_ob=SuggestedArtURL*
++Disallow: /science/downloadActions/
++Disallow: */pdfft/*
++Disallow: */article/eid/*
++Disallow: */science/ereader/
++Disallow: */science/fabrication/
++Disallow: */pdf/*
++Disallow: /science/ppv-pdf/
++Disallow: /science/ppv-supp/
++Disallow: /science/gs/
++Disallow: /science/dc/
++Disallow: /science/frag/
++Disallow: *?np=y
++Disallow: /refmodsrp/suggestedTopics/*
++Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
++Disallow: /sdfe/reader/pii/*
++Disallow: /user/
+ User-agent: Baiduspider
+ Disallow: /science?_ob=PublicationURL*
+@@ -1200,69 +451,109 @@
+ Disallow: /science?_ob=RSSURL*
+ Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science//journal/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */jrnlbs/
+-Disallow: */jrnlhs/
+-Disallow: */jrnlrw/
+-Disallow: */bookbs/
+-Disallow: */bookhs/
+-Disallow: */bookrw/
+-Disallow: */bshs/
+-Disallow: */bsrw/
+-Disallow: */jrnlbook/
+-Disallow: */hsrw/
+-Disallow: */jrnlbookbs/
+-Disallow: */jrnlbshs/
+-Disallow: */jrnlbsrw/
+-Disallow: */jrnlhsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */bshsrw/
+-Disallow: */jrnlbookhs/
+-Disallow: */jrnlbookrw/
+-Disallow: */bookbsrw/
+-Disallow: */jrnlbookbshs/
+-Disallow: */jrnlbookhsrw/
+-Disallow: */jrnlbookbsrw/
+-Disallow: */jrnlbshsrw/
+-Disallow: */pdfft/*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
++Disallow: /science?_ob=MiamiMultiMediaURL*
++Disallow: /science?_ob=ReminderURL*
++Disallow: /science?_ob=QuickSearchURL*
++Disallow: /science?_ob=TitleSrchURL*
++Disallow: /science?_ob=QuickSearchListURL*
++Disallow: /science?_ob=TopicAlertURL*
++Disallow: /science?_ob=RefWorkSubjClassURL*
++Disallow: /science?_ob=RefWorkTocURL*
++Disallow: /science?_ob=SuggestedArtURL*
++Disallow: /science/downloadActions/
++Disallow: */pdfft/*
++Disallow: */article/eid/*
++Disallow: */science/ereader/
++Disallow: */science/fabrication/
++Disallow: */pdf/*
++Disallow: /science/ppv-pdf/
++Disallow: /science/ppv-supp/
++Disallow: /science/gs/
++Disallow: /science/dc/
++Disallow: /science/frag/
++Disallow: *?np=y
++Disallow: /refmodsrp/suggestedTopics/*
++Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
++Disallow: /sdfe/reader/pii/*
++Disallow: /user/
+ User-agent: YandexBot
+ Allow: /topics
+ Disallow: /
++User-agent: Twitterbot
++Disallow: /science?_ob=PublicationURL*
++Disallow: /cache/MiamiImageURL/
++Disallow: /science?_ob=MiamiCaptionURL*
++Disallow: /science/science?_ob=GatewayURL*
++Disallow: /science/science?_ob=MiamiImageURL*
++Disallow: /science?_ob=ShoppingCartURL*
++Disallow: /science?_ob=EmailFriendURL*
++Disallow: /science?_ob=MiamiImageURL*
++Disallow: /science?_ob=GatewayURL*
++Disallow: /science/advertisement/
++Disallow: /science/relLink/ajaxReq?*
++Disallow: /science/gadgets/render/
++Disallow: /science/spliss/rslts/
++Disallow: /science/preview/
++Disallow: /science/mlkt/rslts/
++Disallow: /science/referenceResolution/ajaxRefResol?*
++Disallow: /science/outlineJson/
++Disallow: /science/toc/
++Disallow: /science/bktoc/
++Disallow: /science?_ob=PdfExcerptURL*
++Disallow: /science?_ob=MathURL*
++Disallow: /science/page/flash/VideoPlayer*
++Disallow: /science?_ob=RefWorkIndexURL*
++Disallow: /science?_ob=RSSURL*
++Disallow: /science/MiamiMultiMediaURL/
++Disallow: /science?_ob=MiamiMultiMediaURL*
++Disallow: /science?_ob=ReminderURL*
++Disallow: /science?_ob=QuickSearchURL*
++Disallow: /science?_ob=TitleSrchURL*
++Disallow: /science?_ob=QuickSearchListURL*
++Disallow: /science?_ob=TopicAlertURL*
++Disallow: /science?_ob=RefWorkSubjClassURL*
++Disallow: /science?_ob=RefWorkTocURL*
++Disallow: /science?_ob=SuggestedArtURL*
++Disallow: /science/downloadActions/
++Disallow: */pdfft/*
++Disallow: */article/eid/*
++Disallow: */science/ereader/
++Disallow: */science/fabrication/
++Disallow: */pdf/*
++Disallow: /science/ppv-pdf/
++Disallow: /science/ppv-supp/
++Disallow: /science/gs/
++Disallow: /science/dc/
++Disallow: /science/frag/
++Disallow: *?np=y
++Disallow: /refmodsrp/suggestedTopics/*
++Disallow: /related-books/*
++Disallow: /search?*
++Disallow: /search/api*
++Disallow: /sdfe/export/
++Disallow: /sdfe/arp/
++Disallow: /sdfe/ears/
++Disallow: /sdfe/pdf/download/read/index/pii/*
++Disallow: /sdfe/pdf/download/read/noindex/pii/*
++Disallow: /sdfe/pdf/download/file/pii/*
++Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
++Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
++Disallow: /sdfe/reader/pii/*
++Disallow: /user/
+ Sitemap: https://www.sciencedirect.com/sitemap.xml
+ Sitemap: https://www.sciencedirect.com/topics/sitemap-topics.xml
+-Sitemap: https://www.sciencedirect.com/journal/sitemap.xml
+-Sitemap: https://www.sciencedirect.com/handbook/sitemap.xml
+-Sitemap: https://www.sciencedirect.com/bookseries/sitemap.xml
++Sitemap: https://www.sciencedirect.com/journal/sitemap-0.xml
++Sitemap: https://www.sciencedirect.com/bookseries/sitemap-0.xml
++Sitemap: https://www.sciencedirect.com/handbook/sitemap-0.xml
++Sitemap: https://www.sciencedirect.com/book/sitemap-0.xml
++Sitemap: https://www.sciencedirect.com/referencework/sitemap-0.xml
+ Sitemap: https://www.sciencedirect.com/browse/sitemap.xml
+
+==============================================================================
+2019-12-28  →  2020-12-06   (+32 / -32 lines)
+  before: https://web.archive.org/web/20191228150459/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20201206094325/https://www.sciencedirect.com/robots.txt
+@@ -38,5 +38,5 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
+-Disallow: */pdfft/*
++Disallow: */pdfft*
+ Disallow: */article/eid/*
+ Disallow: */science/ereader/
+@@ -97,9 +97,9 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
+-Disallow: */pdfft/*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
++Disallow: */pdfft*
++Disallow: */article/eid/*
++Disallow: */science/ereader/
++Disallow: */science/fabrication/
++Disallow: */pdf*
+ Disallow: /science/ppv-pdf/
+ Disallow: /science/ppv-supp/
+@@ -157,10 +157,10 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
+-Disallow: */pdfft/*
++Disallow: */pdfft*
+ Disallow: /science/article/
+ Disallow: */article/eid/*
+ Disallow: */science/ereader/
+ Disallow: */science/fabrication/
+-Disallow: */pdf/*
++Disallow: */pdf*
+ Disallow: /science/ppv-pdf/
+ Disallow: /science/ppv-supp/
+@@ -218,9 +218,9 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
+-Disallow: */pdfft/*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
++Disallow: */pdfft*
++Disallow: */article/eid/*
++Disallow: */science/ereader/
++Disallow: */science/fabrication/
++Disallow: */pdf*
+ Disallow: /science/ppv-pdf/
+ Disallow: /science/ppv-supp/
+@@ -278,10 +278,10 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
+-Disallow: */pdfft/*
++Disallow: */pdfft*
+ Disallow: /science/article/
+ Disallow: */article/eid/*
+ Disallow: */science/ereader/
+ Disallow: */science/fabrication/
+-Disallow: */pdf/*
++Disallow: */pdf*
+ Disallow: /science/ppv-pdf/
+ Disallow: /science/ppv-supp/
+@@ -339,10 +339,10 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
+-Disallow: */pdfft/*
++Disallow: */pdfft*
+ Disallow: /science/article/
+ Disallow: */article/eid/*
+ Disallow: */science/ereader/
+ Disallow: */science/fabrication/
+-Disallow: */pdf/*
++Disallow: */pdf*
+ Disallow: /science/ppv-pdf/
+ Disallow: /science/ppv-supp/
+@@ -400,9 +400,9 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
+-Disallow: */pdfft/*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
++Disallow: */pdfft*
++Disallow: */article/eid/*
++Disallow: */science/ereader/
++Disallow: */science/fabrication/
++Disallow: */pdf*
+ Disallow: /science/ppv-pdf/
+ Disallow: /science/ppv-supp/
+@@ -461,9 +461,9 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
+-Disallow: */pdfft/*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
++Disallow: */pdfft*
++Disallow: */article/eid/*
++Disallow: */science/ereader/
++Disallow: */science/fabrication/
++Disallow: */pdf*
+ Disallow: /science/ppv-pdf/
+ Disallow: /science/ppv-supp/
+@@ -525,9 +525,9 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
+-Disallow: */pdfft/*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf/*
++Disallow: */pdfft*
++Disallow: */article/eid/*
++Disallow: */science/ereader/
++Disallow: */science/fabrication/
++Disallow: */pdf*
+ Disallow: /science/ppv-pdf/
+ Disallow: /science/ppv-supp/
+
+==============================================================================
+2020-12-06  →  2021-12-09   (+45 / -1 lines)
+  before: https://web.archive.org/web/20201206094325/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20211209154949/https://www.sciencedirect.com/robots.txt
+@@ -2,5 +2,5 @@
+ User-agent: *
+ Disallow: /
+-# As of 13/6/2019, there are 10 crawlers welcomed by SD
++# As of 02/09/2021, there are 10 crawlers welcomed by SD
+ User-agent: Googlebot
+ Disallow: /cache/MiamiImageURL/
+@@ -62,4 +62,7 @@
+ Disallow: /sdfe/reader/pii/*
+ Disallow: /user/
++Disallow: /journal/neuroscience-research/latest?u=
++Disallow: /journal/neuroscience-research/articles-in-press?u=
++Disallow: /journal/neuroscience-research?u=
+ User-agent: Googlebot-IA
+ Disallow: /cache/MiamiImageURL/
+@@ -122,4 +125,7 @@
+ Disallow: /sdfe/reader/pii/*
+ Disallow: /user/
++Disallow: /journal/neuroscience-research/latest?u=
++Disallow: /journal/neuroscience-research/articles-in-press?u=
++Disallow: /journal/neuroscience-research?u=
+ User-agent: ia_archiver
+ Disallow: /cache/MiamiImageURL/
+@@ -183,4 +189,7 @@
+ Disallow: /sdfe/reader/pii/*
+ Disallow: /user/
++Disallow: /journal/neuroscience-research/latest?u=
++Disallow: /journal/neuroscience-research/articles-in-press?u=
++Disallow: /journal/neuroscience-research?u=
+ User-agent: bingbot
+ Disallow: /cache/MiamiImageURL/
+@@ -243,4 +252,7 @@
+ Disallow: /sdfe/reader/pii/*
+ Disallow: /user/
++Disallow: /journal/neuroscience-research/latest?u=
++Disallow: /journal/neuroscience-research/articles-in-press?u=
++Disallow: /journal/neuroscience-research?u=
+ User-agent: Slurp
+ Disallow: /cache/MiamiImageURL/
+@@ -304,4 +316,7 @@
+ Disallow: /sdfe/reader/pii/*
+ Disallow: /user/
++Disallow: /journal/neuroscience-research/latest?u=
++Disallow: /journal/neuroscience-research/articles-in-press?u=
++Disallow: /journal/neuroscience-research?u=
+ User-agent: Teoma
+ Disallow: /cache/MiamiImageURL/
+@@ -365,4 +380,7 @@
+ Disallow: /sdfe/reader/pii/*
+ Disallow: /user/
++Disallow: /journal/neuroscience-research/latest?u=
++Disallow: /journal/neuroscience-research/articles-in-press?u=
++Disallow: /journal/neuroscience-research?u=
+ User-agent: Mediapartners-Google*
+ Disallow: /cache/MiamiImageURL/
+@@ -425,4 +443,7 @@
+ Disallow: /sdfe/reader/pii/*
+ Disallow: /user/
++Disallow: /journal/neuroscience-research/latest?u=
++Disallow: /journal/neuroscience-research/articles-in-press?u=
++Disallow: /journal/neuroscience-research?u=
+ User-agent: Baiduspider
+ Disallow: /science?_ob=PublicationURL*
+@@ -486,4 +507,7 @@
+ Disallow: /sdfe/reader/pii/*
+ Disallow: /user/
++Disallow: /journal/neuroscience-research/latest?u=
++Disallow: /journal/neuroscience-research/articles-in-press?u=
++Disallow: /journal/neuroscience-research?u=
+ User-agent: YandexBot
+ Allow: /topics
+@@ -550,4 +574,7 @@
+ Disallow: /sdfe/reader/pii/*
+ Disallow: /user/
++Disallow: /journal/neuroscience-research/latest?u=
++Disallow: /journal/neuroscience-research/articles-in-press?u=
++Disallow: /journal/neuroscience-research?u=
+ Sitemap: https://www.sciencedirect.com/sitemap.xml
+ Sitemap: https://www.sciencedirect.com/topics/sitemap-topics.xml
+@@ -558,2 +585,19 @@
+ Sitemap: https://www.sciencedirect.com/referencework/sitemap-0.xml
+ Sitemap: https://www.sciencedirect.com/browse/sitemap.xml
++Sitemap: https://www.sciencedirect.com/author/sitemap.xml
++Sitemap: https://www.sciencedirect.com/topics/clinicalkey/now/de/sitemap.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-0.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-1.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-2.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-3.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-4.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-5.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-6.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-7.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-8.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-9.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-10.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-11.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-12.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-13.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-14.xml
+
+==============================================================================
+2021-12-09  →  2022-06-30   (+1 / -1 lines)
+  before: https://web.archive.org/web/20211209154949/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20220630234412/https://www.sciencedirect.com/robots.txt
+@@ -586,5 +586,4 @@
+ Sitemap: https://www.sciencedirect.com/browse/sitemap.xml
+ Sitemap: https://www.sciencedirect.com/author/sitemap.xml
+-Sitemap: https://www.sciencedirect.com/topics/clinicalkey/now/de/sitemap.xml
+ Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-0.xml
+ Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-1.xml
+@@ -602,2 +601,3 @@
+ Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-13.xml
+ Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-14.xml
++Sitemap: https://www.sciencedirect.com/org/journal/sitemap-0.xml
+
+==============================================================================
+2022-07-16  →  2022-07-22   (+7 / -0 lines)
+  before: https://web.archive.org/web/20220716151716/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20220722220338/https://www.sciencedirect.com/robots.txt
+@@ -601,3 +601,10 @@
+ Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-13.xml
+ Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-14.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-15.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-16.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-17.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-18.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-19.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-20.xml
++Sitemap: https://www.sciencedirect.com/science/article/abs/sitemap-21.xml
+ Sitemap: https://www.sciencedirect.com/org/journal/sitemap-0.xml
+
+==============================================================================
+2023-07-01  →  2023-07-07   (+0 / -64 lines)
+  before: https://web.archive.org/web/20230701032201/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20230707152054/https://www.sciencedirect.com/robots.txt
+@@ -101,68 +101,4 @@
+ Disallow: /science/downloadActions/
+ Disallow: */pdfft*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-Disallow: /sdfe/reader/pii/*
+-Disallow: /user/
+-Disallow: /journal/neuroscience-research/latest?u=
+-Disallow: /journal/neuroscience-research/articles-in-press?u=
+-Disallow: /journal/neuroscience-research?u=
+-User-agent: ia_archiver
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */pdfft*
+-Disallow: /science/article/
+ Disallow: */article/eid/*
+ Disallow: */science/ereader/
+
+==============================================================================
+[AI] 2023-08-27  →  2023-08-30   (+4 / -0 lines)
+  before: https://web.archive.org/web/20230827073206/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20230830101705/https://www.sciencedirect.com/robots.txt
+  AI changes: GPTBot: now named (blocked); ChatGPT-User: now named (blocked)
+@@ -513,4 +513,8 @@
+ Disallow: /journal/neuroscience-research/articles-in-press?u=
+ Disallow: /journal/neuroscience-research?u=
++User-agent: GPTBot
++Disallow: /
++User-agent: ChatGPT-User
++Disallow: /
+ Sitemap: https://www.sciencedirect.com/sitemap.xml
+ Sitemap: https://www.sciencedirect.com/topics/sitemap-topics.xml
+
+==============================================================================
+2023-09-07  →  2023-09-09   (+8 / -0 lines)
+  before: https://web.archive.org/web/20230907102732/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20230909160401/https://www.sciencedirect.com/robots.txt
+@@ -52,4 +52,5 @@
+ Disallow: /search?*
+ Disallow: /search/api*
++Disallow: /search/autosuggest*
+ Disallow: /sdfe/export/
+ Disallow: /sdfe/arp/
+@@ -115,4 +116,5 @@
+ Disallow: /search?*
+ Disallow: /search/api*
++Disallow: /search/autosuggest*
+ Disallow: /sdfe/export/
+ Disallow: /sdfe/arp/
+@@ -178,4 +180,5 @@
+ Disallow: /search?*
+ Disallow: /search/api*
++Disallow: /search/autosuggest*
+ Disallow: /sdfe/export/
+ Disallow: /sdfe/arp/
+@@ -242,4 +245,5 @@
+ Disallow: /search?*
+ Disallow: /search/api*
++Disallow: /search/autosuggest*
+ Disallow: /sdfe/export/
+ Disallow: /sdfe/arp/
+@@ -306,4 +310,5 @@
+ Disallow: /search?*
+ Disallow: /search/api*
++Disallow: /search/autosuggest*
+ Disallow: /sdfe/export/
+ Disallow: /sdfe/arp/
+@@ -369,4 +374,5 @@
+ Disallow: /search?*
+ Disallow: /search/api*
++Disallow: /search/autosuggest*
+ Disallow: /sdfe/export/
+ Disallow: /sdfe/arp/
+@@ -433,4 +439,5 @@
+ Disallow: /search?*
+ Disallow: /search/api*
++Disallow: /search/autosuggest*
+ Disallow: /sdfe/export/
+ Disallow: /sdfe/arp/
+@@ -500,4 +507,5 @@
+ Disallow: /search?*
+ Disallow: /search/api*
++Disallow: /search/autosuggest*
+ Disallow: /sdfe/export/
+ Disallow: /sdfe/arp/
+
+==============================================================================
+[AI] 2023-10-16  →  2023-10-19   (+2 / -0 lines)
+  before: https://web.archive.org/web/20231016060249/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20231019122235/https://www.sciencedirect.com/robots.txt
+  AI changes: Google-Extended: now named (blocked)
+@@ -524,4 +524,6 @@
+ Disallow: /
+ User-agent: ChatGPT-User
++Disallow: /
++User-agent: Google-Extended
+ Disallow: /
+ Sitemap: https://www.sciencedirect.com/sitemap.xml
+
+==============================================================================
+2023-11-12  →  2023-11-16   (+8 / -0 lines)
+  before: https://web.archive.org/web/20231112173937/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20231116192855/https://www.sciencedirect.com/robots.txt
+@@ -66,4 +66,5 @@
+ Disallow: /journal/neuroscience-research/articles-in-press?u=
+ Disallow: /journal/neuroscience-research?u=
++Disallow: /compare
+ User-agent: Googlebot-IA
+ Disallow: /cache/MiamiImageURL/
+@@ -130,4 +131,5 @@
+ Disallow: /journal/neuroscience-research/articles-in-press?u=
+ Disallow: /journal/neuroscience-research?u=
++Disallow: /compare
+ User-agent: bingbot
+ Disallow: /cache/MiamiImageURL/
+@@ -194,4 +196,5 @@
+ Disallow: /journal/neuroscience-research/articles-in-press?u=
+ Disallow: /journal/neuroscience-research?u=
++Disallow: /compare
+ User-agent: Slurp
+ Disallow: /cache/MiamiImageURL/
+@@ -259,4 +262,5 @@
+ Disallow: /journal/neuroscience-research/articles-in-press?u=
+ Disallow: /journal/neuroscience-research?u=
++Disallow: /compare
+ User-agent: Teoma
+ Disallow: /cache/MiamiImageURL/
+@@ -324,4 +328,5 @@
+ Disallow: /journal/neuroscience-research/articles-in-press?u=
+ Disallow: /journal/neuroscience-research?u=
++Disallow: /compare
+ User-agent: Mediapartners-Google*
+ Disallow: /cache/MiamiImageURL/
+@@ -388,4 +393,5 @@
+ Disallow: /journal/neuroscience-research/articles-in-press?u=
+ Disallow: /journal/neuroscience-research?u=
++Disallow: /compare
+ User-agent: Baiduspider
+ Disallow: /science?_ob=PublicationURL*
+@@ -453,4 +459,5 @@
+ Disallow: /journal/neuroscience-research/articles-in-press?u=
+ Disallow: /journal/neuroscience-research?u=
++Disallow: /compare
+ User-agent: YandexBot
+ Allow: /topics
+@@ -521,4 +528,5 @@
+ Disallow: /journal/neuroscience-research/articles-in-press?u=
+ Disallow: /journal/neuroscience-research?u=
++Disallow: /compare
+ User-agent: GPTBot
+ Disallow: /
+
+==============================================================================
+2023-12-01  →  2023-12-04   (+8 / -0 lines)
+  before: https://web.archive.org/web/20231201094454/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20231204052516/https://www.sciencedirect.com/robots.txt
+@@ -67,4 +67,5 @@
+ Disallow: /journal/neuroscience-research?u=
+ Disallow: /compare
++Disallow: /getaccess/*
+ User-agent: Googlebot-IA
+ Disallow: /cache/MiamiImageURL/
+@@ -132,4 +133,5 @@
+ Disallow: /journal/neuroscience-research?u=
+ Disallow: /compare
++Disallow: /getaccess/*
+ User-agent: bingbot
+ Disallow: /cache/MiamiImageURL/
+@@ -197,4 +199,5 @@
+ Disallow: /journal/neuroscience-research?u=
+ Disallow: /compare
++Disallow: /getaccess/*
+ User-agent: Slurp
+ Disallow: /cache/MiamiImageURL/
+@@ -263,4 +266,5 @@
+ Disallow: /journal/neuroscience-research?u=
+ Disallow: /compare
++Disallow: /getaccess/*
+ User-agent: Teoma
+ Disallow: /cache/MiamiImageURL/
+@@ -329,4 +333,5 @@
+ Disallow: /journal/neuroscience-research?u=
+ Disallow: /compare
++Disallow: /getaccess/*
+ User-agent: Mediapartners-Google*
+ Disallow: /cache/MiamiImageURL/
+@@ -394,4 +399,5 @@
+ Disallow: /journal/neuroscience-research?u=
+ Disallow: /compare
++Disallow: /getaccess/*
+ User-agent: Baiduspider
+ Disallow: /science?_ob=PublicationURL*
+@@ -460,4 +466,5 @@
+ Disallow: /journal/neuroscience-research?u=
+ Disallow: /compare
++Disallow: /getaccess/*
+ User-agent: YandexBot
+ Allow: /topics
+@@ -529,4 +536,5 @@
+ Disallow: /journal/neuroscience-research?u=
+ Disallow: /compare
++Disallow: /getaccess/*
+ User-agent: GPTBot
+ Disallow: /
+
+==============================================================================
+[AI] 2024-03-06  →  2024-03-14   (+2 / -203 lines)
+  before: https://web.archive.org/web/20240306230525/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20240314104057/https://www.sciencedirect.com/robots.txt
+  AI changes: CCBot: now named (blocked)
+@@ -267,137 +267,4 @@
+ Disallow: /compare
+ Disallow: /getaccess/*
+-User-agent: Teoma
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */pdfft*
+-Disallow: /science/article/
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /search/autosuggest*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-Disallow: /sdfe/reader/pii/*
+-Disallow: /user/
+-Disallow: /journal/neuroscience-research/latest?u=
+-Disallow: /journal/neuroscience-research/articles-in-press?u=
+-Disallow: /journal/neuroscience-research?u=
+-Disallow: /compare
+-Disallow: /getaccess/*
+-User-agent: Mediapartners-Google*
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */pdfft*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /search/autosuggest*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-Disallow: /sdfe/reader/pii/*
+-Disallow: /user/
+-Disallow: /journal/neuroscience-research/latest?u=
+-Disallow: /journal/neuroscience-research/articles-in-press?u=
+-Disallow: /journal/neuroscience-research?u=
+-Disallow: /compare
+-Disallow: /getaccess/*
+ User-agent: Baiduspider
+ Disallow: /science?_ob=PublicationURL*
+@@ -467,74 +334,4 @@
+ Disallow: /compare
+ Disallow: /getaccess/*
+-User-agent: YandexBot
+-Allow: /topics
+-Disallow: /
+-User-agent: Twitterbot
+-Disallow: /science?_ob=PublicationURL*
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */pdfft*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /search/autosuggest*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-Disallow: /sdfe/reader/pii/*
+-Disallow: /user/
+-Disallow: /journal/neuroscience-research/latest?u=
+-Disallow: /journal/neuroscience-research/articles-in-press?u=
+-Disallow: /journal/neuroscience-research?u=
+-Disallow: /compare
+-Disallow: /getaccess/*
+ User-agent: GPTBot
+ Disallow: /
+@@ -542,4 +339,6 @@
+ Disallow: /
+ User-agent: Google-Extended
++Disallow: /
++User-agent: CCBot
+ Disallow: /
+ Sitemap: https://www.sciencedirect.com/sitemap.xml
+
+==============================================================================
+2024-07-14  →  2024-07-18   (+2 / -0 lines)
+  before: https://web.archive.org/web/20240714031859/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20240718032114/https://www.sciencedirect.com/robots.txt
+@@ -134,4 +134,6 @@
+ Disallow: /compare
+ Disallow: /getaccess/*
++User-agent: Google-InspectionTool
++Allow: /
+ User-agent: bingbot
+ Disallow: /cache/MiamiImageURL/
+
+==============================================================================
+[AI] 2024-10-09  →  2024-11-15   (+2 / -0 lines)
+  before: https://web.archive.org/web/20241009132216/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20241115143350/https://www.sciencedirect.com/robots.txt
+  AI changes: Applebot-Extended: now named (blocked)
+@@ -343,4 +343,6 @@
+ Disallow: /
+ User-agent: CCBot
++Disallow: /
++User-agent: Applebot-Extended
+ Disallow: /
+ Sitemap: https://www.sciencedirect.com/sitemap.xml
+
+==============================================================================
+[AI] 2024-11-15  →  2024-12-09   (+2 / -0 lines)
+  before: https://web.archive.org/web/20241115143350/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20241209011914/https://www.sciencedirect.com/robots.txt
+  AI changes: PerplexityBot: now named (blocked)
+@@ -345,4 +345,6 @@
+ Disallow: /
+ User-agent: Applebot-Extended
++Disallow: /
++User-agent: PerplexityBot
+ Disallow: /
+ Sitemap: https://www.sciencedirect.com/sitemap.xml
+
+==============================================================================
+[AI] 2025-03-24  →  2026-10-15   (+172 / -75 lines)
+  before: https://web.archive.org/web/20250324000942/https://www.sciencedirect.com/robots.txt
+  after:  https://web.archive.org/web/20261015235923/https://www.sciencedirect.com/robots.txt
+  AI changes: OAI-SearchBot: blocked→allowed; ClaudeBot: now named (blocked); anthropic-ai: now named (blocked); Claude-SearchBot: blocked→allowed; Claude-User: now named (blocked); Perplexity-User: now named (blocked); Bytespider: now named (blocked); meta-externalagent: now named (blocked); meta-externalfetcher: now named (blocked); cohere-ai: now named (blocked); Amazonbot: now named (blocked)
+@@ -1,6 +1,9 @@
+-# go away ? tell all others not in the list below to stay out!
++# --- Last updated: October 2026 ---
+ User-agent: *
+ Disallow: /
+-# As of 02/09/2021, there are 10 crawlers welcomed by SD
++# =============================================================================
++# SEARCH ENGINE CRAWLERS
++# =============================================================================
++# --- Googlebot (Google Search) ---
+ User-agent: Googlebot
+ Disallow: /cache/MiamiImageURL/
+@@ -38,4 +41,5 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
++Disallow: */epub
+ Disallow: */pdfft*
+ Disallow: */article/eid/*
+@@ -68,72 +72,10 @@
+ Disallow: /compare
+ Disallow: /getaccess/*
++Disallow: /feature/*
++Disallow: /questions-and-answers/*
++# --- Googlebot-IA (Google Scholar) + bingbot (Bing Search) ---
++# Grouped because they share identical rules; Googlebot-IA is Google Scholar's
++# academic crawler, bingbot is Microsoft Bing's general search crawler.
+ User-agent: Googlebot-IA
+-Disallow: /cache/MiamiImageURL/
+-Disallow: /science?_ob=MiamiCaptionURL*
+-Disallow: /science/science?_ob=GatewayURL*
+-Disallow: /science/science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=ShoppingCartURL*
+-Disallow: /science?_ob=EmailFriendURL*
+-Disallow: /science?_ob=MiamiImageURL*
+-Disallow: /science?_ob=GatewayURL*
+-Disallow: /science/advertisement/
+-Disallow: /science/relLink/ajaxReq?*
+-Disallow: /science/gadgets/render/
+-Disallow: /science/spliss/rslts/
+-Disallow: /science/preview/
+-Disallow: /science/mlkt/rslts/
+-Disallow: /science/referenceResolution/ajaxRefResol?*
+-Disallow: /science/outlineJson/
+-Disallow: /science/toc/
+-Disallow: /science/bktoc/
+-Disallow: /science?_ob=PdfExcerptURL*
+-Disallow: /science?_ob=MathURL*
+-Disallow: /science/page/flash/VideoPlayer*
+-Disallow: /science?_ob=RefWorkIndexURL*
+-Disallow: /science?_ob=RSSURL*
+-Disallow: /science/MiamiMultiMediaURL/
+-Disallow: /science?_ob=MiamiMultiMediaURL*
+-Disallow: /science?_ob=ReminderURL*
+-Disallow: /science?_ob=QuickSearchURL*
+-Disallow: /science?_ob=TitleSrchURL*
+-Disallow: /science?_ob=QuickSearchListURL*
+-Disallow: /science?_ob=TopicAlertURL*
+-Disallow: /science?_ob=RefWorkSubjClassURL*
+-Disallow: /science?_ob=RefWorkTocURL*
+-Disallow: /science?_ob=SuggestedArtURL*
+-Disallow: /science/downloadActions/
+-Disallow: */pdfft*
+-Disallow: */article/eid/*
+-Disallow: */science/ereader/
+-Disallow: */science/fabrication/
+-Disallow: */pdf*
+-Disallow: /science/ppv-pdf/
+-Disallow: /science/ppv-supp/
+-Disallow: /science/gs/
+-Disallow: /science/dc/
+-Disallow: /science/frag/
+-Disallow: *?np=y
+-Disallow: /refmodsrp/suggestedTopics/*
+-Disallow: /related-books/*
+-Disallow: /search?*
+-Disallow: /search/api*
+-Disallow: /search/autosuggest*
+-Disallow: /sdfe/export/
+-Disallow: /sdfe/arp/
+-Disallow: /sdfe/ears/
+-Disallow: /sdfe/pdf/download/read/index/pii/*
+-Disallow: /sdfe/pdf/download/read/noindex/pii/*
+-Disallow: /sdfe/pdf/download/file/pii/*
+-Disallow: /sdfe/pdf/download/read/aam/noindex/pii/*
+-Disallow: /sdfe/pdf/download/read/am4ir/noindex/pii/*
+-Disallow: /sdfe/reader/pii/*
+-Disallow: /user/
+-Disallow: /journal/neuroscience-research/latest?u=
+-Disallow: /journal/neuroscience-research/articles-in-press?u=
+-Disallow: /journal/neuroscience-research?u=
+-Disallow: /compare
+-Disallow: /getaccess/*
+-User-agent: Google-InspectionTool
+-Allow: /
+ User-agent: bingbot
+ Disallow: /cache/MiamiImageURL/
+@@ -171,4 +113,5 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
++Disallow: */epub
+ Disallow: */pdfft*
+ Disallow: */article/eid/*
+@@ -202,4 +145,7 @@
+ Disallow: /compare
+ Disallow: /getaccess/*
++Disallow: /feature/*
++Disallow: /questions-and-answers/*
++# --- Slurp (Yahoo Search — largely inactive, Yahoo now uses Bing's index) ---
+ User-agent: Slurp
+ Disallow: /cache/MiamiImageURL/
+@@ -237,4 +183,5 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
++Disallow: */epub
+ Disallow: */pdfft*
+ Disallow: /science/article/
+@@ -269,5 +216,13 @@
+ Disallow: /compare
+ Disallow: /getaccess/*
++Disallow: /feature/*
++Disallow: /questions-and-answers/*
++# --- Baiduspider (Baidu Search) + DuckDuckBot + DuckAssistBot (DuckDuckGo) ---
++# Grouped because they share identical rules. DuckAssistBot powers DuckDuckGo's
++# AI-assisted answers feature — it is allowed here as a search companion to
++# DuckDuckBot, not as a training crawler.
+ User-agent: Baiduspider
++User-agent: DuckDuckBot
++User-agent: DuckAssistBot
+ Disallow: /science?_ob=PublicationURL*
+ Disallow: /cache/MiamiImageURL/
+@@ -305,4 +260,5 @@
+ Disallow: /science?_ob=SuggestedArtURL*
+ Disallow: /science/downloadActions/
++Disallow: */epub
+ Disallow: */pdfft*
+ Disallow: */article/eid/*
+@@ -336,16 +292,157 @@
+ Disallow: /compare
+ Disallow: /getaccess/*
++Disallow: /feature/*
++Disallow: /questions-and-answers/*
++# =============================================================================
++# GOOGLE AI OPT-OUT
++# =============================================================================
++# --- Google AI training ---
++User-agent: Google-Extended
++Disallow: /
++User-agent: Google-CloudVertexBot
++Disallow: /
++# =============================================================================
++# AI TRAINING CRAWLERS
++# Bots that crawl for model training datasets. Fully blocked.
++# =============================================================================
++# --- OpenAI ---
+ User-agent: GPTBot
+ Disallow: /
++# --- Anthropic ---
++User-agent: ClaudeBot
++Disallow: /
++# DEPRECATED: "anthropic-ai" and "Claude-Web" are legacy Anthropic user agents
++# no longer in active use. Kept for safety in case of residual traffic.
++User-agent: anthropic-ai
++Disallow: /
++User-agent: Claude-Web
++Disallow: /
++# --- Meta ---
++# NOTE: Meta-ExternalAgent is Meta's AI training crawler.
++# Meta-ExternalFetcher is user-triggered (fetches when a user asks Meta AI a
++# question) — it is listed in the AI search / retrieval section below.
++# FacebookBot also serves link preview generation — blocking it here will
++# prevent rich previews when ScienceDirect links are shared on Facebook/Instagram.
++# If social sharing previews are needed, consider moving FacebookBot to its own
++# section with selective Allow rules, and keep only Meta-ExternalAgent blocked.
++User-agent: Meta-ExternalAgent
++Disallow: /
++User-agent: FacebookBot
++Disallow: /
++# --- Common Crawl ---
++User-agent: CCBot
++Disallow: /
++# --- Apple ---
++User-agent: Applebot-Extended
++Disallow: /
++# --- ByteDance ---
++User-agent: Bytespider
++Disallow: /
++# --- Cohere ---
++User-agent: cohere-ai
++Disallow: /
++User-agent: cohere-training-data-crawler
++Disallow: /
++# --- Amazon ---
++User-agent: Amazonbot
++Disallow: /
++# --- Allen Institute for AI ---
++User-agent: AI2Bot
++Disallow: /
++# --- DeepSeek ---
++User-agent: DeepSeekBot
++Disallow: /
++# --- Huawei (Petal Search) ---
++User-agent: PetalBot
++Disallow: /
++# --- iAsk.ai ---
++User-agent: iAskBot/1.0
++Disallow: /
++# --- You.com ---
++User-agent: YouBot
++Disallow: /
++# --- Diffbot ---
++User-agent: Diffbot
++Disallow: /
++# --- Webz.io (operates both omgili and webzio user agents) ---
++User-agent: omgili
++Disallow: /
++User-agent: omgilibot
++Disallow: /
++User-agent: webzio
++Disallow: /
++User-agent: Webzio-Extended
++Disallow: /
++# --- Timpi ---
++User-agent: TimpiBot
++Disallow: /
++# --- Zhipu AI (ChatGLM) ---
++User-agent: ChatGLM-Spider
++Disallow: /
++# --- img2dataset (open-source bulk image scraper used for AI training datasets) ---
++User-agent: img2dataset
++Disallow: /
++# --- Hive Intelligence (image analysis) ---
++User-agent: ImagesiftBot
++Disallow: /
++# --- FriendlyCrawler (aggressive scraper, known to ignore robots.txt) ---
++User-agent: FriendlyCrawler
++Disallow: /
++# --- QuillBot (text scraping for paraphrasing AI) ---
++User-agent: quillbot
++Disallow: /
++# --- Parallel AI (structured data extraction for AI agents) ---
++User-agent: ShapBot
++Disallow: /
++# =============================================================================
++# AI SEARCH / RETRIEVAL CRAWLERS
++# Bots that fetch content to generate AI-powered search answers or respond to
++# user queries. OAI-SearchBot and Claude-SearchBot are explicitly allowed
++# to enable AI search citations. All others remain blocked pending review.
++# =============================================================================
++# --- OpenAI (ChatGPT Search) ---
++User-agent: OAI-SearchBot
++Allow: /
++# --- OpenAI (user-initiated fetches — may not fully honour robots.txt) ---
+ User-agent: ChatGPT-User
+ Disallow: /
+-User-agent: Google-Extended
+-Disallow: /
+-User-agent: CCBot
+-Disallow: /
+-User-agent: Applebot-Extended
+-Disallow: /
++# --- Anthropic (search indexing) ---
++User-agent: Claude-SearchBot
++Allow: /
++# --- Anthropic (user-initiated fetches) ---
++User-agent: Claude-User
++Disallow: /
++# --- Anthropic (Claude Code CLI) ---
++User-agent: claude-code
++Disallow: /
++# --- Mistral AI (user-initiated fetches) ---
++User-agent: MistralAI-User
++Disallow: /
++# --- Perplexity (indexing) ---
+ User-agent: PerplexityBot
+ Disallow: /
++# --- Perplexity (user-initiated fetches) ---
++User-agent: Perplexity-User
++Disallow: /
++# --- Meta (user-initiated fetches — fetches when a user asks Meta AI a question) ---
++User-agent: Meta-ExternalFetcher
++Disallow: /
++# --- Google (Project Mariner — user-triggered AI agent) ---
++User-agent: Google-Agent
++Disallow: /
++# --- Google (NotebookLM — fetches URLs when users add them to a notebook) ---
++User-agent: Google-NotebookLM
++Disallow: /
++# =============================================================================
++# INTERNAL / SEO TOOLS
++# =============================================================================
++User-agent: Google-InspectionTool
++Allow: /
++# Ahrefs Site Audit crawler
++User-agent: AhrefsSiteAudit
++Allow: /
++# =============================================================================
++# SITEMAPS
++# =============================================================================
+ Sitemap: https://www.sciencedirect.com/sitemap.xml
+ Sitemap: https://www.sciencedirect.com/topics/sitemap-topics.xml

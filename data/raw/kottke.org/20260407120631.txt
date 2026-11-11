@@ -1,0 +1,32 @@
+# robots.txt for kottke.org
+
+# General crawlers
+User-agent: *
+Disallow: /cgi-bin
+Disallow: /stats
+Disallow: /tools/
+
+# AI search/citation crawlers - explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Pure training-only crawlers - block
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+Sitemap: https://kottke.org/sitemap.xml

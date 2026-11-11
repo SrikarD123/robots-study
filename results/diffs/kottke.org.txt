@@ -1,0 +1,35 @@
+robots.txt history for kottke.org (blog)
+151 versions, 2015-01-02 to 2026-04-07
+Changes marked [AI] touch at least one tracked AI crawler.
+
+==============================================================================
+[AI] 2025-06-01  →  2026-04-07   (+20 / -2 lines)
+  before: https://web.archive.org/web/20250601094814/https://kottke.org/robots.txt
+  after:  https://web.archive.org/web/20260407120631/https://kottke.org/robots.txt
+  AI changes: GPTBot: now named (allowed); OAI-SearchBot: now named (allowed); ClaudeBot: now named (allowed); anthropic-ai: allowed→blocked; Google-Extended: now named (allowed); PerplexityBot: now named (allowed); CCBot: allowed→blocked
+@@ -1,5 +1,23 @@
+-# robots.txt file for kottke.org
+-# general crawlers
++# robots.txt for kottke.org
++# General crawlers
+ User-agent: *
+ Disallow: /cgi-bin
+ Disallow: /stats
++Disallow: /tools/
++# AI search/citation crawlers - explicitly allowed
++User-agent: GPTBot
++Allow: /
++User-agent: OAI-SearchBot
++Allow: /
++User-agent: ClaudeBot
++Allow: /
++User-agent: PerplexityBot
++Allow: /
++User-agent: Google-Extended
++Allow: /
++# Pure training-only crawlers - block
++User-agent: CCBot
++Disallow: /
++User-agent: anthropic-ai
++Disallow: /
++Sitemap: https://kottke.org/sitemap.xml

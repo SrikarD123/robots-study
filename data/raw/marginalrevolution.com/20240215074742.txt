@@ -1,0 +1,18 @@
+
+User-agent: *
+Disallow: /wp-login.php
+Disallow: /wp-admin/
+Crawl-delay: 600
+
+# START YOAST BLOCK
+# ---------------------------
+User-agent: *
+Disallow:
+
+Sitemap: http://marginalrevolution.com/sitemap_index.xml
+# ---------------------------
+# END YOAST BLOCK
+
+#WP Import Export Rule
+User-agent: *
+Disallow: /wp-content/uploads/wp-import-export-lite/
