@@ -1,9 +1,32 @@
 # robots.txt history study
 
-These scripts download the archived history of each site's `robots.txt` from the
-Wayback Machine and turn it into tables for the paper.
+How have websites changed their `robots.txt` rules in response to AI crawlers?
+This project pulls every archived version of a site's `robots.txt` from the
+Wayback Machine, reads each one the way RFC 9309 says a crawler should, and
+tracks when each AI crawler was first named, blocked, or let back in.
 
-## Setup (once)
+![Sites blocking an AI crawler for the first time, by half-year](results/first_block_timeline.png)
+
+## At a glance
+
+- **Data:** 2,598 archived `robots.txt` versions from 19 sites (news, academic,
+  government, forums, blogs), 2015 to 2026, checked against 23 crawler tokens
+  from 11 companies.
+- **Blocking is common and it arrived fast.** 13 of the 19 sites have blocked at
+  least one AI crawler, including all 7 news sites. 8 of those 13 did so for the
+  first time in the second half of 2023.
+- **Sites separate training from search.** 11 sites currently block a company's
+  training crawler while still allowing its search crawler; 5 do it with an
+  explicit rule.
+- **Rules keep moving.** 10 sites have unblocked an AI crawler at least once.
+
+The tables behind these numbers are in `results/`. The code is `fetch.py`
+(download), `robots_parser.py` (RFC 9309 parsing, 20 tests) and `analyze.py`
+(tables); `plot_timeline.py` draws the chart above.
+
+## Reproducing it
+
+### Setup (once)
 
 You need Python 3.9 or newer and one package:
 
@@ -17,7 +40,7 @@ Then do two edits before the full run:
    government and blog. Cut or swap whatever you like; the only required columns
    are `domain,category`.
 
-## Run it
+### Run it
 
     python test_parser.py                      # 20 checks; should say 20/20 passed
     python fetch.py sites.csv --only npr.org   # test run on one site, ~1-2 min
@@ -28,7 +51,7 @@ The full run is safe to stop with Ctrl-C and restart with the same command: it
 skips everything already downloaded. If you're short on time, add
 `--max-dense 80` to the full run to cap each site at 80 recent versions.
 
-## What you get
+### What you get
 
 `data/raw/<domain>/<timestamp>.txt` holds each archived version. `data/manifest.csv`
 records every capture considered and whether it was kept, rejected (and why) or
